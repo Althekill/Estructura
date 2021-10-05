@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>El atomo</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    overflow: auto;
+
+  }
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .e{
+    border: 1px solid black;
+  }
+  td{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    width:85px;
+    height:55px;
+  }
+
+  @media screen and (device-width: 200px) {
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+
+  </style>
+</head>
+<body onload="load()">
+
+<h2>Tabla periodicidad</h2>
+<p>
+  La tabla periodicidad es donde todos los elementos conocidos por la humanidad se recogen. En ella se listan los 118 átomos conocidos y muchas de sus propiedades más importantes
+  como lo son: el grupo, el numero atómico, la masa atómica, nombre del elemento y símbolo del elemento, muchas de estas propiedades son muy útiles a los químicos para
+  trabajar más rápidamente y conocer los datos más destacables del elemento.
+</p>
+<h3>Historia</h3>
+<p>
+La historia de la tabla periódica comienza hace 150 años: En 1869 el químico Dimitri Mendeléiev presentó su sistema de ordenación de los elementos <ref>[7]</ref>.
+Los elementos de la naturaleza se han agrupado de diversas
+formas a lo largo de la historia, pero fue hace 150 años
+cuando el ruso Dimitri Ivánovich Mendeléiev -Tobolsk, 1834 -
+San Petersburgo, 1907- presentó una tabla periódica para
+reunirlos a todos, incluso a los que estaban por descubrir.
+A mediados del siglo XIX ya se conocían 63 elementos,
+pero los químicos no se ponían de acuerdo sobre la terminología
+y cómo ordenarlos. Para resolver estas cuestiones se organizó en
+1860 el primer Congreso Internacional de Químicos en Karlsruhe, en
+Alemania
+La de Mendeléiev fue la más rompedora al hacer predicciones y
+ dejar huecos de elementos que se descubrirían después,
+ como el galio -1875-, el escandio -1879-, el germanio
+ -1887- y el tecnecio, 1937 <ref>[8]</ref>. No obstante,
+ para algunos autores,
+ la versión definitiva de la tabla
+ se consiguió gracias a la ley periódica
+ que presentó el británico Henry Moseley a comienzos del siglo XX.
+</p>
+<h3>Partes de la tabla periodicidad</h3>
+La tabla periódica de los elementos está organizada de
+menor a mayor según su número atómico, es decir, el número
+total de protones que tiene cada átomo de ese elemento.
+Además están distribuidos en 7 filas horizontales llamadas periodos
+y 18 columnas verticales conocidas como grupos, de modo que los
+elementos que pertenecen al mismo grupo tienen propiedades similares.
+<h4>Elementos</h4>
+<p>
+Cada elemento en la tabla periodicidad esta representado dentro de una casilla cuadrada, en la que se resumen sus propiedades básicas.
+
+</p>
+<br>
+<canvas id="elemento" width="150" height="150"></canvas>
+<br>
+Donde el valor a la izquierda es el numero atómico, el valor a la derecha es la masa atómica, El símbolo se representa en grande al centro y el nombre debajo de este.
+
+
+<h4>Grupos</h4>
+<p>
+Los grupos en una tabla periódica son las columnas en las que se recogen los elementos.
+ Cada grupo tiene un diferente nombre y clasifica a los elementos según
+ su configuración electrónica. Los grupos van desde el 1 hasta el 18, pero también se les suele
+ dar una numeración romana que va en el intervalo 1A-VIIA y IB-VIIB.
+ A continuación están los nombres de los grupos: <ref>[9]</ref>
+<ul><li>Grupo 1: metales alcalinos</li><li>Grupo 2: metales alcalinotérreos</li><li>Grupo 3: familia del escandio (tierras raras y actinidos)</li><li>Grupo 4: familia del titanio</li><li>Grupo 5: familia del vanadio</li><li>Grupo 6: familia del cromo</li><li>Grupo 7: familia del manganeso</li><li>Grupo 8: familia del hierro</li><li>Grupo 9: familia del cobalto</li><li>Grupo 10: familia del níquel</li><li>Grupo 11: familia del cobre</li><li>Grupo 12: familia del zinc</li><li>Grupo 13: térreos</li><li>Grupo 14: carbonoideos</li><li>Grupo 15: nitrogenoideos</li><li>Grupo 16: calcógenos o anfígenos</li><li>Grupo 17: halógenos</li><li>Grupo 18: gases nobles</li></ul>
+</p>
+<h4>Periodos</h4>
+<p>
+Los periodos corresponden a un ordenamiento horizontal, es decir,
+a las filas de la tabla periódica. Los elementos de cada período
+tienen diferentes propiedades, pero poseen la misma cantidad de niveles
+en su estructura atómica. Esto quiere decir que para todos los elementos del mismo
+periodo, el numero cuántico n sera igual.
+ En total la tabla periódica tiene 7 períodos. <ref>[10]</ref>
+</p>
+<h4>Bloques</h4>
+<p>
+El bloque determina el numero cuántico l, y tiene valores de s, p, d y f.
+Esto quiere decir que los elementos del mismo bloque tendrán el mismo numero
+cuántico l en su configuracion electrónica.
+En general
+Los pimeros dos grupos y el helio son s.
+Los metales de transición son d.
+Los lantánidos y actínidos son f.
+Los grupos IIIA (13) - VIIA (18), exceptuando al helio, son p.
+</p>
+<h3>
+La Tabla Periodica
+</h3>
+<p>
+  <div class="table">
+    <p>Haz click en un elemento para saber mas</p>
+    <button type="button" name="gradiente" onclick="llenar_tabla('familia')">Gradiente de familia</button>
+    <button type="button" name="gradiente" onclick="llenar_tabla('grupo')">Gradiente de grupo</button>
+    <button type="button" name="gradiente" onclick="llenar_tabla('masa')">Gradiente de masa</button>
+    <button type="button" name="gradiente" onclick="llenar_tabla('bloque')">Gradiente de bloque</button>
+    <button type="button" name="gradiente" onclick="llenar_tabla('estado')">Gradiente de estado</button>
+    <button type="button" name="gradiente" onclick="llenar_tabla('electronegatividad')">Gradiente de electronegatividad</button>
+
+  <table>
+    <tbody>
+      <tr class="grupo">
+        <td class="grupo"></td>
+        <td>IA<br>1</td>
+        <td>IIA<br>2</td>
+        <td>IIIB<br>3</td>
+        <td>IVB<br>4</td>
+        <td>VB<br>5</td>
+        <td>VIB<br>6</td>
+        <td>VIIB<br>7</td>
+        <td>VIIIB<br>8</td>
+        <td>VIIIB<br>9</td>
+        <td>VIIIB<br>10</td>
+        <td>IB<br>11</td>
+        <td>IIB<br>12</td>
+        <td>IIIA<br>13</td>
+        <td>IVA<br>14</td>
+        <td>VA<br>15</td>
+        <td>VIA<br>16</td>
+        <td>VIIA<br>17</td>
+        <td>VIIIA<br>18</td>
+      </tr>
+      <tr>
+        <td class="grupo">1</td>
+        <td id="e1"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="e2"></td>
+      </tr>
+      <tr>
+        <td class="grupo">2</td>
+        <td id="e3"></td>
+        <td id="e4"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="e5"></td>
+        <td id="e6"></td>
+        <td id="e7"></td>
+        <td id="e8"></td>
+        <td id="e9"></td>
+        <td id="e10"></td>
+      </tr>
+      <tr>
+        <td class="grupo">3</td>
+        <td id="e11"></td>
+        <td id="e12"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="e13"></td>
+        <td id="e14"></td>
+        <td id="e15"></td>
+        <td id="e16"></td>
+        <td id="e17"></td>
+        <td id="e18"></td>
+      </tr>
+      <tr>
+        <td class="grupo">4</td>
+        <td id="e19"></td>
+        <td id="e20"></td>
+        <td id="e21"></td>
+        <td id="e22"></td>
+        <td id="e23"></td>
+        <td id="e24"></td>
+        <td id="e25"></td>
+        <td id="e26"></td>
+        <td id="e27"></td>
+        <td id="e28"></td>
+        <td id="e29"></td>
+        <td id="e30"></td>
+        <td id="e31"></td>
+        <td id="e32"></td>
+        <td id="e33"></td>
+        <td id="e34"></td>
+        <td id="e35"></td>
+        <td id="e36"></td>
+      </tr>
+      <tr>
+        <td class="grupo">5</td>
+        <td id="e37"></td>
+        <td id="e38"></td>
+        <td id="e39"></td>
+        <td id="e40"></td>
+        <td id="e41"></td>
+        <td id="e42"></td>
+        <td id="e43"></td>
+        <td id="e44"></td>
+        <td id="e45"></td>
+        <td id="e46"></td>
+        <td id="e47"></td>
+        <td id="e48"></td>
+        <td id="e49"></td>
+        <td id="e50"></td>
+        <td id="e51"></td>
+        <td id="e52"></td>
+        <td id="e53"></td>
+        <td id="e54"></td>
+      </tr>
+      <tr>
+        <td class="grupo">6</td>
+        <td id="e55"></td>
+        <td id="e56"></td>
+        <td id="la"></td>
+        <td id="e72"></td>
+        <td id="e73"></td>
+        <td id="e74"></td>
+        <td id="e75"></td>
+        <td id="e76"></td>
+        <td id="e77"></td>
+        <td id="e78"></td>
+        <td id="e79"></td>
+        <td id="e80"></td>
+        <td id="e81"></td>
+        <td id="e82"></td>
+        <td id="e83"></td>
+        <td id="e84"></td>
+        <td id="e85"></td>
+        <td id="e86"></td>
+      </tr>
+      <tr>
+        <td class="grupo">7</td>
+        <td id="e87"></td>
+        <td id="e88"></td>
+        <td id="ac"></td>
+        <td id="e104"></td>
+        <td id="e105"></td>
+        <td id="e106"></td>
+        <td id="e107"></td>
+        <td id="e108"></td>
+        <td id="e109"></td>
+        <td id="e110"></td>
+        <td id="e111"></td>
+        <td id="e112"></td>
+        <td id="e113"></td>
+        <td id="e114"></td>
+        <td id="e115"></td>
+        <td id="e116"></td>
+        <td id="e117"></td>
+        <td id="e118"></td>
+
+      </tr>
+      <td></td>
+      <td></td>
+      <tr>
+
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="e57"></td>
+        <td id="e58"></td>
+        <td id="e59"></td>
+        <td id="e60"></td>
+        <td id="e61"></td>
+        <td id="e62"></td>
+        <td id="e63"></td>
+        <td id="e64"></td>
+        <td id="e65"></td>
+        <td id="e66"></td>
+        <td id="e67"></td>
+        <td id="e68"></td>
+        <td id="e69"></td>
+        <td id="e70"></td>
+        <td id="e71"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="e89"></td>
+        <td id="e90"></td>
+        <td id="e91"></td>
+        <td id="e92"></td>
+        <td id="e93"></td>
+        <td id="e94"></td>
+        <td id="e95"></td>
+        <td id="e96"></td>
+        <td id="e97"></td>
+        <td id="e98"></td>
+        <td id="e99"></td>
+        <td id="e100"></td>
+        <td id="e101"></td>
+        <td id="e102"></td>
+        <td id="e103"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</p>
+<br>
+<canvas id="e" width="150" height="150"></canvas>
+<br>
+<p id="elementinfo">
+
+</p>
+<h4>¿Por qué el hidrógeno esta en el grupo IA?</h4>
+<p>
+  Las especiales características del átomo de hidrógeno y
+  de la sustancia elemental hidrógeno hacen que este haya
+  sido uno de los puntos más discutidos y controvertidos.
+En la tabla periódica se observa que el hidrógeno, a pesar de ser un no metal,
+se coloca en el grupo de los metales alcalinos, las dos razones principales de este hecho son las siguientes:
+<ul>
+  <li>El hidrógeno tiene numero de oxidación de +1, al igual que todos los metales alcalinos y su octeto de lewis esta conformado
+  por 1 electrón y 7 espacios para completar el octeto, un tema que se discutirá en la sección siguiente</li>
+  <li>No se ha encontrado una posición mas ventajosa para colocarlo, aunque comparte similitudes con los
+  metales alcalinos, también tiene una alta electronegatividad, similar a la del flúor, pero esta colocado en
+un punto donde es implícito que su electronegatividad debería ser menor. Algunas otras propiedades como los potenciales de ionización
+y la afinidad electrónica. son más cercanos a los elementos del grupo 14 (del carbono). Por tanto su posición aun se seguirá discutiendo en el
+futuro <ref>[11]</ref></li>
+</ul>
+
+</p>
+<div class="ref">
+  <table>
+    <tbody>
+      <tr>
+        <td>[7]</td>
+        <td>Facultad de Ciencias Químicas, Universidad Complutense de Madrid. “Historia de la Tabla Periódica”, 2019. [En línea]. Disponible en: https://biblioteca.ucm.es/qui/historia-de-la-tabla-periodica</td>
+      </tr>
+      <tr>
+        <td>[8]</td>
+        <td>National Geographic. “La tabla periódica cumple 150 años”, 2019. [En línea]. Disponible en: https://www.nationalgeographic.com.es/ciencia/actualidad/tabla-periodica-cumple-150-anos_13721</td>
+      </tr>
+      <tr>
+        <td>[9]</td>
+        <td>J. F. Murillo y Gabriel Pinto, National Geographic. “La tabla periódica, la forma de ordenar los elementos químicos”, 2021. [En línea]. Disponible en: https://www.nationalgeographic.com.es/ciencia/tabla-periodica-forma-ordenar-elementos-quimicos_15988</td>
+      </tr>
+      <tr>
+        <td>[10]</td>
+        <td>Khan Academy. “Repaso de la tabla periódica”. [En línea]. Disponible en: https://es.khanacademy.org/science/quimica-pe-pre-u/xa105e22a677145a0:estructura-atomica/xa105e22a677145a0:tabla-periodica/a/246-repaso-de-tabla-peridica</td>
+      </tr>
+      <tr>
+        <td>[11]</td>
+        <td>Claudi Mans Teixidó, Investigación y Ciencia. “¿Dónde va el hidrógeno en la tabla periódica? Y otras discusiones parecidas”, 2019. [En línea]. Disponible en: https://www.investigacionyciencia.es/blogs/fisica-y-quimica/24/posts/dnde-va-el-hidrgeno-en-la-tabla-peridica-y-otras-discusiones-parecidas-17971 </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/El Atomo.html'">
+  <p>Tema anterior: El Atomo</p>
+</div>
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+
+<div class="right" onclick="window.location.href = '/static/temas/Enlaces quimicos.html'">
+  <p>Siguiente tema: Enlaces Químicos</p>
+</div>
+
+      </body>
+      </html>

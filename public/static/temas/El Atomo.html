@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>El átomo</title>
+    <style>
+        body{
+          font-family: monaco,Consolas,Lucida Console,monospace;
+
+        }
+          h2{
+          color:olive;
+              font-size: 4em;
+              font-family:'Sofia',sans-serif;
+          }
+          h3{
+          color:fuchsia;
+              font-size: 2em;
+              font-family:'Sofia',sans-serif;
+          }
+          h4{
+          color:mediumturquoise;
+              font-size: 4em;
+                font-family:'Amatic SC',sans-serif;
+          }
+          h5{
+          color:coral;
+              font-size: 3em;
+                font-family:'Amatic SC',sans-serif;
+          }
+          q{
+          font-style: oblique;
+          font-weight: bold;
+          color:crimson
+          }
+          img{
+            max-width: 100%;
+          }
+          elemento{
+            color:maroon;
+            font-style: normal;
+            font-weight: bold;
+            font-size:1.5em;
+          }
+          todo{
+            font-style: italic;
+            font-weight: bold;
+            font-size:3em;
+          }
+          .table {
+            background-color: lawngreen;
+            overflow: auto;
+
+          }
+          .Modelo{
+            height: 500px;
+            width: 100%;
+          }
+          td{
+            background-color: lightyellow
+          }
+          @media screen and (device-width: 200px) {
+            h2,h3,h4,h5 {
+              font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+            }
+          }
+          .ref{
+            width:90%;
+            overflow: auto;
+          }
+          .ref>table>tbody>tr>td{
+            background-color: white;
+          }
+          .ref>table>tbody>tr>td:first-child ,ref{
+            color: navy;
+            font-weight: bold;
+          }
+
+      </style>
+    <script type="text/javascript" src="tabla periodica.js"></script>
+    <script type="text/javascript" src="atomo.js"></script>
+  </head>
+  <body onload="animar_configuracion(500)">
+
+    <h2>Composición de los átomos</h2>
+    <p>
+      Los átomos están compuestos por: electrones, protones y neutrones. Cada uno de estos tiene características
+      importantes como son la carga y la masa. Los protones tienen cargas positivas y se encuentran en el núcleo del átomo,
+       los electrones tienen cargas negativas y orbitan alrededor del núcleo, los neutrones no tienen carga y están al
+       núcleo del átomo junto con los protones. La masa de los protones y neutrones es muy similar, sin embargo el electrón es 1800
+       veces más ligero que el protón.<ref>[1, p. 42]</ref>, <ref>[2, p. 3]</ref> Generalmente un átomo es neutro, es decir: tiene la misma cantidad de protones y electrones.
+       En caso contrario, a un átomo se le llama ión, si tiene más electrones, es un ión negativo, y si tiene menos electrones es un ión
+       positivo. Ademas, si un átomo tiene una cantidad de neutrones diferente a su cantidad de protones, a este se le llamará un isótopo.
+    </p>
+
+<h2>Numeros Cuánticos</h2>
+<h3 id="orbitales">Estructura de los orbitales del átomo</h3>
+<p>
+Los electrones orbitan alrededor del núcleo del átomo. Aunque es imposible conocer su posición exacta en el espacio, debido a un concepto
+de la mecánica cuántica llamado <q>Prinicipio de Incertidumbre de Heisenberg</q>, que dicta que no se pueden conocer ambas la trayectoria y posición de una partícula
+pero si se puede conocer la probabilidad de encontrar al átomo en determinadas posiciones dependiendo del tipo de átomo.<ref>[3, pp. 3-4]</ref> Esto mediante el conocimiento
+de los orbitales.
+</p>
+<p>
+Los números cuánticos se pueden considerar (de manera practica) como la huella dactilar de un elemento. Estos números son diferentes al numero de masa
+o al numero atómico, debido a que estos se obtienen mediante la observación de los electrones de un átomo y de sus orbitales.
+Los orbitales, son aquellas regiones donde es mas probable encontrar al electrón; estos se clasifican en diferentes "capas"
+las cuales tienen una forma definida muy característica y definen importantes propiedades sobre el átomo en cuestión.
+Cada uno de estos tiene diferentes reglas de comportamiento y de contener electrones, que dependen de diferentes principios como:
+</p>
+<li>El principio de máxima multiplicidad de Hund:
+  Los orbitales con igual nivel de energía ( se refiere a orbitales con el mismo número cuántico n y el mismo número cuántico l), se llenan progresivamente de manera que siempre exista un mayor número de electrones desapareados. <ref>[4]</ref>
+</li>
+
+
+<li>El principio de exclusión de pauli: El Principio de exclusión de Pauli dice que dos electrones
+de un mismo átomo nunca pueden poseer sus cuatro números
+cuánticos iguales. <ref>[2, p. 5]</ref>, <ref>[3, p. 4]</ref></li>
+
+<li>El principio de construcción de Aufbau:  Los electrones pasan a ocupar los orbitales de menor energía, y progresivamente se van llenando los orbitales de mayor energía.
+Según el principio de Aufbau, la configuración electrónica de un átomo se expresa mediante la secuencia siguiente:
+1s  2s  2p  3s  3p  4s  3d  4p  5s  4d….sigue
+Esta es la razón por la que en la configuracion electrónica no se llena secuencialmente siguiendo la tabla, si no que sigue la regla de las diagonales. <ref>[4]</ref>
+</li>
+<h3>Numero cuántico principal (n)</h3>
+<p>
+  Este numero cuántico indica el nivel de energía del orbital en cuestión. O sea, <q>Los orbitales atómicos
+    se agrupan en distintas "capas" a diferentes distancias del núcleo.</q> Y cada una de estas capas se identifica
+      mediante el numero cuántico principal.
+  En la configuracion electrónica, cada capa se determina por el primer numero de la  configuracion electrónica.
+  <br>
+  <div class="Modelo">
+  <model-viewer class="Modelo" src="/static/Modelos/atomos/atomo_45_n.glb" alt="Modelo 3d de un átomo y sus niveles de energía" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+En este modelo, se pueden ver los diferentes niveles de energía, que corresponden al orbital n
+<br>
+  Conforme aumenta le capa de los electrones, estos tienen mas energía (ya que están mas lejos del núcleo)
+  entonces las capas aumentan su energía y pueden albergar una mayor cantidad de electrones.
+  Volviendo a la tabla de configuracion electrónica, este hecho es fácil de ver:
+  <table>
+    <tbody>
+      <tr>
+        <td>1s<sup>2</sup></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2 e<sup>-</sup></td>
+
+      </tr>
+      <tr>
+        <td>2s<sup>2</sup></td>
+        <td>2p<sup>6</sup></td>
+        <td></td>
+        <td></td>
+        <td>6+2 = 8e<sup>-</sup></td>
+      </tr>
+      <tr>
+        <td>3s<sup>2</sup></td>
+        <td>3p<sup>6</sup></td>
+        <td>3d<sup>10</sup></td>
+        <td></td>
+        <td>6+2+10 = 18e<sup>-</sup></td>
+      </tr>
+      <tr>
+        <td>4s<sup>2</sup></td>
+        <td>4p<sup>6</sup></td>
+        <td>4d<sup>10</sup></td>
+        <td>4f<sup>14</sup></td>
+        <td>6+2+10+14 = 32e<sup>-</sup></td>
+      </tr>
+      <tr>
+        <td>5s<sup>2</sup></td>
+        <td>5p<sup>6</sup></td>
+        <td>5d<sup>10</sup></td>
+        <td>5f<sup>14</sup></td>
+        <td>6+2+10+14 = 32e<sup>-</sup></td>
+      </tr>
+      <tr>
+        <td>6s<sup>2</sup></td>
+        <td>6p<sup>6</sup></td>
+        <td>6d<sup>10</sup></td>
+        <td></td>
+        <td>6+2+10 = 18e<sup>-</sup></td>
+      </tr>
+      <tr>
+        <td>7s<sup>2</sup></td>
+        <td>7p<sup>6</sup></td>
+        <td></td>
+        <td></td>
+        <td>6+2 = 8e<sup>-</sup></td>
+      </tr>
+      <tr>
+        <td>8s<sup>2</sup></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2 e<sup>-</sup></td>
+      </tr>
+    </tbody>
+  </table>
+
+</p>
+<h3>Numero cuántico azimutal u orbital (l)</h3>
+<p>
+El numero cuántico azimutal determina la nube de probabilidad de un electrón en determinada capa, esto es,
+este numero determina el tipo de orbital s,p,d,f (sharp ,principal, difuse, fundamental) <ref>[1, pp. 265-266]</ref> y su valor va desde 0 hasta 4. Estos orbitales siguen
+el principio de exclusión de pauli, que dice que cada orbital puede albergar un maximo de dos electrones, ademas estos orbitales son
+estructuras tridimensionales que difieren dependiendo del tipo de orbital.
+Existen 4 tipos diferentes de orbitales con diferentes formas tridimensionales que determinan la posición del electrón:
+</p>
+<li>Orbital s <br>
+  <div class="Modelo">
+  <model-viewer class="Modelo" src="/static/Modelos/orbital_s.glb" alt="Modelo 3d de un orbital s" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+<br>
+</li>
+<li>Orbital p
+  <br>
+  <div class="Modelo">
+  <model-viewer class="Modelo" src="/static/Modelos/orbital_p.glb" alt="Modelo 3d de un orbital p" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+<br></li>
+<li>Orbital d
+  <br>
+  <div class="Modelo">
+  <model-viewer class="Modelo" src="/static/Modelos/orbital_d.glb" alt="Modelo 3d de un orbital d" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+<br></li>
+<li>Orbital f
+  <br>
+  <div class="Modelo">
+  <model-viewer class="Modelo" src="/static/Modelos/orbital_f.glb" alt="Modelo 3d de un orbital f" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+<br>
+</li>
+
+<h3>Numero cuántico magnético (m)</h3>
+<p>
+Para obtener el numero cuántico magnético, primero hay que ahondar mas en como obtener la configuración electrónica de un elemento en particular.
+Anteriormente se vio la regla de las diagonales, pero sin ahondar en un caso especifico. Ahora se obtendrá la
+configuracion electrónica siguiendo la regla de las diagonales y ordenando los electrones (representados por flechas hacia arriba o abajo)
+del ultimo orbital del átomo.
+Entonces el numero cuántico m depende del numero azimutal e indica en que parte del orbital se encuentra el electrón.<ref>[1, p. 266]</ref> En otras palabras: <b>el numero cuántico m representa el par de orbital</b>. Por ejemplo, en
+las imágenes se encuentran tres pares de orbitales tipo p, que apuntan a un diferente eje, entonces, a cada uno de ellos le corresponde un numero cuántico m.
+<br>
+<img src="/static/Imagenes/m-1.png" width="300px">
+<br>
+m=-1
+<br>
+<img src="/static/Imagenes/m0.png" width="300px">
+<br>
+m=0
+<br>
+<img src="/static/Imagenes/m1.png" width="300px">
+<br>
+m=1
+<br>
+</p>
+<h3>Numero cuántico spin (s)</h3>
+<p>
+Volviendo a la configuracion electrónica, los electrones eran representados por flechas, las cuales iban hacia arriba
+o hacia abajo, estas flechas representan el numero de spin, y su valor es de -1/2 o de 1/2. <ref>[1, p. 266]</ref>
+Este numero cuántico determina el giro del electrón en su propio eje (como si de un planeta se tratara: gira sobre su propio eje y se traslada atraves del átomo).
+Según el principio de pauli, <q>cada orbital puede albergar un maximo de dos electrones, dado que sus espines [numero cuántico s]
+están apareados [un electrón gira en dirección contraria al otro]</q>
+Aunque es importante comentar: esta explicación, aunque muy útil para comprender lo que pasa con el spin, es una analogía, y como toda analogía, no debe llevarse al pie de la letra
+hasta el final. <ref>[5]</ref>
+Esto explica porque los diferentes tipos de orbitales pueden albergar una cantidad máxima de electrones.
+<br>
+<div class="Modelo">
+<model-viewer class="Modelo" src="/static/Modelos/spin_2.glb" alt="Modelo 3d del spin" autoplay ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+</div>
+<br>
+<h2>Configuracion electrónica</h2>
+<p>
+A partir de los principios de exclusividad, máxima multiplicidad y construcción, se puede determinar la composición electrónica de un átomo, sabiendo que existen 4 tipos de orbitales que pueden albergar
+diferentes cantidades de electrones. Normalmente la manera en que esta configuracion electrónica se obtiene es haciendo uso de una regla pedagógica
+llamada regla de las diagonales. Teniendo en cuenta que el orbitals solo puede albergar 2 electrones, el p 6 electrones, el d 10 electrones y el f
+14 electrones; se crea una pirámide, la cual se rellena utilizando la regla de las diagonales (que sigue el principio de construcción de aufbau), <ref>[6}</ref>
+como la siguiente:
+  <br>
+  <img src="/static/Imagenes/diagonales.png" >
+  <br>
+Mediante esta ordenación se pueden obtener cada uno de los números cuánticos del átomo en cuestión.
+Lo primero que se debe hacer es tomar el numero atómico del átomo en cuestión.
+Siguiendo la regla de las diagonales, se va aumentando la cantidad de electrones colocados en el
+átomo hasta que se llegue al numero atómico en cuestión., tomando en cuenta cuantos
+electrones puede albergar cada orbital.
+<table id="conf_animada">
+  <tbody>
+    <tr id="n1">
+      <td id="n1l1">1s<sup>2</sup></td>
+    </tr>
+    <tr id="n2">
+      <td id="n2l1">2s<sup>2</sup></td>
+      <td id="n2l2">2p<sup>6</sup></td>
+    </tr>
+    <tr id="n3">
+      <td id="n3l1">3s<sup>2</sup></td>
+      <td id="n3l2">3p<sup>6</sup></td>
+      <td id="n3l3">3d<sup>10</sup></td>
+    </tr>
+    <tr id="n4">
+      <td id="n4l1">4s<sup>2</sup></td>
+      <td id="n4l2">4p<sup>6</sup></td>
+      <td id="n4l3">4d<sup>10</sup></td>
+      <td id="n4l4">4f<sup>14</sup></td>
+    </tr>
+    <tr id="n5">
+      <td id="n5l1">5s<sup>2</sup></td>
+      <td id="n5l2">5p<sup>6</sup></td>
+      <td id="n5l3">5d<sup>10</sup></td>
+      <td id="n5l4">5f<sup>14</sup></td>
+    </tr>
+    <tr id="n6">
+      <td id="n6l1">6s<sup>2</sup></td>
+      <td id="n6l2">6p<sup>6</sup></td>
+      <td id="n6l3">6d<sup>10</sup></td>
+    </tr>
+    <tr id="n7">
+      <td id="n7l1">7s<sup>2</sup></td>
+      <td id="n7l2">7p<sup>6</sup></td>
+    </tr>
+    <tr id="n8">
+      <td id="n8l1">8s<sup>2</sup></td>
+    </tr>
+  </tbody>
+</table>
+De esta manera se pueden obtener los números n y l (que están en la ultima casilla obtenida); sin embargo para obtener m y s,
+también se necesita tomar el ultimo numero de orbital y acomodar cada uno de los electrones
+individualmente. Dependiendo del tipo de orbital, el proceso cambia, así que para hacer una mejor
+explicación, se utilizara un ejemplo.
+</p>
+
+<h3>Ejemplo interactivo</h3>
+<p>En el siguiente ejemplo interactivo, inserte el nombre del elemento (nombre completo, símbolo o numero atómico) del cual quiere obtener la configuracion electrónica</p>
+<br>
+<input id="elemento" name="elemento"type="text"  onchange="traductinput()">
+<p id="conf_larga">..</p>
+<table id="1conf_animada">
+  <tbody>
+    <tr id="1n1">
+      <td id="1n1l1">1s<sup>2</sup></td>
+    </tr>
+    <tr id="1n2">
+      <td id="1n2l1">2s<sup>2</sup></td>
+      <td id="1n2l2">2p<sup>6</sup></td>
+    </tr>
+    <tr id="1n3">
+      <td id="1n3l1">3s<sup>2</sup></td>
+      <td id="1n3l2">3p<sup>6</sup></td>
+      <td id="1n3l3">3d<sup>10</sup></td>
+    </tr>
+    <tr id="1n4">
+      <td id="1n4l1">4s<sup>2</sup></td>
+      <td id="1n4l2">4p<sup>6</sup></td>
+      <td id="1n4l3">4d<sup>10</sup></td>
+      <td id="1n4l4">4f<sup>14</sup></td>
+    </tr>
+    <tr id="1n5">
+      <td id="1n5l1">5s<sup>2</sup></td>
+      <td id="1n5l2">5p<sup>6</sup></td>
+      <td id="1n5l3">5d<sup>10</sup></td>
+      <td id="1n5l4">5f<sup>14</sup></td>
+    </tr>
+    <tr id="1n6">
+      <td id="1n6l1">6s<sup>2</sup></td>
+      <td id="1n6l2">6p<sup>6</sup></td>
+      <td id="1n6l3">6d<sup>10</sup></td>
+    </tr>
+    <tr id="1n7">
+      <td id="1n7l1">7s<sup>2</sup></td>
+      <td id="1n7l2">7p<sup>6</sup></td>
+    </tr>
+    <tr id="1n8">
+      <td id="1n8l1">8s<sup>2</sup></td>
+    </tr>
+  </tbody>
+</table>
+<p id="ultimo_orbital"></p>
+<br>
+<p id="mas_texto"></p>
+<p id="ultimo_orbital_super"></p>
+<p id="z"></p>
+<div width="300" height="150">
+<canvas id="m&s" width="300" height="150"></canvas>
+</div>
+<br>
+<p id="ms">
+</p>
+<h3>Gases nobles en la ordenación electrónica</h3>
+<p>
+En el ejemplo interactivo, se puede descubrir que los elementos que pertenecen al grupo de gases nobles (Vease el tema de tabla periódica), es decir: Helio, Neón, Argón, Kriptón, Xenón, Radón, y Organesón;
+tienen su ultimo orbital completo y lleno de lineas, por eso a estos elementos se les suele considerar extremadamente estables y no suelen formar compuestos con otros elementos.
+También es muy útil utilizarlos para la configuración electrónica, debido a que para muchos elementos esta es muy larga de escribir, se suele abreviar haciendo uso de los gases nobles.
+<br>
+He
+<br>
+1s<sup>2</sup>
+<br>
+Ne
+<br>
+1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>
+<br>
+Ar
+<br>
+1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup>
+<br>
+Kr
+<br>
+1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup>
+<br>
+Xe
+<br>
+1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup>
+<br>
+Rn
+<br>
+1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup>
+<br>
+Og
+<br>
+1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>6</sup>
+<br>
+
+Así, si la configuracion electrónica del elemento esta entre dos de estos gases nobles, se abrevia metiendo al gas noble entre corchetes y continuando la configuracion desde ahí. Por ejemplo, para el Oro (Au), con numero atómico 79, la configuracion larga es:
+<br>
+1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>9</sup>
+<br>
+que es mayor que la del Xenon, y menor a la del Radon, entonces, la configuración electrónica abreviada del oro se escribe:
+<br>
+[Xe] 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>9</sup>
+</p>
+<h2>Referencias de la sección 'El Átomo'</h2>
+<div class="ref">
+
+<table>
+  <tbody>
+    <tr>
+      <td>[1]</td>
+      <td>Chang, Raymond, “Química”, McGraw-Hill, Séptima Edición, 2002.</td>
+    </tr>
+<tr>
+    <tr>
+      <td>[2]</td>
+      <td>Wade, Leroy, “Química orgánica. Volumen 1”, Pearson Educación, Séptima edición, 2011.</td>
+    </tr>
+    <tr>
+      <td>[3]</td>
+      <td>Carey, Francis & M. Guiliano, Robert, “Química orgánica”, McGraw-Hill, Novena Edición, may. 2014.</td>
+    </tr>
+    <tr>
+      <td>[4]</td>
+      <td>CEDRÓN, Juan Carlos, Victoria LANDA y Juana ROBLES, Pontificia Universidad Católica del Perú́. “2.3.1. Principio de exclusión de Pauli - Principio de Aufbau - Regla de Hund” en Química General, 2011. [En línea]. Disponible en: http://corinto.pucp.edu.pe/quimicageneral/contenido/231-principio-de-exclusion-de-pauli-principio-de-aufbau-regla-de-hund.html</td>
+    </tr>
+    <tr>
+      <td>[5]</td>
+      <td>Navarro, Jesús, “El principio de Incertidumbre de Heisenberg: ¿Existe el mundo cuando no lo miras?”, National Geographic, pp. 88-89,2012.</td>
+    </tr>
+    <tr>
+      <td>[6]</td>
+      <td>Lic. Pedro Omar Hernández Vicente, Universidad Autónoma del Estado de Hidalgo. “Configuración Electrónica”, 2019. [En línea]. Disponible en: https://www.uaeh.edu.mx/docencia/P_Presentaciones/prepa_ixtlahuaco/2019/4/Formatos-Quimica-Inorganica.pdf</td>
+
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+<div class="right" onclick="window.location.href = '/static/temas/Tabla Periodica.html'">
+  <p>Siguiente tema: Tabla Periodica</p>
+</div>
+
+  </body>
+</html>

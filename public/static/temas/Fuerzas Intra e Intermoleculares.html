@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Fuerzas Intra e Intermoléculares</title>
+    <style>
+        body{
+          font-family: monaco,Consolas,Lucida Console,monospace;
+
+        }
+          h2{
+          color:olive;
+              font-size: 4em;
+              font-family:'Sofia',sans-serif;
+          }
+          h3{
+          color:fuchsia;
+              font-size: 2em;
+              font-family:'Sofia',sans-serif;
+          }
+          h4{
+          color:mediumturquoise;
+              font-size: 4em;
+                font-family:'Amatic SC',sans-serif;
+          }
+          h5{
+          color:coral;
+              font-size: 3em;
+                font-family:'Amatic SC',sans-serif;
+          }
+          q{
+          font-style: oblique;
+          font-weight: bold;
+          color:crimson
+          }
+          img{
+            max-width: 100%;
+          }
+          elemento{
+            color:maroon;
+            font-style: normal;
+            font-weight: bold;
+            font-size:1.5em;
+          }
+          quotation{
+            font-style: italic;
+            font-weight: bold;
+            font-size:3em;
+          }
+          .table {
+            background-color: lawngreen;
+            overflow: auto;
+
+          }
+          .Modelo{
+            height: 500px;
+            width: 100%;
+          }
+          td{
+            background-color: lightyellow
+          }
+          @media screen and (device-width: 200px) {
+            h2,h3,h4,h5 {
+              font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+            }
+          }
+          .ref{
+            overflow: auto;
+          }
+          .ref>table>tbody>tr>td{
+            background-color: white;
+          }
+          .ref>table>tbody>tr>td:first-child ,ref{
+            color: navy;
+            font-weight: bold;
+          }
+      </style>
+  </head>
+  <body>
+    <h2>Propiedades cinéticas de las fases de la materia</h2>
+    Antes de comenzar con la explicación de las fuerzas intra e
+    intermoléculares, es importante aclarar las propiedades generales de los
+    sólidos, líquidos y gaseosos <ref>[1, p. 418]</ref>:
+    <div class="table">
+    <table >
+      <tbody>
+        <tr>
+          <th>Estado de la materia</th>
+          <th>Volumen y forma</th>
+          <th>Densidad</th>
+          <th>Compresibilidad</th>
+          <th>Movimiento de las moléculas</th>
+        </tr>
+        <tr>
+          <td>Gaseoso</td>
+          <td>Adopta el volumen y forma del recipiente que lo contiene</td>
+          <td>La mas baja</td>
+          <td>Altamente compresibles</td>
+          <td>Libre</td>
+        </tr>
+        <tr>
+          <td>Líquido</td>
+          <td>Adopta la forma del recipiente que lo contiene, su volumen es
+            constante</td>
+          <td>Alta, menor a la del sólido</td>
+          <td>Ligeramente compresibles, necesitan una gran presión para lograrlo</td>
+          <td>Libre</td>
+        </tr>
+        <tr>
+          <td>Sólido</td>
+          <td>Volumen y forma definidos</td>
+          <td>Alta, suele ser la mayor debido a la cercanía entre moléculas</td>
+          <td>Incompresibles</td>
+          <td>Lo máximo que pueden lograr es vibrar alrededor de posiciones muy
+            fijas</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <h2>Fuerzas intermoléculares</h2>
+    <q>Las fuerzas intermoléculares son fuerzas de atracción entre moléculas</q> <ref>[1, p. 418]</ref>
+    Estas son las que generan las características principales de las fases de la
+    materia, se puede inferir que estas fuerzas dependen de la temperatura (así
+    como los estados de la materia), Cabe aclarar que el
+    punto de fusión y de ebullición de las sustancias depende de sus fuerzas
+    intermoléculares, mientras mayor sea la fuerza, mayor es la temperatura
+    requerida para pasar de sólido a líquido y de liquido a gaseoso.
+    <h2>Fuerzas intramoléculares</h2>
+    Las fuerzas intramoléculares también actúan sobre los átomos, pero <q>Las
+    fuerzas intramoléculares mantienen juntos a los átomos de una molécula</q> <ref>[1, p. 418]</ref>,
+    es decir, estas son las fuerzas que ocurren en un enlace químico y que unen
+    a los átomos de una sustancia partícular. Estas fuerzas ya se abordaron
+    a fondo en la sección de enlaces químicos.
+    <br>
+    Generalmente,
+    las fuerzas intramoléculares son mayores a las fuerzas intermoléculares, por
+    ejemplo, la energía necesaria para evaporar 1 mol de agua es 23 veces menor
+    a la necesaria para romper sus dos enlaces O-H (41KJ y 930 KJ
+    respectivamente)
+    <h2>Tipos de fuerzas intermoléculares</h2>
+    Las fuerzas intermoléculares se suelen clasificar conforme al tipo de
+    moléculas que son atraídas, principalmente se encuentran las fuerzas de Van
+    Der Waals, o enlaces de Van Der Waals, o enlaces secundarios, que son aquellos enlaces en los que no hay comparticion de electrones, a diferencia de los enlaces covalentes e iónicos. <ref>[12]</ref>.
+    Estos enlaces incluyen a las fuerzas dipolo-dipolo, las fuerzas dipolo-dipolo inducido y a las fuerzas de
+    dispersión; y las fuerzas de ion-dipolo, que no pertenecen a las fuerzas de Van Der Waals
+    <h3>Fuerzas Dipolo-Dipolo</h3>
+    <q>Las fuerzas dipolo-dipolo son las fuerzas de atracción entre moléculas
+      polares</q> <ref>[1, p. 420]</ref>. Estas fuerzas acomodan las moléculas de una manera muy
+    específica, en la que los ́átomos con momento dipolar tienden a alinear sus
+    polaridades opuestas como si de un imán se tratara, un ejemplo de esto es el
+    Ácido Clorhídrico <elemento>HCl</elemento>, que esta compuesto por dos
+    moléculas con diferente electronegatividad, por lo que genera un dipolo y se
+    acomodan de la siguiente manera:
+<br>
+    <img src="/static/Imagenes/Screenshot_20210829_140945.png"></img>
+
+    <h3>Fuerzas Ión-Dipolo</h3>
+    <q>Estas atraen entre si un ion (catión o anión) y una molécula polar</q> Su
+    efecto se puede describir con la ley de Coulomb de las cargas, ya que este
+    es de naturaleza eléctrica <ref>[1, p. 420]</ref>. Es muy parecido a la manera en que al cargar un
+    globo mediante frotamiento, puede atraer el pelo o una hoja de papel.
+    Estas fuerzas se pueden encontrar, por ejemplo al disolver sal
+    <elemento>NaCl</elemento> en agua, la sal se divide en sus iones <elemento>Na<sup>+</sup></elemento>
+    y  <elemento>Cl<sup>-</sup></elemento>, los cuales atraen al agua, la cual es un dipolo, resultando en
+    una solución conductiva:
+    <br>
+    <img src="/static/Imagenes/ion-dipolo.jpg"></img>
+    <h3>Fuerzas de dispersión</h3>
+    Estas fuerzas actúan sobre un átomo no cargado y un ion. La atracción se
+    genera cuando el ion cargado afecta los electrones de la molécula no
+    cargada, convirtiéndola en un <i>Dipolo inducido</i>
+    <q>La separación de las cargas positivas [de una molécula no cargada]
+    se debe a la proximidad de un ion o una molécula polar</q>
+    La probabilidad de formarse un dipolo inducido aumenta según la cantidad de
+    electrones en la molécula no polarizada. Estas fuerzas de dispersión se pueden
+    producir por el simple hecho de que los electrones de un ́́átomo giren, estas fuerzas, duran un corto periodo de tiempo y se les llaman
+    <i>dipolos instaneos</i> <ref>[1, p. 421]</ref> generalmente se cancelan entre si, pero aun asir tienen un efecto al que se le llama
+    <i>fuerza de dispersión</i>, y a bajas temperaturas pueden mantener unidos a los átomos
+    de un elemento, por ejemplo el helio <elemento>He</elemento>
+
+
+    <h3>El enlace de hidrógeno</h3>
+    <q>El enlace de hidrógeno es un tipo especial de interacción dipolo-dipolo
+    entre el átomo de hidrógeno de un enlace polar, como <elemento>N-H</elemento>,<elemento>O-H</elemento>
+    o <elemento>F-H</elemento> y un átomo electronegativo de <elemento>O</elemento>,
+    <elemento>N</elemento> o <elemento>F</elemento> <ref>[1, p. 422]</ref>. Esta interacción se
+    escribe como:</q>
+    <br>
+    <div style="text-align:center;">
+    <elemento>A-H····B</elemento>
+    <br> Donde la linea punteada representa el enlace de hidrogeno y A y B solo pueden ser
+    <p><elemento>O</elemento>, <elemento>F</elemento> y <elemento>N</elemento></p></div>
+    <br>
+    Pero ¿por qué unicamente el <elemento>O</elemento>, <elemento>F</elemento> y <elemento>N</elemento>
+    son afectados por este enlace? Principalmente porque estos tres elementos
+    tienen al menos un par de electrones libres con lo que poder interactuar con
+    el átomo de hidrógeno, además, estos tres elementos son los más
+    electronegativos. Este enlace se puede considerar como un caso especial del
+    enlace dipolo-dipolo, pero debido a la diferencia de electronegatividad,
+    este enlace es tan fuerte que puede alterar la estructura de la molécula en
+    cuestión como si de un enlace intramolécular se tratara. Por ejemplo, un
+    enlace de ácido fluorhídrico tiene un punto de ebullición mayor al que se
+    esperaría tomando en cuenta su masa molar, la razón de esto se puede
+    encontrar en el enlace de hidrógeno que se forma:
+    <br>
+    <div class="Modelo">
+      <div class="Modelo">
+      <model-viewer class="Modelo" src="/static/Modelos/ácido fluorhidrico.glb" alt="Modelo 3d del HF" autoplay ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+      </div>
+  </div>
+    <br>
+    Este enlace
+    une a las moléculas de HF en una estructura de zigzag esta fuera del enlace de hidrogeno mantiene a estas
+    moléculas unidas como el diagrama en estado sólido y en estado líquido
+    también actuán, como resultado la energía para romper estos enlaces es mucho
+    mayor a la predecida y el HF tiene un punto de ebullición de 19.5 grados centigrados,
+    con una masa molécular de 20 g/mol. En contraste con el etano <elemento>CH<sub>3</sub>-CH<sub>3</sub></elemento>
+    que tiene una masa molar de 30 g/mol y su punto de ebullición esta en los -89 grados centígrados.
+    <h4> El agua </h4>
+    El agua es un caso especial, ya que a diferencia por ejemplo del ácido
+    fluorihídrico, esta contiene dos hidrógenos y una de las moléculas capaces de
+    hacer enlaces de hidrogeno: el oxígeno.
+    <br>
+    <img src="/static/Imagenes/h20.png"></img>
+    <br>
+    <q>Si el agua no tuviera la capacidad de formar
+    enlaces de hidrógeno, sería un gas a temperatura ambiente</q> <ref>[1, p. 426]</ref>. Se suele
+    decir que un planeta no puede albergar vida sín agua; esto no es una
+    exageración, el agua tiene una enorme cantidad de propiedades que
+    facilitarían enormemente la vida, por ejemplo, el hecho de que el hielo
+    flote sobre el agua permite que las bajas temperaturas no congelen
+    completamente un oceano y asesinen a todas las criaturas que viven en él,
+    sino que se crea una capa enorme que aisla (física y térmicamente) el agua
+    debajo y permite que no se congele, manteniendo la vida dentro. Pero antes
+    de explicar por que el hielo flota en el agua, hay que explicar dos fenomenos muy interesantes: la tensión
+    superficial y la capilaridad.
+    <h5> Tensión superficial del agua </h5>
+    <br>
+    <img src="/static/Imagenes/tension.jpg" style="max-width:30%;">
+    <br>
+    Todos
+    hemos visto como las hojas de los arboles flotan sobre el agua al caer, pero
+    una vez que las empujamos dentro del agua estas caen al fondo. Surge una
+    incógnita, ¿por qué puede flotar y a la vez hundirse? Para explicarlo es
+    interesante ver el siguiente diagrama:
+    <br>
+    <img src="/static/Imagenes/water_tension.png" style="max-width:100%;">
+    <br>
+    Se observa que las fuerzas moléculares del agua atraen la capa superior
+    hacia abajo y las moléculas que estan adyacentes en la capa superior se
+    atraen entre si, esto crea una tensión similar a la de un trampolín al ser
+    montado, permitiendo que esa delgada capa mantenga cosas con mayor densidad.
+    <br>
+    <img src="/static/Imagenes/Tension en un trampolin.png">
+    <br>
+    Este
+    efecto es mucho mas notable en el agua debido a la enorme atracción de los enlaces de
+    hidrógeno que tiene ésta, y la razón por la que esto no ocurre en la mayoría de
+    los líquidos
+    <h5> La capilaridad </h5>
+    También se ha visto como el agua fluye hacia arriba en un tubo delgado sín
+    razón aparente.
+    <br>
+    <img src="/static/Imagenes/capilaridad.png">
+    <br>
+    Esto también se
+    debe a la tensión superficial. Lo primero que el agua hace al entrar en el
+    capilar es adherirse a la superficie del capilar -Fuerza de adhesión-. Pero
+    tambien las moléculas ejercen su propia atracción, que es la fuerza de
+    cohesión. Si la fuerza de ahesión es mas fuerte que la de cohesión, las
+    moléculas de agua se atraen hacia la dirección del capilar, haciendo que
+    esta suba, finalmente, esta fuerza se contrarresta por la de gravedad, que
+    en un punto supera a la adhesión y hace que el agua no pueda subir más. <ref>[1, p. 425]</ref>
+    <br>
+    <img src="/static/Imagenes/capilaridad_m.png">
+    <br>
+    <h5> El hielo flota en el agua </h5>
+    Este comportamiento es completamente anti-intuitivo desde el punto de vista
+    de la química. La manera en que un objeto puede flotar sobre otro se debe a
+    la diferencia de densidad, es decir, la cantidad de moléculas por unidad de
+    volúmen, los objetos con densidad mayor son atraídos por la gravedad y a la
+    vez empujan a los objetos con menor densidad.
+    <br>
+    <img src="/static/Imagenes/densidad.png" style="max-height:50%;">
+    <br>
+    Un poco de inferencia puede decirnos que:
+    si los sólidos tienen sus moléculas más juntas, estos deben tener mayor
+    densidad que los líquidos de la misma sustancia, por lo tanto todo sólido
+    deberia hundirse el colocarse en la misma sustancia líquida. Pero esto no
+    ocurre en el agua..., el líquido es mas denso que el sólido. ¿Cómo es eso
+    posible? La razón: los enlaces de hidrógeno. En el agua cada átomo de
+    oxígeno tiene la capacidad de formar dos enlaces de hidrógeno, entonces, a
+    diferencia del <elemento>HF</elemento>, que forma enlaces de hidrógeno en
+    una estructura bidimensional de zig-zag, el agua forma una estructura
+    tridimensional cuando esta en estado sólido, de manera que cada átomo de
+    oxigeno esta unido a 4 de hidrogeno.
+    <br>
+    <img src="/static/Imagenes/Cryst_struct_ice.png" style="max-width:50%;">
+    <br>
+    <div class="Modelo">
+    <model-viewer class="Modelo" src="/static/Modelos/ice.glb" alt="Modelo 3d del hielo" autoplay ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+    </div>
+    <br>
+    Se puede observar que esta estructura deja mucho espacio
+    vacío entre las moléculas, lo que significa que la densidad es mayor. Sin
+    embargo, cuando el agua se vuelve líquida estas estructuras se rompen y
+    todos los espacios vacios se llenan con más moléculas, ocasionando una mayor
+    densidad que la del sólido. <ref>[1, p. 427]</ref>.
+    <h2>Referencias de la sección 'Fuerzas Intermoleculares'</h2>
+    <div class="ref">
+      <table>
+        <tbody>
+          <tr>
+            <td>[1]</td>
+            <td>Chang, Raymond, “Química”, McGraw-Hill, Séptima Edición, 2002.</td>
+          </tr>
+          <tr>
+            <td>[12]</td>
+            <td>Shackelford, James, “Introducción a la ciencia de materiales para ingenieros”, Pearson Educación, pp. 23-53, 2005.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <link rel="stylesheet" href="/static/css/botones_nav.css">
+    <div class="left" onclick="window.location.href = '/static/temas/Enlaces quimicos.html'">
+      <p>Tema anterior: Enlaces Quimicos</p>
+    </div>
+
+    <div class="main" onclick="window.location.href = '/'">
+      <p>Indice</p>
+    </div>
+
+    <div class="right" onclick="window.location.href = '/static/temas/Compuestos Inorgaincos.html'">
+      <p>Siguiente tema: Compuestos Inorganicos</p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Quimica Orgánica</title>
+  <style>
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+  }
+  h1{
+    color:palegoldenrod;
+    font-size: 4.5em;
+    font-family:'Sofia',sans-serif;
+    text-shadow: #000 0px 0px 2px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  quotation{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    background-color: lawngreen;
+    overflow: auto;
+
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  td{
+    background-color: lightyellow
+  }
+  @media screen and (device-width: 200px) {
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <h1>Quimica Orgánica</h1>
+  <p>
+
+    La química orgánica se dedica al estudio de un único elemento: el Carbono. La razón por la que tiene toda una rama
+    dedicada a su estudio se debe a que, por sus características químicas, puede formar una gran cantidad de nuevas moléculas
+    con diferentes propiedades.
+    La aparición de la Química Orgánica se asocia al descubrimiento en 1828 por parte del químico alemán
+    Friedrich Wöhler, de que la sustancia inorgánica cianato de amonio podía convertirse en urea, una sustancia
+    orgánica que se encuentra en la orina de muchos animales. Antes de este descubrimiento, los químicos creían
+    que para sintetizar sustancias orgánicas, era necesaria la intervención de lo que llamaban 'la fuerza vital' (el “vis
+    vitalis”); es decir, los organismos vivos.
+    Hay varias maneras de representar un elemento orgánico:
+    <li>Formula Condensada: Consiste en contar la cantidad de átomos de cada elemento presentes en el compuesto y expresarlos con subíndices, como si fuera un compuesto inorgánico, por ejemplo <elemento>CH<sub>3</sub>, C<sub>3</sub>H<sub>6</sub></elemento></li>
+    <li>Semidesarrollada: Se expresan los carbonos y sus enlaces de manera explicita, cuando es semidesarrollada, solo se deben colocar los enlaces separando a los carbonos, los demás se pueden expresar junto al carbono, a menos que el enlace sea doble, por ejemplo:
+      <br>
+      <semidesarrollada><img src="/static/Imagenes/Semidesarrolladas y taquigraficas/semidesarrolladas/octanal.png" alt="octanal"></semidesarrollada>
+      <br>
+    </li>
+    <li>Taquigráfica: Intenta ser fiel a la geometría bidimensional de los hidrocarburos haciendo uso de lineas para representar los enlaces que forman caminos hexagonales o en zig-zag, en estas no se debe expresar el símbolo de los carbonos, sino que estos son implícitos y se encuentran en los vértices, a menos que el elemento no sea un carbono, en cuyo caso si se especifica el símbolo</li>
+    <br>
+    <taquigrafica><img src="/static/Imagenes/Semidesarrolladas y taquigraficas/taquigraficas/octanal.png" alt="octanal"></taquigrafica>
+    <br>
+
+  </p>
+  <h2>Hibridación del carbono</h2>
+  <p>
+    El Carbono es un elemento que se localiza en el grupo IVA de la tabla
+    periódica, con un número y masa atómica: 6 y 12 respectivamente, además de que favorece la formación de una Hibridación entre los
+    orbitales puros de los átomos de carbono; lo que se refiere a la combinación de estos orbitales.
+    Su configuración electrónica es:
+    <br>
+    1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>
+    <br>
+
+    Cuando se combinan los orbitales s y p del carbono
+    con otros elementos u otros carbonos, estos se fusionan
+    y forman un orbital con diferente forma, el cual tiene
+    cierto carácter s y cierto carácter p.
+    A este fenómeno se le llama hibridación del carbono,
+    y depende del tipo de enlace que se forme con otro elemento.
+    Esto hace que la geometría de la molécula cambie.
+    Existen tres tipos de hibridación: sp<sup>3</sup>, sp<sup>2</sup> y sp:
+  </p>
+  <h3>Hibridación sp<sup>3</sup></h3>
+  <p>
+    Ocurre cuando se fusionan tres orbitales p puros y 1 orbital s, en este tipo de hibridación, los ángulos
+    entre los orbitales son de 109 grados
+    <br>
+    <img src="/static/Imagenes/sp3.png" >
+    <br>
+    <div class="Modelo">
+      <model-viewer class="Modelo" src="/static/Modelos/sp3.glb" alt="Modelo 3d de la hibridación sp3" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+    </div>
+  </p>
+  <h3>Hibridación sp<sup>2</sup></h3>
+  <p>
+    La hibridación sp<sup>2</sup> es muy similar a la sp<sup>3</sup>, solo que en esta intervienen solo dos orbitales p, por lo que en la hibridación final, queda un orbital p puro
+    y por tanto la geometría cambia a ser una estructura trigonal en un plano con ángulos de 120 grados
+    <br>
+    <img src="/static/Imagenes/sp2.png" >
+    <br>
+    <div class="Modelo">
+      <model-viewer class="Modelo" src="/static/Modelos/sp2.glb" alt="Modelo 3d de la hibridación sp2" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+    </div>
+  </p>
+  <h3>Hibridación sp</h3>
+  <p>
+    En esta solo interviene un orbital p que es hibridado, por lo que quedan dos orbitales puros
+    <br>
+    <img src="/static/Imagenes/sp.png" >
+    <br>
+    <div class="Modelo">
+      <model-viewer class="Modelo" src="/static/Modelos/sp.glb" alt="Modelo 3d de la hibridación sp" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+    </div>
+  </p>
+  <h2>Enlaces entre carbonos</h2>
+
+  <h3>Enlace sencillo</h3>
+  <p>
+    El enlace sencillo se forma
+    cuando se unen entre si
+    átomos de carbono con
+
+    hibridación sp<sup>3</sup> ,
+    clasificándose este tipo de
+    enlaces como sigma.
+
+  </p>
+  <h3>Enlace doble</h3>
+  <p>
+    En un doble enlace los átomos de carbono
+    2
+    involucrados presentan hibridación sp .
+    Formándose un enlace de tipo sigma entre
+    los orbitales híbridos; pero también se unen
+    paralelamente los orbitales p puros del
+    carbono, formando el otro enlace que ahora
+    se denomina de tipo “pi”.
+    <div class="Modelo">
+      <model-viewer class="Modelo" src="/static/Modelos/etileno_sp2.glb" alt="Modelo 3d de la hibridación en el etileno" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+    </div>
+  </p>
+  <h3>Enlace Triple</h3>
+  <p>
+    Para formar un triple enlace entre
+    átomos de carbono, éstos deben
+    tener hibridación sp.
+    Donde dos de estas uniones son
+    del tipo pi por el recubrimiento de
+    los orbitales “py y pz” puros y
+    además paralelos, y el otro sigma
+    por el recubrimiento de orbitales
+    híbridos sp.
+    <div class="Modelo">
+      <model-viewer class="Modelo" src="/static/Modelos/acetileno_sp2.glb" alt="Modelo 3d de la hibridación en el acetileno" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+    </div>
+  </p>
+
+
+
+  <h2>Hidrocarburos</h2>
+  <p>Los hidrocarburos son todos aquellos elementos formados exclusivamente por átomos de carbono e hidrógeno.
+    Los hidrocarburos se pueden clasificar en dos tipos: alifáticos y aromáticos.
+    Los alifáticos se pueden clasificar a su vez en alcanos, alquenos y alquinos según los tipos de enlace que
+    unen entre sí los átomos de carbono.
+    Como cada átomo de carbono tiene 4 espacios libres necesarios para completar su octeto, el carbono puede formar 4 enlaces,
+    esto significa que -como el hidrógeno. solo necesita de un electrón para completar el octeto- el carbono puede formar enlaces con hasta
+    3 hidrógenos (y un carbono), o con hasta 3 carbonos (y un hidrógeno.)
+    Como se vio en la sección de Hibridación, los alcanos tienen un 75% de carácter p y 25% de carácter s, en este caso el
+    orbital p se achata un poco y no esta tan alargado como un orbital p puro (esto solo pasa entre dos carbonos, para la unión carbono-hidrogeno
+    el hidrógeno. y el carbono solo unen sus orbitales).
+    <br>
+    <img src="/static/Imagenes/lewis_metano.jpeg" >
+    <br>
+  </p>
+  <h3>Alcanos</h3>
+  <p>Los alcanos son una de las clasificaciones de los hidrocarburos alifáticos, su principal característica es que están compuestos
+    unicamente por enlaces covalentes simples, a diferencia de los alquenos y alquinos. Debido al fenómeno de isomeria del carbono, los
+    alcanos no se pueden expresar como una simple formula química (como <elemento>C2H6</elemento>), sino que necesitan desarrollarse
+    para conocer las características del elemento en cuestión.
+    <br>
+    La geometría molecular de los alcanos, por tanto es mas complicada, tomando como ejemplo el metano y el etano (que son los alcanos mas simples)
+    el primero tiene una forma tridimensional de tetraedro característica con ángulos y tamaños de enlace predefinidos.
+    Los alcanos están compuestos de unicamente enlaces simples o sigma
+    <strong>σ</strong>
+    <br>
+    En general, para alcanos, alquenos y alquinos la nomenclatura es muy similar, y depende de la cantidad de carbonos que estén en la cadena principal, en particular, un alcano debe tener terminación -ano
+    <table>
+      <tbody>
+        <tr>
+          <td><elemento>CH<sub>4</sub></elemento></td>
+          <td>Metano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-CH<sub>3</sub></elemento></td>
+          <td>Etano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>3</sub></elemento></td>
+          <td>Propano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>3</sub></elemento></td>
+          <td>Butano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>3</sub></elemento></td>
+          <td>Pentano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-(CH<sub>2</sub>)<sub>4</sub>-CH<sub>3</sub></elemento></td>
+          <td>Hexano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-(CH<sub>2</sub>)<sub>5</sub>-CH<sub>3</sub></elemento></td>
+          <td>Heptano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-(CH<sub>2</sub>)<sub>6</sub>-CH<sub>3</sub></elemento></td>
+          <td>Octano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-(CH<sub>2</sub>)<sub>7</sub>-CH<sub>3</sub></elemento></td>
+          <td>Nonano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-(CH<sub>2</sub>)<sub>8</sub>-CH<sub>3</sub></elemento></td>
+          <td>Decano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-(CH<sub>2</sub>)<sub>9</sub>-CH<sub>3</sub></elemento></td>
+          <td>Undecano</td>
+        </tr>
+        <tr>
+          <td><elemento>CH<sub>3</sub>-(CH<sub>2</sub>)<sub>10</sub>-CH<sub>3</sub></elemento></td>
+          <td>Dodecano</td>
+        </tr>
+      </tbody>
+    </table>
+  Ademas, cuando hay una ramificación en el compuesto, como por ejemplo:
+  <br>
+  <img src="/static/Imagenes/2-metil propano.png" alt="2 metil propano">
+  <br>
+  Se debe buscar primero la cadena mas larga (en este caso <elemento>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>3</sub></elemento>), y nombrarla como la tabla dice
+  <br>
+  <img src="/static/Imagenes/2-metil propano (2).png" alt="2 metil propano">
+  <br>
+  En este caso, es un propano. Ahora, para la ramificación que sobra, a estas se les llama grupos alquilo, y se nombran como sigue:
+  <table>
+    <tbody>
+      <tr>
+        <td><elemento>CH<sub>4</sub>-</elemento></td>
+        <td>Metil</td>
+      </tr>
+      <tr>
+        <td><elemento>CH<sub>3</sub>-CH<sub>3</sub>-</elemento></td>
+        <td>Etil</td>
+      </tr>
+      <tr>
+        <td><elemento>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>3</sub>-</elemento></td>
+        <td>Propil</td>
+      </tr>
+      <tr>
+        <td><elemento>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>3</sub>-</elemento></td>
+        <td>Butil</td>
+      </tr>
+    </tbody>
+  </table>
+  Este elemento solo tiene un metil, pero este podría tener tres posiciones, entonces para aclarar la posición en la que el grupo alquilo se encuentra, se agrega un sufijo numérico antes del nombre:
+  <br>
+  <img src="/static/Imagenes/2-metil propano (3).png" alt="2 metil propano">
+  <br>
+  Entonces a este compuesto se le llama 2-metil pentano
+  <br>
+  Tambien cabe aclarar: <b>Esta nomenclatura también aplica para alquenos, alquinos, y en el caso de los radicales alquilos, también aplica para otros hidrocarburos como los alcoholes, amidas, aminas, derivados del benceno (parcialmente), etc.</b>
+  <br>
+  Para nombrar un alcano, siga las reglas que mencionamos a continuación:
+  <ol>
+    <li>Encuentre la cadena continua más larga de átomos de carbono y utilícela como el nombre base al final del nombre correspondiente.</li>
+    <li>Numere la cadena más larga, comenzando por el extremo que se encuentre más cerca de una ramificación.</li>
+    <li>Nombre los sustituyentes de la cadena más larga (como grupos alquilo). Dé la posición de cada sustituyente por medio del número
+    del átomo de carbono de la cadena principal al que está unido, seguido de un guion.</li>
+    <li>
+      Cuando haya dos o más sustituyentes, menciónelos en orden alfabético. Si hay dos o más sustituyentes alquilo iguales, utilice los pre-
+      fijos di-, tri-, tetra-, etcétera (los cuales se ignoran para ordenar alfabéticamente), para evitar repetir el nombre del grupo alquilo.
+    </li>
+  </ol>
+
+
+  </p>
+  <br>
+  <div class="Modelo">
+    <model-viewer class="Modelo" src="/static/Modelos/metano.glb" alt="Un modelo 3d del Metano" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+  <br>
+  <p>Y el etano, que esta formado por dos ángulos distintivos: el del carbono con el hidrógeno y el de
+    ambos hidrógenos entre si, se puede observar que un etano es como unir dos metanos de manera horizontal y eliminar
+    los hidrógenos
+  </p>
+  <br>
+  <div class="Modelo">
+    <model-viewer class="Modelo" src="/static/Modelos/etano.glb" alt="Un modelo 3d del etano" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+  <br>
+  <h3>Alquenos</h3>
+  <br>
+  <p>
+    La manera en que los alquenos forman un doble enlace (con un enlace pi π y un enlace sigma σ)
+    es mediante sus orbitales sp<sup>2</sup>, que al fusionarse dan paso al doble enlace
+    La nomenclatura de los alquenos lleva los mismos prefijos que los alcanos, pero con una terminación -eno.
+    Por ejemplo: eteno, propeno, penteno, buteno, etc.
+  </p>
+  <div class="Modelo">
+    <model-viewer class="Modelo" src="/static/Modelos/eteno.glb" alt="Un modelo 3d del eteno" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+  <br>
+  <h3>Alquinos</h3>
+  <p>
+    Los alquinos son aquellos que presentan un triple enlace covalente en su estructura, el cual se conforma de dos enlaces pi π y un enlace sigma σ.
+
+    La nomenclatura de los alquinos lleva los mismos prefijos que los alcanos, pero con una terminación -ino.
+    Por ejemplo: etino, propino, pentino, butino, etc.
+  </p>
+
+
+  <br>
+  <div class="Modelo">
+    <model-viewer class="Modelo" src="/static/Modelos/etino.glb" alt="Un modelo 3d del etino" ar scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+  <br>
+  <link rel="stylesheet" href="/static/css/botones_nav.css">
+  <div class="left" onclick="window.location.href = '/static/temas/Compuestos Inorgaincos.html'">
+    <p>Tema anterior: Compuestos Inorgánicos</p>
+  </div>
+  <div class="main" onclick="window.location.href = '/'">
+    <p>Indice</p>
+  </div>
+  <div class="right" onclick="window.location.href = '/static/temas/Compuestos Orgaincos.html'">
+    <p>Siguiente tema: Compuestos Orgánicos</p>
+  </div>
+
+</body>
+</html>

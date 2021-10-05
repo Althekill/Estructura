@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="/static/favicon.ico">
+	<!-- <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script> -->
+	<!-- Import the component -->
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+	rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Compuestos Inorgánicos</title>
+	<style>
+	body{
+		font-family: monaco,Consolas,Lucida Console,monospace;
+
+	}
+	h2{
+		color:olive;
+		font-size: 4em;
+		font-family:'Sofia',sans-serif;
+	}
+	h3{
+		color:fuchsia;
+		font-size: 2em;
+		font-family:'Sofia',sans-serif;
+	}
+	h4{
+		color:mediumturquoise;
+		font-size: 4em;
+		font-family:'Amatic SC',sans-serif;
+	}
+	h5{
+		color:coral;
+		font-size: 3em;
+		font-family:'Amatic SC',sans-serif;
+	}
+	q{
+		font-style: oblique;
+		font-weight: bold;
+		color:crimson
+	}
+	img{
+		max-width: 100%;
+	}
+	elemento{
+		color:maroon;
+		font-style: normal;
+		font-weight: bold;
+		font-size:1.5em;
+	}
+	todo{
+		font-style: italic;
+		font-weight: bold;
+		font-size:3em;
+	}
+	.table {
+		background-color: lawngreen;
+		overflow: scroll;
+
+	}
+	.Modelo{
+		height: 500px;
+		width: 100%;
+	}
+	IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+	Tradicional{
+		font-style: italic;
+		font-weight: bold;
+		color:lightskyblue;
+		font-size:1.2em;
+
+	}
+	Stock{
+		font-style: italic;
+		font-weight: bold;
+		color:purple;
+		font-size:1.2em;
+
+	}
+	td{
+		background-color: lightyellow
+	}
+	@media screen and (device-width: 200px) {
+		h2,h3,h4,h5 {
+			font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+		}
+	}
+	.ref{
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+  }
+
+	</style>
+</head>
+<body>
+	<h2>Nomenclatura de los compuestos químicos inorgánicos</h2>
+	<p>
+		La nomenclatura es la manera en que se nombran a los compuestos. En la química inorgánica existen tres nomenclaturas importantes
+		<li><Tradicional>Tradicional</Tradicional>: En la nomenclatura tradicional se agregan sufijos y prefijos según el estado de oxidación de los elementos metálicos.
+			Cuando el elemento tiene el mayor estado de oxidación se utiliza el sufijo -ico y cuando tiene el menor se utiliza el sufijo -oso.
+			Por ejemplo: <Tradicional>óxido plúmbico</Tradicional> (<elemento>PbO<sub>2</sub></elemento>) cuando el estado de oxidación es el mayor (4+) y <Tradicional>óxido plumboso</Tradicional> (<elemento>PbO</elemento>) cuando el estado de oxidación
+			es el menor (2+). [13]</li>
+			<br>
+			<li><IUPAC>IUPAC, sistemática o estequiométrica</IUPAC>: Se agrega un sufijo antes de cada elemento del compuesto indicando cuantos átomos de cada elemento hay. Por
+				ejemplo: a <elemento>CO<sub>2</sub></elemento> se le llamaría <IUPAC>Dióxido de Carbono</IUPAC>. <elemento>NiO</elemento> se le llama <IUPAC>monoxido de níquel</IUPAC>. <elemento>Ni<sub>2</sub>O<sub>3</sub></elemento> se le llama <IUPAC>Trióxido de Diniquel</IUPAC> [13]</li>
+				<br>
+				<li><Stock>Stock</Stock>: Se añade al final del nombre el estado de oxidación del metal en ese compuesto según corresponda,
+					en números romanos y entre paréntesis. Por ejemplo:<Stock> óxido de plomo (IV)</Stock> (<elemento>PbO<sub>2</sub></elemento>) y <elemento>óxido de plomo (II)</elemento> (<elemento>PbO</elemento>).
+					Aclaración. A veces los subíndices se pueden simplificar. Este es el caso del <Stock>óxido de plomo (IV)</Stock>
+					que se podría representar como <elemento>Pb<sub>2</sub>O<sub>4</sub></elemento>, pero se simplifican los subíndices y queda <elemento>PbO<sub>3</sub></elemento> [13]</li>
+				</p>
+				<h2>Compuestos Inorgánicos</h2>
+				<h3>Óxido metálico</h3>
+				<p>
+					Los óxidos metálicos son un tipo de óxidos los cuales están formados por un elemento metal más oxígeno.
+					Este grupo de compuestos son conocidos también como óxidos básicos.
+					<br>
+					<b>Metal + Oxigeno -> Oxido Metálico</b>
+					<br>
+					La regla que se sigue para que estos compuestos sean estables es cruzando las valencias del metal y el oxigeno, por ejemplo, para el
+					<Tradicional>Óxido Sódico</Tradicional> (<elemento>Na<sub>2</sub>O</elemento>), las valencias son +1 para el <elemento>Na</elemento> y -2 para
+					el <elemento>O</elemento>, es fácil intuir que para que el elemento tenga una suma de valencias igual a cero, solo se necesitan de dos <elemento>Na</elemento>.
+					Pero para generalizar (y simplificar), se inventó la regla, en la que la valencia del primer elemento pasa a ser la cantidad de átomos del segundo elemento y vice-versa:
+					<br>
+					<img src="/static/Imagenes/na2o.png" alt="calculo_subindice">
+					<br>
+					<br>
+					<div class="Modelo">
+						<model-viewer class="Modelo" src="/static/Modelos/na2o.glb" alt="Na2O" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+					</div>
+					<br>
+				</p>
+				<p>
+					<div class="table">
+						<table>
+							<tbody>
+								<tr>
+									<th rowspan=2>Molécula</th>
+									<th colspan=3>Nomenclatura</th>
+									<th rowspan=2>Usos y aplicaciones</th>
+									<th rowspan=2>Ficha de seguridad</th>
+									<th rowspan=2>Noticia</th>
+								</tr>
+								<tr>
+									<th>IUPAC</th>
+									<th>Stock</th>
+									<th>Tradicional</th>
+								</tr>
+								<tr>
+									<td><elemento>CuO</elemento></td>
+									<td><IUPAC>Óxido cúprico</IUPAC></td>
+									<td><Stock>Óxido de cobre (II)</Stock></td>
+									<td><Tradicional>Óxido de cobre</Tradicional></td>
+									<td>El óxido cúprico se utiliza como pigmento en cerámica para producir esmaltes azul, rojo y verde (y a veces gris, rosa o negro).
+										También se utiliza ocasionalmente como suplemento dietético en animales con deficiencia de cobre
+										El óxido de cobre(II) tiene aplicación como un semiconductor tipo p, (por ejemplo los transistores utilizan un semiconductor de tipo p) <ref>[14]</ref></td>
+										<td>El óxido de cobre(II) es un irritante.
+											También puede causar daño al sistema endócrino
+											y sistema nervioso central.
+											El contacto con los ojos puede causar
+											irritación e importantes daños
+											en la córnea, pudiendo causar
+											conjuntivitis. En contacto
+											con la piel causa irritación
+											y decoloración. La manipulación de polvo de óxido de cobre(II)
+											debe hacerse en un área bien ventilada, y se debe tener cuidado para evitar
+											el contacto con la piel o los ojos. <ref>[14]</ref></td>
+											<td>Científicos descubren como convertir <elemento>CO<sub>2</sub></elemento> en <elemento>CO</elemento>,
+												para poder utilizar este ultimo en fabricar otros combustibles como el etanol.
+												La solución está en añadir una capa de estaño a los electrodos de óxido de cobre.
+												Una capa que debe tener un espesor concreto de un átomo para realizar
+												su importante cometido. Gracias a este proceso, el 90% de las moléculas de <elemento>CO<sub>2</sub></elemento>
+												se convertían simplemente en monóxido de carbono <elemento>CO</elemento>. <ref>[15]</ref></td>
+											</tr>
+											<tr>
+												<td><elemento>Ag<sub>2</sub>O </elemento></td>
+												<td><IUPAC>Óxido de Diplata</IUPAC></td>
+												<td><Stock>Óxido de Plata (I)</Stock></td>
+												<td><Tradicional>Óxido argéntico</Tradicional></td>
+												<td>    Medicina: generalmente usado en uso externo dado su alta toxicidad.
+													Electricidad: en generadores eléctricos (baterias flexibles, generalmente).
+													Electrónica: usado en contactos de circuitos.
+													Joyería: en la realización de artículos ornamentales.
+													Química orgánica: usado como un agente oxidante.<ref>[16]</ref></td>
+													<td>Puede provocar un incendio o una explosión; muy comburente.
+														Provoca lesiones oculares graves. Utilizar un equipo de protección, según corresponda. Evitar el contacto en la piel, ojos y la ropa.
+														Lavarse las manos a fondo después de manipular el producto.
+														Si  se  ingiere,  llamar  a  un  médico.  En  caso  de  irritación  cutánea:  Lavar  inmediatamente
+														durante 15 minutos, consultar a un médico. En caso de contacto con los ojos: Enjuagar
+														inmediatamente durante 15 minutos. consultar a un médico. En caso de inhalación: retirarse
+														al aire fresco. Si la persona no respira, dar respiración artificial. Si la respiración fuera difícil,
+														dar oxígeno. Consiga atención médica <ref>[17]</ref>
+													</td>
+													<td>
+														El gobierno exhorta a la población a desechar correctamente las pilas en esta etapa de confinamiento.
+														De acuerdo con la regulación ambiental vigente a nivel federal,
+														las pilas que se convierten en residuos peligrosos son
+														las de óxido mercurio (Zn-HgO) y las de níquel-cadmio (Ni-Cd),
+														con base en lo dispuesto en la fracción V del artículo 31
+														de la Ley General para la Prevención y Gestión Integral de
+														los Residuos (LGPGIR); y las de zinc-óxido de plata (Zn-Ag2O),
+														conforme a la NOM-052-SEMARNAT-2005. <ref>[18]</ref>
+
+													</td>
+
+												</tr>
+												<!--
+												<tr>
+												<td><elemento>Au<sub>2</sub>O<sub>3</sub> </elemento></td>
+												<td><IUPAC>Trióxido de Oro</IUPAC></td>
+												<td><Stock>Óxido de Oro (III)</Stock></td>
+												<td><Tradicional>Óxido Aúrico</Tradicional></td>
+												<td>    Industria aeroespacial.
+												Aplicaciones electroquímicas.
+												Elaboración de vidrio colorado, también llamado Vidrio rubino oro.</td>
+												<td>
+												Causa Irritación a la piel y a los ojos.
+											</td>
+											<td><todo>Noticia</todo></td>
+										-->
+										<tr>
+											<td><elemento>CaO</elemento></td>
+											<td><IUPAC>Óxido de Calcio o Monóxido de Calcio</IUPAC></td>
+											<td><Stock>Óxido de Calcio</Stock></td>
+											<td><Tradicional>Óxido de Calcio</Tradicional></td>
+											<td>Tambien conocido como <b>cal</b> Se utiliza desde tiempos inmemoriales como aglomerante en la contrucción
+												y para pintar muros y fachadas de edificios construidos con adobe <ref>[19]</ref>
+											</td>
+											<td>
+												El hidróxido de calcio puede afectarle al inhalarlo.
+												El contacto puede producir graves irritaciones y
+												quemaduras en la piel y los ojos con la posibilidad de daño
+												ocular.
+												Respirar hidróxido  de  calcio  puede  irritar  la  nariz,  la
+												garganta  y  los  pulmones,  causando  tos,  respiración  con
+												silbido o falta de aire.
+												ES MEJOR TENER CONTROLES EN EL LUGAR DE
+
+												TRABAJO QUE USAR EQUIPO DE PROTECCIÓN
+												INDIVIDUAL.    Sin  embargo,  para  algunos  trabajos  (tales
+												como  trabajos  al  aire  libre,  trabajos  en  un  área  confinada,
+												trabajos  que  se  hacen  sólo  de  vez  en  cuando,  o  trabajos
+												realizados  mientras  se  instalan  los  controles  en  el  lugar  de
+												trabajo),  puede  ser  apropiado  usar  un  equipo  de  protección
+												individual <ref>[19]</ref>
+											</td>
+											<td>
+												Ante la emergencia sanitaria por Covid-19, el funcionario dijo que el agua de cal cuenta con propiedades antimicrobianas y antiparásitas, debido a su nivel de alcalinidad con un pH por arriba de 12, situación que permite al preparado, mejorar las acciones de sanidad en los hogares.
+												Abundó que para ello se requieren 20 litros de agua y dos cucharadas de cal, mismas que deben ser mezclados y concentrados de preferencia en un recipiente para desinfectar, sobre todo, los productos perecederos, frutas y verduras, por lo que recomendó a las familias hacer uso del preparado para contar con mejores medidas de sanidad al interior del hogar.
+												<ref>[20]</ref>
+											</td>
+										</tr>
+										<tr>
+											<td><elemento>SnO<sub>2</sub> </elemento></td>
+											<td><IUPAC>Dióxido de estaño</IUPAC></td>
+											<td><Stock>Óxido de Estaño (IV)</Stock></td>
+											<td><Tradicional>Óxido estañico</Tradicional></td>
+											<td>También conocido como <b>Casiterita</b> Es un mineral fundamental para la obtención de estaño, que, a su vez, es empleado en aleación con el cobre para obtener bronce. Y también para fabricar soldadura y pigmentos cerámicos </td>
+											<td>En la fase final del concentrado de la casiterita y durante el
+												cocido del mineral de sulfuro, se desprende dióxido de azufre.
+												El dióxido de azufre y el sulfuro estannoso representan un riesgo
+												cuando el estaño derretido primario se separa del resto de la
+												carga durante el refino. Este trabajo se realiza en un ambiente
+												muy caliente, lo que puede dar lugar a desvanecimientos.
+												El ruido producido por la descarga del cucharón de la draga en
+												la primera planta de lavado puede causar problemas de audición
+												a los trabajadores. <ref>[21]</ref></td>
+												<td>
+													Hallan en Salamanca un amuleto de la diosa egipcia Hathor que data de hace casi 3000 años.
+													Entre los otros restos descubiertos, también destacan un fragmento de cerámica de engobe rojo fenicio y elementos litúrgicos de terracota, como figuritas, un vaso fenicio y una mesita. Todo parece indicar que el morador de la vivienda gozaba de cierta vida social, bien organizando banquetes para huéspedes o bien recibiendo a comerciantes, pues la región es rica en hierro y casiterita (de donde se extrae el estaño),
+													<b>metales con mucha demanda entonces en el Mediterráneo y Oriente Medio.</b> <ref>[22]</ref>
+												</td>
+											</tr>
+
+											<tr>
+
+												<td><elemento> Fe<sub>2</sub>O<sub>3</sub> </elemento></td>
+												<td><IUPAC>Trióxido de dihierro</IUPAC></td>
+												<td><Stock>Óxido de Hierro (III)</Stock></td>
+												<td><Tradicional>Óxido Férrico</Tradicional></td>
+												<td>Este es el óxido de hierro "común", la herrumbre que aparece en el metal tras su exposición al aire durante tiempo.
+													No conduce la electricidad. Se emplea como pigmento y en la obtención de hierro colado, hierro dulce y acero. Se emplea como abrasivo fino para pulir joyería, óptica (rojo de joyero); pues aunque su corte es más lento que otros abrasivos, da resultados más finos. Igualmente es el componente básico de la "pasta roja" para el suavizado del filo de las navajas de afeitar. <ref>2[1]</ref>
+												</td>
+												<td>
+													Notas generales
+													Quitar las prendas contaminadas.
+													En caso de inhalación
+													Proporcionar aire fresco. Si aparece malestar o en caso de duda consultar a un médico.
+													En caso de contacto con la piel
+													Aclararse la piel con agua/ducharse. Si aparece malestar o en caso de duda consultar a un médico.
+													En caso de contacto con los ojos
+													Aclarar cuidadosamente con agua durante varios minutos. Si aparece malestar o en caso de duda
+													consultar a un médico.
+													En caso de ingestión
+													Enjuagarse la boca. Llamar a un médico si la persona se encuentra mal.
+													4.2 Principales síntomas y efectos, agudos y retardados
+													A la fecha no se conocen síntomas y efectos
+													Precauciones relativas al medio ambiente
+													Mantener el producto alejado de los desagües y de las aguas superficiales y subterráneas.
+													Protección de los ojos/la cara
+													Utilizar gafas de protección con protección a los costados.
+													Protección respiratoria es necesaria para: Formación de polvo. Filtro de partículas (EN 143). P1 (filtra
+													al menos 80 % de las partículas atmosféricas, código de color: blanco).<ref>[21]</ref>
+												</td>
+												<td>La Luna se está oxidando y el oxígeno de la Tierra sería la causa
+													Científicos hallaron hematita en las regiones de alta latitud de la Luna sospechando que el oxígeno de la atmósfera de la Tierra pudo haberlo provocado. La hematita, también llamada oligisto o acerina, es la forma mineral del óxido férrico, y su nombre deriva del término griego que alude al color rojo de su polvo. “Es decir que el oxígeno atmosférico de la Tierra podría ser el mayor oxidante en la producción de la hematita (…:) El agua y el impacto del polvo interplanetario también pueden haber desempeñado papeles decisivos” <ref>[23]</ref></td>
+												</tr>
+
+											</tbody>
+										</table>
+
+									</div>
+								</p>
+								<h3>Hidróxido</h3>
+								<p>
+									<br>
+									<img src="/static/Imagenes/hidroxido.png" alt="hidroxido">
+									<br>
+									Los hidróxidos son el resultado de la unión entre un óxido metálico (metal + <elemento>o<sub>2</sub></elemento>)y agua (<elemento>H<sub>2</sub>O</elemento>). Es decir, Cuando ya se tiene un óxido metálico, al combinarse con agua forma un hidróxido, también conocido como base, por ejemplo:
+									<br>
+									<img src="/static/Imagenes/nioh2.png" alt="nioh2">
+									<br>
+									Todos los hidróxidos tienen el ion <elemento>OH</elemento>, que tiene una carga de -1. <elemento>H<sup>+1</sup> + O<sup>-2</sup> = OH<sup>-1</sup></elemento>. Por lo tanto, también se pueden cruzar las valencias al subindice para formular el compuesto:
+									<br>
+									<img src="/static/Imagenes/nioh2(2).png" alt="nioh2_valencias">
+									<br>
+									<br>
+									<div class="Modelo">
+										<model-viewer class="Modelo" src="/static/Modelos/naoh.glb" alt="NaOH" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+									</div>
+									<br>
+									<div class="table">
+										<table>
+											<tbody>
+												<tr>
+													<th rowspan=2>Molécula</th>
+													<th colspan=3>Nomenclatura</th>
+													<th rowspan=2>Usos y aplicaciones</th>
+													<th rowspan=2>Ficha de seguridad</th>
+													<th rowspan=2>Noticia</th>
+												</tr>
+												<tr>
+													<th>IUPAC</th>
+													<th>Stock</th>
+													<th>Tradicional</th>
+												</tr>
+												<tr>
+													<td><elemento>LiOH</elemento></td>
+													<td><IUPAC>Hidróxido de Litio</IUPAC></td>
+													<td><Stock>Hidróxido de Litio</Stock></td>
+													<td><Tradicional>Hidróxido Lítico</Tradicional></td>
+													<td>
+														El hidróxido de litio se consume principalmente en la producción de materiales para el cátodo de las baterías de iones de litio.
+														Se usa en las naves espaciales y submarinos para depurar el aire extrayendo el dióxido de carbono.
+														También es usado en cerámicas, manufacturación de otros compuestos de litio, y específicamente en la esterificación para el estearato de litio (que como propósito general se usa como lubricante, debido a la alta resistencia al agua, y es utilizable tanto en alta como en baja temperatura). <ref>[24]</ref>
+													</td>
+													<td>
+														IDENTIFICACIÓN DE PELIGROS / EFECTOS EN LA SALUD: Tóxico en caso de ingestión. Provoca graves quemaduras en la piel y lesiones oculares. Provoca lesiones oculares graves. Tóxico
+														si se inhala.
+														MEDIDAS DE PRIMEROS AUXILIOS:
+														Inhalación: Si aspiró, mueva la persona al aire fresco. Si ha parado de respirar, hacer la respiración artificial. Consultar a un médico.
+														Ingestión: No provocar el vómito. Nunca debe administrarse nada por la boca a una persona inconsciente. Enjuague la boca con agua. Consultar a un médico
+														Protección respiratoria: Donde sea necesario, usar un respirador que cubra toda la cara tipo N100 o tipo P3 con cartuchos de
+														repuesto  para  los  controles  de  ingeniería.  Usar  un  respirador  de  cara  completa  con  suministro  de  aire,  si  esta  es  la  única  protección  respiratoria.  Usar  respiradores  y  componentes
+														aprobados  por  NIOSH  o  CEN.    Protección  manos:  Guantes  de  protección.  Protección  ocular:  Careta  de  protección  y  gafas  de  seguridad.  Protección  del  Cuerpo:  Traje  de  protección
+														completo contra productos químicos. <ref>[24]</ref>
+													</td>
+													<td>
+														Las minas españolas resucitan. Entre otros productos que buscan extraer, La idea de la firma —­con un 75% de capital australiano y un 25% en manos de Sacyr— es extraer unas 15.000 toneladas de hidróxido de litio que darían vida a 10 millones de coches eléctricos. <ref>[25]</ref>
+													</td>
+												</tr>
+												<tr>
+													<td><elemento>Ca(OH)<sub>2</sub></elemento></td>
+													<td><IUPAC>Dihidróxido de Calcio</IUPAC></td>
+													<td><Stock>Hidróxido de Calcio</Stock></td>
+													<td><Tradicional>Hidróxido Cálcico</Tradicional></td>
+													<td>    Metalúrgica: En la producción de magnesio se pueden utilizar dos tipos de procesos de fabricación: proceso electrolítico o proceso de reducción térmica, en el proceso electrolítico se utiliza cal hidratada.
+
+														Química: En mezclas de pesticidas; en el proceso para la neutralización de ácido sobrante, en la industria petrolera. Material odontológico y dental: Material de tratamiento de los conductos radiculares Endodoncia o protección pulpar directa o indirecta en caso de restauraciones coronarias dentales [operatoria dental]  <ref>[26]</ref></td>
+														<td>El contacto puede producir graves irritaciones y
+															quemaduras en la piel y los ojos con la posibilidad de daño
+															ocular.
+															* Respirar hidróxido  de  calcio  puede  irritar  la  nariz,  la
+															garganta  y  los  pulmones,  causando  tos,  respiración  con
+															silbido o falta de aire.
+															Toda la ropa de protección (trajes, guantes, calzado,
+															protección  para  la  cabeza)  debe  estar  limpia,  disponible
+															todos los días y debe ponerse antes de comenzar a trabaja <ref>[27]</ref>
+														</td>
+														<td>
+															El Hidróxido de Calcio y los bloques de tierra comprimida, alternativa sostenible de construcción:
+															El presente artículo trata dos materiales elementales en los procesos constructivos de las viviendas, por un lado se realiza el estudio químico de los morteros cal - arena que se utilizan para el pegado de los mampuestos y los revoques, con la finalidad de determinar la absorción de CO2 y por otra parte se hace el estudio mecánicos de un material alternativo para el uso de muros de carga como son los Bloques de Tierra Comprimida estabilizados con cal, por último se hace un comparativo entre estos materiales alternativos y los convencionales con relación a las emisiones de CO2. <ref>[28]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>Ni(OH)<sub>2</sub></elemento></td>
+														<td><IUPAC>Dihidróxido de Níquel </IUPAC></td>
+														<td><Stock>Hidróxido de Níquel (II)</Stock></td>
+														<td><Tradicional>Hidróxido Niquélico</Tradicional></td>
+														<td>
+															En la naturaleza, el Ni(OH)2 se encuentra en el mineral teofrastita (del inglés theophrastite), el cual fue reportado por primera vez en 1981 al ser encontrado al norte de Grecia.
+															Se ha empleado desde hace tiempo como cátodo de baterías alcalinas recargables. Tiene aplicación en electrocatálisis, lo que lo convierte en un material muy útil en celdas de combustible y electrosíntesis, entre varias aplicaciones.
+															Cuando el Ni(OH)2 se obtiene de soluciones de cloruro de níquel (NiCl2) presenta una coloración verde-azulada, mientras que si se precipita de soluciones de nitrato de níquel (Ni(NO3)2) presenta una coloración verde-amarillosa.
+															En 1904 Thomas Edison lo usaba junto con su óxido NiO(OH) como material para el cátodo de baterías alcalinas.
+															También se ha empleado en súper-capacitores de alto desempeño.
+															El α-Ni(OH)2 ha sido usado para el desarrollo de sensores electroquímicos para la determinación de Vitamina D3, o colecalciferol, una forma de Vitamina D que puede obtenerse por la exposición de la piel a la luz del sol o a través de algunos alimentos (yema de huevo, leche de vaca, salmón fresco y aceite de hígado de bacalao). <ref>[29]</ref>
+														</td>
+														<td>
+															Nocivo en caso de ingestión.
+															Nocivo en contacto con la piel.
+															Provoca irritación cutánea.
+															Puede provocar una reacción alérgica en la piel.
+															Provoca irritación ocular grave.
+															Nocivo en caso de inhalación.
+															Puede provocar síntomas de alergia o asma o dificultades respiratorias en caso deinhalación.
+															Puede irritar las vías respiratorias.
+															Puede provocar cáncer.
+															Consejos de prudencia:
+															Pedir instrucciones especiales antes del uso.
+															Evitar respirar el polvo, el humo, el gas, la niebla, los vapores, el aerosol.
+															Llevar guantes, prendas, gafas, máscara de protección.
+															EN CASO DE CONTACTO CON LOS OJOS: Aclarar cuidadosamente con agua
+															durante varios minutos. Quitar las lentes de contacto, si lleva y resulta fácil. Seguir
+															aclarando. <ref>[30]</ref>
+														</td>
+														<td>
+															Logran producir combustible de hidrógeno con agua del mar
+															Hasta ahora, el desarrollo de la tecnología necesaria para obtener este combustible una realidad tenía un importante inconveniente. Se necesitaba tanto hidrógeno como agua dulce hay en el mundo tan solo para cubrir las necesidades energéticas de las ciudades y el transporte de automóviles.
+															Todo parece haber dado un vuelco con los hallazgos de los científicos de la Universidad de Stanford all encontrar la manera de generar hidrógeno utilizando energía solar, electrodos y agua salada, la materia prima más abundante en la Tierra.
+															Dai y su equipo encontraron la manera de evitar que los componentes del agua de mar rompieran los ánodos sumergidos. Descubrieron que si cubrían el ánodo con capas abundantes en cargas negativas, estas reducirían la descomposición del metal subyacente. Entonces usaron hidróxido de hierro y níquel y sulfuro de níquel, los cuales durante la electrólisis se convirtieron en una capa cargada negativamente que protege el ánodo. <ref>[31]</ref>
+
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>Na(OH)</elemento></td>
+														<td><IUPAC>Hidróxido de Sodio</IUPAC></td>
+														<td><Stock>Hidróxido de sodio</Stock></td>
+														<td><Tradicional>Hidróxido Sódico</Tradicional></td>
+														<td>
+															También conocido como sosa cáustica.
+															Se utiliza en la industria petrolera en la elaboración de lodos de perforación base agua. A nivel doméstico, son reconocidas sus utilidades para desbloquear tuberías de desagües de cocinas y baños, fabricar jabón casero, entre otros.
+															También se usa en el procesamiento de textiles de algodón, lavandería y blanqueado, revestimiento de óxidos, galvanoplastia y extracción electrolítica.
+															También se usa como eliminador de pintura y por los ebanistas para quitar pintura vieja de muebles de madera.  <ref>[32]</ref>
+														</td>
+														<td>
+															Corrosivos para los metales H290
+															corrosión o irritación cutáneas H314
+															lesiones oculares graves o irritación ocular
+															En caso de contacto con la piel
+															En caso de contacto con la piel, lávese inmediata y abundantemente con mucho agua. Necesario un
+															tratamiento médico inmediato, ya que auterizaciones no tratadas pueden convertirse en heridas difícil de curar.
+															En caso de contacto con los ojos
+															En caso de contacto con los ojos aclarar inmediatamente los ojos abiertos bajo agua corriente duran-
+															te 10 o 15 minutos y consultar al oftalmólogo. Proteger el ojo ileso.
+															En caso de ingestión
+															Lavar la boca inmediatamente y beber agua en abundancia. En caso de tragar existe el peligro de una
+															perforación del esófago y del estómago (fuertes efectos cauterizantes). Llamar al médico inmediatamente <ref>[32]</ref>
+														</td>
+														<td>
+															Derrame de sosa cáustica moviliza a las autoridades en Gómez Palacio
+															El reporte del derrame de sosa cáustica líquida sobre el pavimento en el Parque Industrial Lagunero de Gómez Palacio, movilizó a las unidades de Protección Civil y Bomberos quienes controlaron la situación y procedieron con el aseguramiento y la limpieza de la zona.
+															Los primeros reportes de lo ocurrido apuntan a que se trató de un contenedor de mil litros de sosa cáustica en estado líquido al 50 por ciento, mismo que era transportado por un camión de carga, perteneciente a una empresa ubicada en el mismo parque industrial. <ref>[33]</ref>
+
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>Al(OH)<sub>3</sub></elemento></td>
+														<td><IUPAC>Trihidróxido de Aluminio</IUPAC></td>
+														<td><Stock>Hidróxido de Aluminio </Stock></td>
+														<td><Tradicional>Hidróxido Aluminico</Tradicional></td>
+														<td>
+															En la naturaleza se encuentra como mineral de gibbsita.
+															Tiene varios usos, como un agente extintor en los plásticos, y en la medicina, como un antiácido, quelante de fosfato y adyuvante en las vacunas.
+															Se descompone a unos 180 ºC, absorbiendo una cantidad considerable de calor en el proceso y desprendiendo vapor de agua. Además de comportarse como una resistencia al fuego, es muy eficaz como un supresor de humo en varios polímeros, especialmente en el poliéster, el acrílico, el etileno, el acetato de vinilo, la resina epoxica, el PVC y el caucho <ref>[34]</ref>
+														</td>
+														<td>
+															En caso de inhalación
+															Proporcionar aire fresco. Si aparece malestar o en caso de duda consultar a un médico.
+															En caso de contacto con la piel
+															Aclararse la piel con agua/ducharse. Si aparece malestar o en caso de duda consultar a un médico.
+															En caso de contacto con los ojos
+															Aclarar cuidadosamente con agua durante varios minutos. Si aparece malestar o en caso de duda
+															consultar a un médico.
+															En caso de ingestión
+															Enjuagarse la boca. Llamar a un médico si la persona se encuentra mal.
+															A la fecha no se conocen síntomas y efectos agudos y retardados
+															Medios de extinción apropiados
+															Coordinar las medidas de extinción con los alrededores
+															agua pulverizada, espuma, polvo extinguidor seco, dióxido de carbono (CO2)
+															Medios de extinción no apropiados
+															chorro de agua
+															No respirar el polvo.
+															Mantener el producto alejado de los desagües y de las aguas superficiales y subterráneas <ref>[34]</ref>
+														</td>
+														<td>
+															Todo sobre “Sinopharm” la vacuna que muy pronto podría autorizar la cofepris:
+															La BBIBP-CorV funciona enseñando al sistema inmunitario a fabricar anticuerpos contra el coronavirus SARS-CoV-2. Los anticuerpos se adhieren a las proteínas virales, como las llamadas proteínas de espiga que tachonan su superficie.
+
+															Esto significa que están hechos de partículas virales producidas en un laboratorio, que luego se inactivan para que no puedan infectarlo con COVID-19. Muchas otras vacunas utilizan plataformas similares, incluidas las vacunas inyectables contra la poliomielitis, la hepatitis A y la gripe.
+
+															La vacuna también contiene un adyuvante en forma de hidróxido de aluminio. Los adyuvantes ayudan a fortalecer la respuesta inmunitaria del cuerpo a las vacunas. <ref>[35]</ref>
+														</td>
+
+													</tr>
+													<tr>
+														<td><elemento>Fe(OH)<sub>3</sub></elemento></td>
+														<td><IUPAC>Trihidróxido de Hierro</IUPAC></td>
+														<td><Stock>Hidróxido de hierro (III)</Stock></td>
+														<td><Tradicional>Hidróxido Férrico</Tradicional></td>
+														<td>
+															Se utiliza para hacer pinturas y tintes para usos variados
+															Elaboración de medicamentos (muchos ya descontinuados).
+															También pueden ser utilizados para antídoto del arsénico. <ref>[36]</ref>
+														</td>
+														<td>
+															Causa Irritación en la piel (H315)
+															Causa seria irritación en los ojos (H319)
+															Puede causer irritación respiratoria (H335) <ref>[37]</ref>
+														</td>
+														<td>
+															Desarrollan una nueva membrana de filtro de agua que hace que los virus sean inofensivos: Un equipo internacional de investigadores ha desarrollado una nueva membrana de filtro de agua que es altamente eficaz contra los virus. Para fabricarlo, los investigadores han utilizado materias primas naturales.
+
+															Concretamente, la membrana del filtro funciona para eliminar metales pesados ​​o preciosos del agua. La membrana ha sido creada utilizando proteínas de suero desnaturalizadas que se ensamblan en filamentos diminutos llamados fibrillas amiloides. En este caso, los investigadores han combinado este andamio de fibrillas con nanopartículas de hidróxido de hierro. La membrana también elimina los virus de la gripe H1N1 e incluso el nuevo virus SARS-CoV-2 del agua con gran eficacia. <ref>[38]</ref>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</p>
+									<h3>Anhídridos</h3>
+									<p>
+										<br>
+										<img src="/static/Imagenes/co.jpg" alt="ClO">
+										<br>
+										Los anhídridos son compuestos binarios (de dos diferentes elementos) formados por un no metal  y oxígeno. Similares a los óxidos metálicos (con la diferencia de que llevan no metales).
+										Para estos elementos, igual que en los óxidos metálicos, la formulación para hacerlos estables  se logra intercambiando las valencias de los elementos como subíndice del elemento vecino.
+										Las nomenclaturas para nombrarlos de forma Stock y IUPAC no cambian, sin embargo, para la nomenclatura tradicional, cuando el no metal presenta más de dos valencias como es el caso del cloro se conservan los sufijos de la regla anterior y se utilizan además: el prefijo hipo proveniente del griego "hypo" que significa inferior o debajo, y el prefijo hiper o per del griego "hyper" que significa mayor o superior, por ejemplo:
+										<br>
+										<img src="/static/Imagenes/clo.png" alt="ClO">
+										<br>
+										<br>
+										<div class="Modelo">
+											<model-viewer class="Modelo" src="/static/Modelos/co.glb" alt="CO" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+										</div>
+										<br>
+										<div class="table">
+
+											<table>
+												<tbody>
+													<tr>
+														<th rowspan=2>Molécula</th>
+														<th colspan=3>Nomenclatura</th>
+														<th rowspan=2>Usos y aplicaciones</th>
+														<th rowspan=2>Ficha de seguridad</th>
+														<th rowspan=2>Noticia</th>
+													</tr>
+													<tr>
+														<th>IUPAC</th>
+														<th>Stock</th>
+														<th>Tradicional</th>
+													</tr>
+													<tr>
+														<td><elemento>GeO<sub>2</sub></elemento></td>
+														<td><IUPAC>Dióxido de Germanio o Anhídrido de Germanio</IUPAC></td>
+														<td><Stock>Óxido de Germanio (IV) o Anhídrido de Germanio (IV)</Stock></td>
+														<td><Tradicional>Óxido Germanoso o Anhídrido Germanoso</Tradicional></td>
+														<td>
+															El dióxido de germanio tiene propiedades como el índice de refracción (1.7) y la dispersión óptica que lo hacen útil como material óptico para objetivos gran angular, en lentes de objetivo de microscopio óptico , y para el núcleo de líneas de fibra óptica
+															Con el vidrio se pueden fabricar ventanas y lentes IR, utilizadas para tecnología de visión nocturna en el ejército, vehículos de lujo​ y cámaras térmicas. Se prefire el GeO2 sobre otros vidrios transparentes al IR porque es mecánicamente fuerte y por tanto preferido por la exigencia del uso militar. <ref>[40]</ref>
+														</td>
+														<td>
+															H302: Nocivo en caso de ingestión.
+															P264: Lavarse la piel concienzudamente tras la manipulación.
+															P270: No comer, beber ni fumar durante su utilización.
+															P301 + P312: EN CASO DE INGESTIÓN: Llamar a un CENTRO DE TOXICOLOGÍA/médico si la persona se encuentra mal.
+															P501: Eliminar el contenido/ el recipiente en una planta de eliminación de residuos autorizada.
+															WGK 1 contamina ligeramente el agua <ref>[40]</ref>
+														</td>
+														<td>
+															Nueva fibra óptica con capacidad diez mil veces mayor a la actual:De acuerdo a las estimaciones de especialistas en la materia, explica Dicyt, para el año 2025 se prevé un “colapso” de las telecomunicaciones debido a que la demanda de transmisión de información superará la capacidad instalada y esta no podrá ser cubierta por la infraestructura existente. Es por ello que se trabaja actualmente en el desarrollo de nuevas fibras ópticas más eficientes y con mayores capacidades.
+
+															Al respecto, uno de los proyectos a nivel global que cuenta con avances significativos lo realiza la Universidad de Southampton, en el Reino Unido, y del que forma parte el mexicano Martín Miguel Ángel Núñez Velázquez, quien en la institución realiza sus estudios de doctorado en Opto-Electrónica.
+															El prototipo desarrollado por el equipo científico considera como elemento clave en la fabricación de fibra óptica el óxido de germanio, en reemplazo del óxido de silicio empleado hasta ahora, mismo que cuenta con la capacidad de incrementar los canales de transmisión en al menos 10 mil veces más en relación a los existentes, utilizando los más recientes adelantos en transmisión y procesamiento de señal. Además, es totalmente compatible con la tecnología actual, permitiendo hacer el remplazo de una fibra por otra. <ref>[41]</ref>
+
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>SO<sub>2</sub></elemento></td>
+														<td><IUPAC>Dióxido de azufre o Anhídrido de azufre</IUPAC></td>
+														<td><Stock>Óxido de Azufre (IV) o Anhídrido de azufre (IV)</Stock></td>
+														<td><Tradicional>Óxido sulfuroso o Anhídrido sulfuroso</Tradicional></td>
+														<td>
+															El dióxido de azufre tiene propiedades desinfectantes, por ello fue utilizado durante siglos en la desinfección por ejemplo de las cubas de vino quemando azufre en su interior. También se utiliza en la industria alimentaria como conservante y antioxidante (E220) generalmente de zumos, frutos secos, mermeladas, vino etc.
+															Es un reductor usado en la potabilización del agua, que permite ayudar a eliminar metales pesados como el cromo hexavalente, mercurio y plomo.
+															El dióxido de azufre es el principal causante de la lluvia ácida ya que en la atmósfera es transformado en ácido sulfúrico.
+
+															Es liberado en muchos procesos de combustión ya que los combustibles como el carbón, el petróleo, el diésel o el gas natural contienen ciertas cantidades de compuestos azufrados. Por estas razones se intenta eliminar estos compuestos antes de su combustión por ejemplo mediante la hidrodesulfuración en los derivados del petróleo o con lavados del gas natural haciéndolo más "dulce". <ref>[42]</ref>
+
+														</td>
+														<td>
+															Peligro
+															Frases H:
+															H314 Provoca quemaduras graves en la piel y lesiones oculares graves.
+															H331 Tóxico en caso de inhalación.
+															Frases P:
+															P280 Llevar guantes/prendas/gafas/máscara de protección.
+															P310 Llamar inmediatamente a un CENTRO DE TOXICOLOGĺA/médico/...
+															P405 Guardar bajo llave.
+															P304+P340 EN CASO DE INHALACIÓN: Transportar a la persona al aire libre y mantenerla en una posición que le facilite
+															la respiración.
+															P403+P233 Almacenar en un lugar bien ventilado. Mantener el recipiente cerrado herméticamente.
+															P301+P330+P331 EN CASO DE INGESTIÓN: Enjuagarse la boca. NO provocar el vómito <ref>[42]</ref>
+														</td>
+														<td>
+															Demuestran que un extracto de madera de la vid conserva el vino
+															Investigadores del área de Tecnología, Postcosecha e Industria Agroalimentaria del Instituto de Investigación y Formación Agraria y Pesquera (Ifapa) Centro Rancho de la Merced, de Jerez de la Frontera (Cádiz), y Centro Alameda del Obispo (Córdoba) han realizado un estudio por el que han comprobado las propiedades de un extracto de madera de la vid (procedente de la poda de la viña) para utilizarlo como conservante natural del vino.
+															La investigación supone un primer paso para utilizar este concentrado como alternativa al anhídrido sulfuroso, el aditivo químico usado de forma habitual en el proceso de vinificación y que, según los expertos, se caracteriza por su capacidad antioxidante y antimicrobiana. Sin embargo, indican que estudios recientes «apuntan algunos riesgos para la salud«. <ref>[43]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>N<sub>2</sub>O</elemento></td>
+														<td><IUPAC>Óxido de Dinitrógeno</IUPAC></td>
+														<td><Stock>Óxido de nitrógeno (I)</Stock></td>
+														<td><Tradicional>Óxido Nitroso</Tradicional></td>
+														<td>
+															Óxido Nitroso
+															El Óxido Nitroso (N2O), también conocido como “el gas de la
+															risa,” es un gas que, combinado con el oxígeno a veces se usa
+															durante un tratamiento dental para disminuir la ansiedad. No
+															tiene color ni olor, y no es irritante. El gas típicamente produce
+															sensaciones placenteras que pueden ayudar al paciente a relajarse.
+															El óxido nitroso es un poderoso gas de efecto invernadero, por lo que a las emisiones de este gas se las responsabiliza parcialmente junto con el dióxido de carbono, el metano y algunos aerosoles, de provocar el calentamiento global. <ref>[44]</ref>
+														</td>
+														<td>
+															Aunque la mayoría de las personas no experimentan efectos
+															secundarios negativos por el óxido nitroso, hay un pequeño
+															número de personas que si los experimentan. Esto podría ocurrir
+															cuando el nivel de nitrógeno está demasiado alto en la mezcla del
+															gas o por un cambio repentino en la cantidad de óxido nitroso
+															inhalada. Los efectos secundarios negativos podrían incluir náusea
+															o vómito, dolor de cabeza, somnolencia excesiva, y/o sudoración
+															o temblor excesivo del cuerpo. <ref>[45]</ref>
+
+														</td>
+														<td>
+															Cómo el gas de la risa pasó de ser una atracción de feria a un elemento indispensable de la medicina
+															Durante el siglo XVIII florecieron las disciplinas químicas y nació la denominada "medicina neumática", con el descubrimiento de una gran cantidad de gases.
+
+															Entre ellos, cabe mencionar el óxido nitroso (aire nitroso flogisticado), descubierto en 1775 por el químico inglés Joseph Priestley al tratar, en caliente, limaduras de hierro con ácido nítrico.
+															De hecho, el óxido nitroso, por su capacidad euforizante, alcanzó una enorme popularidad como "gas hilarante" o "gas de la risa" en reuniones de la alta sociedad y, posteriormente, en el ámbito circense.
+															Sin embargo, sería el joven químico Humphry Davy quien descubriría las propiedades anestésicas del óxido nitroso, denominado también protóxido de ázoe.
+
+															Lo hizo al experimentar en sí mismo, en 1796, los efectos de dicho gas en el alivio de un dolor odontológico.
+
+															En su libro de 1800 especuló con la posibilidad de que el nuevo gas pudiera tener una importante utilidad en cirugía, dada su capacidad analgésica. <ref>[46]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>ClO<sub>2</sub></elemento></td>
+														<td><IUPAC>Dióxido de Cloro o Anhídrido de Cloro</IUPAC></td>
+														<td><Stock>Óxido de Cloro (III) o Anhídrido de Cloro (III)</Stock></td>
+														<td><Tradicional>Óxido Hipocloroso o  Anhídrido Hipocloroso</Tradicional></td>
+														<td>
+															Es un gas de color rojizo a verde amarillento que se disuelve en agua a temperatura ambiente. Se utiliza para una variedad de actividades como antimicrobiano, incluida la desinfección de agua potable.
+															Cuando se agrega al agua potable permite destruir las bacterias, los virus y algunos tipos de parásitos que pueden causar enfermedades, como el Cryptosporidium parvum y la Giardia lamblia. La Agencia de Protección Ambiental (EPA) regula que la concentración máxima de dióxido de cloro en el agua potable no sea mayor de 0.8 partes por millón (ppm).
+															En los hospitales y otros entornos sanitarios, el gas de dióxido de cloro se usa para esterilizar los equipos médicos y de laboratorio, las superficies, habitaciones y herramientas. <ref>[47]</ref>
+														</td>
+														<td>
+															En su forma pura, el dióxido de cloro es un gas peligroso, pero es “improbable” que las personas respiren un aire que contenga niveles peligrosos de dióxido de cloro, ya que no se produce de forma natural en el medio ambiente. Para los trabajadores que usan dióxido de cloro, la Administración de Seguridad y Riesgo Ocupacional de EE. UU. (OSHA) regula el nivel de dióxido de cloro en el aire del lugar de trabajo por motivos de seguridad. La OSHA ha establecido un límite de exposición permisible (PEL) para el dióxido de cloro en 0,1 partes por millón (ppm), o 0,3 miligramos (mg) por metros cúbicos (m3) para los trabajadores que utilizan dióxido de cloro con fines industriales en general. <ref>[48]</ref>
+														</td>
+														<td>
+															¿Qué es el dióxido de cloro y por qué no cura al Covid-19?; La OMS, la OPS e incluso la UNAM han advertido que este compuesto químico, anunciado como una solución mineral "milagrosa", puede poner en riesgo la vida de las personas
+															La Universidad Nacional  Autónoma de México ha sido otra de las instituciones que han hecho hincapié en los peligros que se corren al consumir el dióxido de cloro.
+
+															Carlos Ruis Alonso, del Departamento de Química Orgánica de la Facultad de Química de la UNAM, habló sobre esta solución mineral "milagrosa" que se ha usado en algunas ocasiones como tratamiento contra el Covid-19. Sin embargo, el espcialista ha señalado que el compuesto químico provoca efectos adversos como alteración de la actividad eléctrica del corazón, baja presión arterial, insuficiencia hepática aguda, vómitos y diarreas severas. <ref>[49]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>CO</elemento></td>
+														<td><IUPAC>Monóxido de Carbono o Anhídrido de Carbono</IUPAC></td>
+														<td><Stock>Óxido de Carbono (II) o Anhídrido de Carbono (II)</Stock></td>
+														<td><Tradicional>Óxido Carbonoso o Anhídrido Carbonoso</Tradicional></td>
+														<td>
+															Durante la Segunda Guerra Mundial, el monóxido de carbono fue usado en los motores de los vehículos ya que escaseaba la gasolina. Se introducía carbón mineral o vegetal y el monóxido de carbono generado por gasificación alimentaba al carburador. El CO también fue usado como un método de exterminio (cámaras de gas) durante el Holocausto en los campos de concentración.  (En otras palabras, no tiene aplicaciones prácticas importantes) <ref>[50]</ref>
+														</td>
+														<td>
+															Ya que, el CO es un gas "invisible y silencioso", sus características no nos permiten, en muchos casos, que nos demos cuenta del peligro que éste presenta, resultando en envenenamiento por inhalación en cuestión de minutos. De hecho, el CO es la causa más común de muerte por envenenamiento en los EE.UU. Los envenenamientos no intencionales a causa del CO resultan en 500 muertes y 15,000 visitas a las salas de emergencia cada año.
+															La persona puede no tener síntomas y lo mismo estar expuesta a niveles peligrosos de CO. Respirar concentraciones bajas de CO puede no resultar en síntomas obvios de envenenamiento por CO, pero lo mismo esta baja exposición puede causar daños a la salud en el largo plazo, aún después de que se haya eliminado la fuente de CO. Estos efectos incluyen daños neurológicos a largo plazo, por ejemplo dificultad para aprender y retener datos en la memoria, efectos emocionales y de personalidad, y trastornos sensoriales y motores.
+															Instale alarmas de CO cerca de los dormitorios.
+
+															Verifique todos los años los sistemas de calefacción y los aparatos que queman combustible.
+
+															Esté alerta a posibles signos de envenenamiento por CO.
+
+															Mantenga los aparatos de gas correctamente calibrados. <ref>[50]</ref>
+														</td>
+														<td>
+															Fallecen 3 mineros por inhalación de monóxido de carbono en el Cerro Rico de Potosí, en Bolivia:
+															Tres mineros de 19, 25 y 50 años fallecieron por inhalación de monóxido de carbono mientras desarrollaban trabajos a unos 700 metros de profundidad en una mina del Cerro Rico de Potosí, informó este miércoles el comandante de Policía de ese departamento boliviano, Juan Carlos Mercado.
+															Aunque no se brindaron detalles del hecho, el comandante subrayó las complicaciones que los trabajadores tienen en sus faenas a esa profundidad, en la que hay poco oxígeno y “las partículas de polvo” también afectan los pulmones.
+
+															En febrero pasado también se produjo la muerte de dos mineros de 22 y 41 años de en la mina potosina Encinas perteneciente a la cooperativa ComPotosí cuando una carga de tierra los sepultó mientras efectuaban trabajos en su interior.
+
+															El deceso de ambos se debió a las lesiones que sufrieron por el peso de la tierra y la imposibilidad de respirar a pesar de que algunos de sus compañeros intentaron evacuarlos a un hospital cercano. <ref>[51]</ref>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</p>
+
+									<h3>Hidracidos</h3>
+									<p>
+										Este tipo de compuestos se forman con la combinación de un hidrógeno (H+) como ión positivo y un no metal (NM-) como ión negativo.
+										<br>
+										<img src="/static/Imagenes/hf.png" alt="hf">
+										<br>
+										<br>
+										<div class="Modelo">
+											<model-viewer class="Modelo" src="/static/Modelos/acido fluorhidrico.glb" alt="HF" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+										</div>
+										<br>
+										<div class="table">
+
+											<table>
+												<tbody>
+													<tr>
+														<th rowspan=2>Molécula</th>
+														<th colspan=3>Nomenclatura</th>
+														<th rowspan=2>Usos y aplicaciones</th>
+														<th rowspan=2>Ficha de seguridad</th>
+														<th rowspan=2>Noticia</th>
+													</tr>
+													<tr>
+														<th>IUPAC</th>
+														<th>Stock</th>
+														<th>Tradicional</th>
+													</tr>
+													<tr>
+														<td><elemento>HF</elemento></td>
+														<td><IUPAC>Ácido fluorhídrico</IUPAC></td>
+														<td><Stock>Ácido fluorhídrico</Stock></td>
+														<td><Tradicional>Fluoruro de Hidrógeno</Tradicional></td>
+														<td>
+															En la obtención de mucho compuestos farmacéuticos y polímeros. Se utiliza para la fabricación de compuestos fluorinados orgánicos e inorgánicos.
+															Es  la  base  para  la  producción  de  fluoroboratos,  criolita  (Na3AlF6)  artificial  que  se
+															emplea  en  la  producción  de  aluminio,  fluoruros,  ácidos  fluorados.  Los  compuestos
+															fluorados se emplean principalmente como fluidos refrigerantes o como polímeros. Para fabricar plaguicidas, plásticos y combustibles. Se  utiliza  en  la  refinación  del  petróleo.  Como  catalizador  para  la  producción  de
+															gasolina en alto octanaje en la operación conocida como alquilación de la gasolina.
+														</td>
+														<td>
+															El ácido fluorhídrico es un compuesto químico altamente peligroso, corrosivo, de olor agudo
+															y penetrante, formado por hidrógeno y flúor. Es uno de los ácidos más peligrosos y que hay que manipular con mayor precaución en el
+															laboratorio  es  el  ácido  fluorhídrico  (HF).  Las  soluciones  de  HF  son  transparentes  e
+															incoloras con una densidad similar a la del agua. La propiedad más extensamente conocida
+															del  HF  es  la  de  atacar  el  vidrio.  También  atacará  esmaltes,  cemento,  caucho,  cuero,
+															metales (especialmente el hierro), y compuestos orgánicos.
+															or inhalación de vapores: Irritaciones en vías respiratorias. Puede provocar
+															bronquitis bronconeumonía edema pulmonar   En  contacto  con  la  piel:  quemaduras  No  se  descarta:  necrosis  La  penetración  del
+															producto origina heridas de difícil curación.  Por contacto ocular: quemaduras ceguera (lesión irreversible del nervio óptico)
+														</td>
+														<td>
+															Ácido fluorhídrico: nuevo contaminante en el aire de Huelva [municipio al sureste de España] que podría ser la causa del asma:
+															Desde que hay estudios sobre la calidad del aire ha habido un sólo episodio de calidad "muy mala" en Huelva. Ocurrió en Mazagón cuando el incendio de Doñana durante el verano de 2017. Jesús de la Rosa investigador principal de la Unidad Asociada al Consejo Superior de Investigaciones Científicas....
+															Investigadores de la Universidad de Huelva detectan un nuevo contaminante en el aire de Huelva. Se trata del ácido fluorhídrico en estado gaseoso. Según la ambientóloga Raquel Torres, este contaminante podría ser la causa de problemas respiratorios como el asma. <ref>[52]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>HBr</elemento></td>
+														<td><IUPAC>Ácido Bromhídrico</IUPAC></td>
+														<td><Stock>Ácido Bromhídrico (I)</Stock></td>
+														<td><Tradicional>Bromuro de Hidrógeno</Tradicional></td>
+														<td>
+															El ácido bromhídrico se utiliza para elaborar productos químicos y farmacéuticos, principalmente para la producción de bromuros inorgánicos, especialmente el bromuro de zinc, calcio y sodio, también se lo emplea como solvente y en medicación veterinaria.
+															Es un reactivo útil para la regeneración de compuestos organobromados. Ciertos éteres se rompen con ácido bromhídrico. También funciona como catalizador de reacciones de alquilación y de la extracción de cierto minerales. A partir de ácido bromhídrico se crean importantes compuestos orgánicos útiles para la industria, como lo son: bromuro de alilo y fenol. <ref>[53]</ref>
+														</td>
+														<td>
+															H290 Puede ser corrosivo para los metales
+															H314 Provoca quemaduras graves en la piel y lesiones oculares graves
+															H335 Puede irritar las vías respiratorias
+															P280 Llevar guantes/gafas de protección.
+															EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua.
+															P305+P351+P338 EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente du-
+															rante varios minutos. Quitar las lentes de contacto cuando estén presentes y
+															pueda hacerse con facilidad. Proseguir con el lavado.
+															P310 Llamar inmediatamente a un CENTRO DE TOXICOLOGĺA/médico. <ref>[54]</ref>
+														</td>
+														<td>
+															El viento empujó el humo del incendio de Ávila creando una lluvia de ceniza en el norte de Madrid:
+															Unos 500 vecinos de las localidades abulenses de Riofrío y Sotalbo han sido desalojados ante el riesgo que presentaban las llamas del incendio de Navalacruz para su población. El incendio de Navalacruz ha quemado hasta el momento unas 10.000 hectáreas de matorral, pasto y superficie arbolada, y cuenta con un perímetro de 40 kilómetros.
+															Entre los irritantes cabe señalar los ácidos halógenos como el ácido clorhídrico (HCl), el bromhídrico (HBr) y el fluorhídrico (HF), los óxidos de nitrógeno (NOx), el dióxido de azufre (SO2), la acroleína o el formaldehído. <ref>[55]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>HI</elemento></td>
+														<td><IUPAC>Yoduro de Hidrógeno</IUPAC></td>
+														<td><Stock>Yoduro de Hidrógeno (I)</Stock></td>
+														<td><Stock>Ácido Yodhídrico</Stock></td>
+														<td>
+															El ácido yodhídrico figura dentro de la lista I de sustancias de la DEA debido a su utilidad como agente reductor. La reducción del HI y el fósforo rojo se ha convertido en el método más popular para la creación de metanfetamina en los Estados Unidos. El HI reacciona con pseudoefedrina para formar yodo-metafetamina, un intermediario el cual es reducido principalmente de la metanfetamina. <ref>[56]</ref>
+														</td>
+														<td>
+															No combustible. En caso de incendio se desprenden humos (o gases) tóxicos e irritantes.
+															Inhalación 	Tos. Dolor de garganta. Sensación de quemazón detrás del esternón. Jadeo. Dificultad respiratoria.
+															Usar ventilación, extracción localizada o protección respiratoria. Proporcionar asistencia médica inmediatamente.
+															Piel 	Enrojecimiento. Dolor. Quemaduras cutáneas. Ampollas.
+															EN CONTACTO CON LÍQUIDO: CONGELACIÓN.
+															Guantes de protección. Guantes aislantes del frío. Traje de protección.
+															Aclarar la piel con agua abundante o ducharse durante 15 minutos como mínimo.
+															EN CASO DE CONGELACIÓN: aclarar con agua abundante, NO quitar la ropa. Proporcionar asistencia médica inmediatamente.
+															Ojos 	Enrojecimiento. Dolor. Quemaduras graves.
+															Utilizar pantalla facial o protección ocular en combinación con protección respiratoria.
+															Enjuagar con agua abundante (quitar las lentes de contacto si puede hacerse con facilidad). Proporcionar asistencia médica inmediatamente. <ref>[56]</ref>
+														</td>
+														<td>
+															Encuentran instalaciones clandestinas para producción de droga: Un narcolaboratorio y dos lugares dedicados a la producción de marihuana fueron descubiertos por agentes policiales en distintos puntos de Jalisco. Ninguna persona fue detenida.
+
+															Como parte de las labores fueron asegurados alrededor de 80 kilogramos de metanfetamina tipo crystal, cuyo precio por kilogramo está valuado en México en más de 14 mil 500 dólares, fueron localizadas sustancias como acetato de plomo, acetona, hidróxido de sodio, ácido clorhídrico, tolueno, tiogilcolato de metilo, ácido yodhídrico y alcohol etílico, colocados en tambos, bidones y cubetas, según constataron peritos de la Fiscalía General de la República (FGR) al realizar pruebas de identificación de sustancias. <ref>[57]</ref>
+														</td>
+													</tr>
+													<td><elemento>HCl</elemento></td>
+													<td><IUPAC>Cloruro de Hidrógeno</IUPAC></td>
+													<td><Stock>Ácido clorhídrico (I)</Stock></td>
+													<td><Tradicional>Ácido hidroclórico</Tradicional></td>
+													<td>
+														Tambien conocido como ́ácido muríatico:
+														El ácido clorhídrico tiene las siguientes aplicaciones:
+
+														Tratamiento de aguas industriales
+														Decapado de metales en industria metalúrgica
+														Potabilización de agua
+														Actúa como neutralizante, reductor e intermediario en síntesis orgánicas e inorgánicas en la industria química.
+														Refinación de aceites
+														Solvente (Químicos y materias primas)
+														Fabricación de productos de limpieza
+														Es  un  líquido  de  color
+														amarillo (por presencia de trazas de fierro, cloro o materia orgánica) o incoloro con un olor penetrante.
+														Está  presente  en  el  sistema  digestivo  de  muchos  mamíferos  y  una  deficiencia  de  éste,  provoca
+														problemas en la digestión, especialmente, de carbohidratos y proteínas; un exceso provoca úlceras
+														gástricas. <ref>[58]</ref>
+													</td>
+													<td>
+														Con agentes oxidantes como peróxido de hidrógeno, ácido selénico y pentóxido de vanadio, genera
+														cloro, el cual es muy peligroso.
+														ara  su  manejo  es  necesario  utilizar    lentes  de  seguridad  y,  si  es  necesario,  guantes  de
+														neopreno,  viton  o  hule  butílico,  nunca  de  PVA  o  polietileno  en  lugares  bien  ventilados.  No  deben
+														usarse  lentes  de  contacto  cuando  se  utilice  este  producto.
+														El ácido clorhídrico y concentraciones altas de gas, son altamente corrosivos a la piel y membranas
+														mucosas
+														Inhalación: En el caso de exposiciones agudas, los mayores efectos se limitan al tracto respiratorio
+														superior.  El  gas  causa  dificultad  para  respirar,  tos  e  inflamación  y  ulceración  de  nariz,  tráquea  y
+														laringe.  Exposiciones severas  causan espasmo  de  la laringe y edema en los pulmones y cuerdas
+														vocales.  Una  exposición  prolongada  y  repetida  puede  causar  decoloración  y  corrosión  dental.  En
+														algunos casos , se han presentado problemas de gastritis y bronquitis crónica.
+														En humanos,la exposición a una concentración de 50 a 100 ppm por una hora fue  muy poco
+														tolerada; de 35 ppm por un momento, causó irritación de la tráquea y de 10 ppm fue tolerada. <ref>[59]</ref>
+													</td>
+													<td>
+														La receta del caos de los CDR: ácido clorhídrico al 39% para cortar la red eléctrica:
+														La Guardia Civil halla pruebas de que los CDR acusados de terrorismo adquirieron ácido clorhídrico (HCl) para inutilizar cableados eléctricos de líneas ferroviarias y nodos eléctricos. <ref>[60]</ref>
+													</td>
+													<tr>
+														<td><elemento>HS</elemento></td>
+														<td><IUPAC>Sulfuro de hidrógeno</IUPAC></td>
+														<td><Stock>Ácido Sulfhídrico (II)</Stock></td>
+														<td><Tradicional>Ácido Hidrosulfúrico</Tradicional></td>
+
+														<td>
+															El ácido sulfhídrico (H2S) ocurre naturalmente en el petróleo crudo, gas natural, gases volcánicos y manantiales de aguas termales. También puede producirse como resultado de la degradación bacteriana de materia orgánica. Es, además, producto de los desperdicios de animales y humanos. Las bacterias que se encuentran en su boca y el tracto gastrointestinal producen ácido sulfhídrico al degradar materiales que contienen proteínas de origen animal o vegetal.
+															El ácido sulfhídrico es un gas inflamable, incoloro con un olor característico a huevos podridos. Se le conoce comúnmente como ácido hidrosulfúrico o gas de alcantarilla. La gente puede detectar su olor a niveles muy bajos.
+															Estas industrias incluyen la manufactura de tejidos de rayón, manufactura de pulpa y papel; operaciones de perforación de petróleo y gas natural; y plantas de tratamiento de aguas residuales. Los trabajadores en fincas con fosos donde se almacenan abonos o en vertederos pueden estar expuestos a niveles de ácido sulfhídrico más altos que la población general. <ref>[61]</ref>
+														</td>
+														<td>
+															La exposición a niveles bajos de ácido sulfhídrico puede producir irritación de los ojos, la nariz o la garganta. También puede provocar dificultades respiratorias en personas asmáticas. Exposiciones breves a concentraciones altas de ácido sulfhídrico (mayores de 500 ppm) puede causar pérdida del conocimiento y posiblemente la muerte. En la mayoría de los casos, las personas que pierden el conocimiento parecen recuperarse sin sufrir otros efectos. Sin embargo, algunas personas parecen sufrir efectos permanentes o a largo plazo tales como dolor de cabeza, incapacidad para concentrarse y alteraciones de la memoria y la función motora. <ref>[62]</ref>
+														</td>
+														<td>
+															Mató ácido sulfhídrico a empleados de Comapa (Tamaulipas):  uno de ellos, el ingeniero Javier Mancilla Rocha será llevado al municipio de Padilla para su sepelio mientras que los trabajadores Francisco Tadeo Charles y Mario Rodríguez son velados en esta capital
+															“Al pensar que solamente estaban ante una caja que tenía situaciones de agua potable no tenían la certeza de lo que se iban a encontrar, abren la caja de válvulas, , inmediatamente se despide el gas tóxico y es lo que los fulmina”, aclaró que el personal de COMAPA. <ref>[63]</ref>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</p>
+									<h3>Oxiácidos</h3>
+									<p>
+										Un oxiácido es un ácido que contiene oxigeno, hidrógeno y otro elemento el cual es un no metal. Específicamente, es un compuesto que contiene hidrógeno, oxígeno y al menos otro elemento y que siempre mantienen el mismo orden (Hidrógeno, 1 no metal y oxígeno). También podemos decir que se forman por reacción de un óxido no metálico y agua.
+										Para estos compuestos, no se puede simplemente cruzar la valencia a los otros elementos, puesto que son tres, en cambio, se requiere conocer el anión con el cual se formara el compuesto (El cual es la parte del oxigeno y el no metal, ya que el hidrógeno es un catión con valencia de +1, y por tanto, carga positiva).
+										<br>
+										<div class="Modelo">
+											<model-viewer class="Modelo" src="/static/Modelos/hno3.glb" alt="hn03" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+										</div>
+										<br>
+										<div class="table">
+
+
+											<table>
+												<tbody>
+													<tr>
+														<th rowspan=2>Molécula</th>
+														<th colspan=3>Nomenclatura</th>
+														<th rowspan=2>Usos y aplicaciones</th>
+														<th rowspan=2>Ficha de seguridad</th>
+														<th rowspan=2>Noticia</th>
+													</tr>
+													<tr>
+														<th>IUPAC</th>
+														<th>Stock</th>
+														<th>Tradicional</th>
+													</tr>
+													<tr>
+														<td><elemento>H<sub>3</sub>PO<sub>4</sub></elemento></td>
+														<td><IUPAC>Ácido Tetraoxifosforico</IUPAC></td>
+														<td><Stock>Ácido Tetraoxifosforico (V)</Stock></td>
+														<td><Tradicional>Ácido Fosfórico</Tradicional></td>
+														<td>
+															Entre los usos y aplicaciones más comunes del ácido fosfórico se encuentran:
+
+															Pegamento.
+															Catalizador.
+															Regulador del pH.
+															Fuerte fertilizante. <ref>[64]</ref>
+														</td>
+														<td>
+															H314 Provoca quemaduras graves en la piel y lesiones oculares graves.
+															PREVENCIÓN
+															P260 No respirar el polvo, el humo, el gas, la niebla, los vapores o el aerosol.
+															P264 Lavarse cuidadosamente tras la manipulación.
+															P280 Usar guantes, ropa y equipo de protección para los ojos y la cara.
+															P301  +  P330  +  P331  EN  CASO  DE  INGESTIÓN:  Enjuagarse  la  boca.  NO  provocar  el
+															vómito.
+															P303  +  P361  +  P353  EN  CASO  DE  CONTACTO  CON  LA  PIEL  (o  el  pelo):  Quitarse
+															inmediatamente las prendas contaminadas. Enjuagar la piel con agua o ducharse.
+															P363 Lavar la ropa contaminada antes de volverla a usar. <ref>[65]</ref>
+														</td>
+														<td>
+															Nutricionista explica por qué las gaseosas son dañinas para la salud : Una botella de gaseosa de aproximadamente 300 mililitros (tamaño personal) contiene 60 gramos de carbohidratos, es decir, 12 cucharaditas de azúcar. El azúcar es un tipo de carbohidrato.
+
+															Román advirtió que las altas dosis de azúcar que contienen las gaseosas incrementan la grasa corporal y el sobrepeso, fomentan la obesidad e incentivan cualquier otra enfermedad metabólica, como la hipertensión, y el aumento de colesterol y triglicéridos.
+															De la misma manera, el ácido fosfórico presente en las gaseosas afecta el sistema óseo, altera la estructura de los huesos y los descalcifica si se consume en exceso. También daña el esmalte de los dientes y, por el azúcar, provoca caries. <ref>[66]</ref>
+														</td>
+
+													</tr>
+													<tr>
+														<td><elemento>H<sub>2</sub>SO<sub>3</sub></elemento></td>
+														<td><IUPAC>Ácido Trioxisulfúrico</IUPAC></td>
+														<td><Stock>Ácido Trioxisulfúrico (IV)</Stock></td>
+														<td><Tradicional>Ácido Sulfuroso</Tradicional></td>
+														<td>
+															El ácido sulfuroso H2SO3, es un ácido mineral (no un ácido orgánico), que se forma cuando el dióxido de azufre se disuelve en agua. Es un fuerte agente reductor y se usa para blanquear manchas en materiales dañados por cloro. En la atmósfera, se puede formar cuando el dióxido de azufre se disuelve en las gotas de lluvia, causando lluvia ácida. <ref>[67]</ref>
+
+														</td>
+														<td>
+															Peligros Físicos:
+															H290  Sustancias y mezclas corrosivas para los metales – Categoría 1 – Puede ser corrosiva para los metales.
+
+															Peligros para la Salud:
+															H314  Corrosión cutánea - Categoría 1B - Provoca graves quemaduras en la piel y lesiones oculares.
+															H318   Lesiones oculares graves - Categoría 1 - Provoca lesiones oculares grave
+															Lavarse la piel concienzudamente después de la manipulación.
+															P280  Usar guantes/ ropa de protección/ equipo de protección para la cara/ ojos.
+															P301 + P330 + P331  EN CASO DE INGESTIÓN: Enjuagarse la boca. NO provocar el vómito. <ref>[68]</ref>
+														</td>
+														<td>
+															El extraño y "hermoso" fuego de azufre que sorprendió a un equipo de bomberos en Estados Unidos
+															Los bomberos de Worland, en el estado de Wyoming, recibieron una llamada alertando sobre un tipo de fuego desconocido.
+
+															Cuando llegaron al lugar, se dieron cuenta que se trataba de un montículo de azufre que se estaba quemando.
+
+															“A pesar de sus hermosas llamas”, explicaron los bomberos, “el fuego de azufre crea un gas peligroso llamado dióxido de azufre (SO2)”.
+															“Añadir agua al gas SO2 crea ácido sulfuroso (no confundir con el ácido sulfúrico) que puede estar relacionado con la ‘lluvia ácida’”, dijeron en un comunicado.
+
+															También explicaron que los depósitos quemados son residuos de una planta de azufre que operó en la zona en los años 50. <ref>[69]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>HNO<sub>3</sub></elemento></td>
+														<td><IUPAC>Ácido Trioxinítrico</IUPAC></td>
+														<td><Stock>Ácido Trioxinítrico (V)</Stock></td>
+														<td><Tradicional>Ácido Nítrico</Tradicional></td>
+														<td>
+															El ácido nítrico es un líquido cuyo color varía de incoloro a amarillo pálido, de olor sofocante. Se
+															utiliza  en  la  síntesis  de  otros  productos  químicos  como  colorantes,  fertilizantes,  fibras,  plásticos  y
+															explosivos, entre otros. Es soluble en agua, generándose calor. No es combustible, pero puede acelerar
+															el quemado de materiales combustibles y causar ignición
+															En la industria electrónica se utiliza para la elaboración de placas de circuito impreso.
+															En la fabricación de medicamentos.
+															En el proceso de pasivación.
+															En la fabricación de colorantes.
+															Como agente nitrante en la elaboración de explosivos.
+															En grabado artístico.
+															En la fabricación de abonos. <ref>[70]</ref>
+														</td>
+														<td>
+															Equipo de protección personal:
+															Para su manejo debe utilizarse bata y lentes de seguridad y, si es necesario, delantal y guantes
+															de neopreno o Viton ( no usar hule natural, nitrilo, PVA o polietileno). No deben usarse lentes de contacto
+															cuando se utilice este producto.
+															Riesgos de fuego y explosión:
+															Puede generar óxidos de nitrógeno, muy tóxicos, cuando se calienta. Por ser un fuerte oxidante,
+															su contacto con material combustible, hace que se incremente el riesgo de  fuego o incluso explosión. Es
+															no combustible, pero es peligrosamente reactivo con muchos materiales.
+															este producto es principalmente irritante y causa quemaduras y ulceración de todos los tejidos
+															con los que está en contacto.  La extensión del daño, los signos y síntomas de envenenamiento y el
+															tratamiento  requerido,  dependen  de  la  concentración  del  ácido,  el  tiempo  de  exposición  y  la
+															susceptibilidad del individuo.
+															La  dosis  letal  mínima  es  aproximadamente  de  5  ml  (concentrado)  para  una  persona  de  75  Kg.  Las
+															personas  con  problemas  en  piel,  ojos  y  cardiopulmonares  tienen  gran  riesgo  al  trabajar  con  este
+															producto. <ref>[71]</ref>
+														</td>
+														<td>
+															Aumenta el temor por posible desastre ambiental tras hundimiento de un barco en Sri Lanka: La embarcación, registrada en Singapur y que transportaba 1.500 contenedores de productos químicos, entre ellos ácido nítrico, se mantuvo en llamas por varios días desde el pasado 20 de mayo, provocando su hundimiento parcial. Ante el temor de que toneladas de combustibles se viertan en las aguas y aumente el impacto al medio ambiente, el buque está siendo remolcado a aguas profundas. El siniestro ha afectado a la pesca, una de las actividades económicas de los pobladores de la zona. El medio británico señaló que la tripulación conocía la situación desde el 11 de mayo. No obstante, agregó que la compañía propietaria del barco reconoció que la tripulación estaba al tanto de la fuga pero que tanto Qatar como India negaron la entrada al barco. Tras un incendio, que se extendió por varios días, la embarcación se hundió parcialmente. Las labores para sofocar las llamas y el posterior traslado de los restos hacia aguas profundas se vieron obstaculizadas por los fuertes vientos, producto del monzón y un ciclón que afecta una parte de India. Para evitar que el barco siga generando daños en la zona, donde se encuentran algunas de las playas vírgenes del país, las autoridades intentaron trasladar los restos hacia aguas más profundas, una acción que debió ser abandonada por el hundimiento. <ref>[72]</ref>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</p>
+									<h3>Sales</h3>
+									En química, una sal es un compuesto químico formado por cationes (iones con carga positiva) enlazados a aniones (iones con carga negativa) mediante un enlace iónico. Son el producto típico de una reacción química entre una base y un ácido,​ donde la base proporciona el catión y el ácido el anión.
+									<h4>Sales simples o Binarias</h4>
+									<p>
+										Son combinaciones de un metal y un no metal. Como su nombre lo indica, solo tienen dos compuestos, donde el metal suele ser el Catión y el no metal suele ser el ́anión.
+										<br>
+										<div class="Modelo">
+											<model-viewer class="Modelo" src="/static/Modelos/lif.glb" alt="lif" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+										</div>
+										<br>
+										<div class="table">
+
+											<table>
+												<tbody>
+													<tr>
+														<th rowspan=2>Molécula</th>
+														<th colspan=3>Nomenclatura</th>
+														<th rowspan=2>Usos y aplicaciones</th>
+														<th rowspan=2>Ficha de seguridad</th>
+														<th rowspan=2>Noticia</th>
+													</tr>
+													<tr>
+														<th>IUPAC</th>
+														<th>Stock</th>
+														<th>Tradicional</th>
+													</tr>
+													<tr>
+														<td><elemento>LiF</elemento></td>
+														<td><IUPAC>Fluoruro de Litio</IUPAC></td>
+														<td><Stock>Fluoruro de Litio</Stock></td>
+														<td><Tradicional>Fluoruro Lítico</Tradicional></td>
+														<td>
+															El floruro de Litio se utiliza como fundente en la soldadura en la industria del vidrio, de la cerámica y esmaltes. El Floruro de Litio es también la materia prima para lentes ópticas y primas. <ref>[74]</ref>
+														</td>
+														<td>
+															Peligros para la salud
+															Toxicidad aguda oral Categoría 3 (H301)
+															Corrosión o irritación cutáneas Categoría 2 (H315)
+															Lesiones o irritación ocular graves Categoría 2 (H319)
+															P304 + P340 - EN CASO DE INHALACIÓN: Transportar a la víctima al exterior y mantenerla en reposo en una posición
+															confortable para respirar
+															P280 - Llevar guantes/prendas/gafas/máscara de protección
+															P332 + P313 - En caso de irritación cutánea: Consultar a un médico <ref>[75]</ref>
+														</td>
+														<td>
+															Litio en Alemania: el oro blanco de la movilidad eléctrica:
+															"En estos momentos, planeamos extraer 522.000 toneladas de minerales que contienen litio por año", dijo Müller a DW. "Usaremos el material para obtener 125.000 toneladas de zinnwaldita concentrado anualmente. Esta se procesará para obtener 5.100 toneladas de fluoruro de litio cada año. Hay más que suficiente en el suelo para poder hacerlo durante 30 años. Es también el período de la licencia minera que tenemos", añadió. <ref>[76]</ref>
+
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>Na<sub>2</sub>S</elemento></td>
+														<td><IUPAC>Sulfuro de Disodio</IUPAC></td>
+														<td><Stock>Sulfuro de Sodio</Stock></td>
+														<td><Tradicional>Sulfuro Sódico</Tradicional></td>
+														<td>
+															El sulfuro de sodio se utiliza principalmente en el proceso kraft en la industria de la pulpa y el papel.
+
+															Se utiliza en el tratamiento del agua como captador de oxígeno y también como precipitante de metales; en fotografía química para mejorar fotografías en blanco y negro; en la industria textil como blanqueador, desulfuración y declorante; y en el comercio de cueros para la sulfitización de extractos tánicos. Se utiliza en la fabricación de productos químicos como agente sulfonante y sulfometilante. Se utiliza en la producción de productos químicos para caucho, tintes de azufre y otros compuestos químicos. Se utiliza en otras aplicaciones que incluyen flotación de minerales, extracción de aceite, fabricación de colorantes y detergentes. También se utiliza durante el procesamiento del cuero, como agente depilatorio en el tratamiento con cal. <ref>[77]</ref>
+
+														</td>
+														<td>
+															H290: Puede se corrosivo para los metales.
+															H301: Tóxico por ingestión.
+															H314: Provoca quemaduras graves en la piel y lesiones oculares graves
+															H400: Muy tóxico para los organismos acuáticos
+															EUH031: En contacto con ácidos libera gases tóxicos
+															EUH071: Corrosivo para el tracto respiratorio
+															Consejos de prudencia: P273: Evitar su liberación al medio ambiente
+															P280: Llevar guantes/prendas/gafas/máscara de protección.
+															P302+P352: EN CASO DE CONTACTO CON LA PIEL: Lavar con agua y jabón abundantes.
+															P305+P351+P338:  EN  CASO  DE  CONTACTO  CON  LOS  OJOS:  Aclarar  cuidadosamente  con  agua
+															durante varios minutos. Quitar las lentes de contacto, si lleva y resulta fácil. Seguir aclarando.
+
+															Otros peligros:
+															En el caso de que el producto se vea envuelto en un fuego se pueden producir gases irritantes y
+															venenosos. El producto puede formar mezclas explosivas con aire. <ref>[78]</ref>
+														</td>
+														<td>
+															Nanopartículas derivadas de hojas de té destruyen células de cáncer de pulmón
+															El equipo realizó el descubrimiento mientras probaban un nuevo método para producir un tipo de nanopartícula llamada punto cuántico. Estas son partículas diminutas que miden menos de 10 nanómetros. Un cabello humano tiene un espesor de 40.000 nanómetros.
+															Las hojas de té contienen una amplia variedad de compuestos, incluidos polifenoles, aminoácidos, vitaminas y antioxidantes. Los científicos mezclaron el extracto de hoja de té con sulfato de cadmio (CdSO4) y sulfuro de sodio (Na2S) y permitieron que la solución se incubara, un proceso que causa la formación de puntos cuánticos. Luego, aplicaron los puntos a las células de cáncer de pulmón.
+															Además, los puntos cuánticos producidos a partir de las hojas de té inhiben el crecimiento de las células de cáncer de pulmón. Penetraron en los nanoporos de las células cancerosas y destruyeron hasta el 80 por ciento de ellas, <ref>[79]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>NiCl<sub>2</sub></elemento></td>
+														<td><IUPAC>Dicloruro de Níquel</IUPAC></td>
+														<td><Stock>Cloruro de Níquel (II)</Stock></td>
+														<td><Tradicional>Cloruro Niquelico</Tradicional></td>
+														<td>
+															Se aplica fundamentalmente en aleaciones duras, maleables y resistentes a la corrosión (81%), para
+															niquelados  y  plateados  (11%),  para  monedas,  catalizadores,  instrumental  químico  y  equipos  de
+															laboratorio, en pilas termoeléctricas, acumuladores de níquel-cadmio y sustancias magnéticas.
+															El  cloruro  de  níquel  (NiCl2):  se  utiliza  como  colorante  de  la  cerámica,  para  la  fabricación  de
+															catalizadores de níquel y para el niquelado galvánico. <ref>[80]</ref>
+
+														</td>
+
+
+														<td>
+															Seres humanos/mamíferos: El níquel es un elemento traza. El metal y sus compuestos inorgánicos se
+															consideran comparativamente inocuos, si bien el contacto permanente con la piel puede
+															desencadenar la "sarna del níquel". En cambio ciertos compuestos orgánicos del níquel son
+															extremadamente tóxicos (p. ej., el tetracarbonilo de níquel) y poseen un alto potencial alergénico y
+															mutágeno. Es probable que el vapor y el polvo de níquel sean carcinógenos, lo mismo que algunos
+															otros de sus compuestos <ref>[80]</ref>
+														</td>
+														<td>
+															Detector de rayos X flexible:
+															Un equipo que incluye a Zheng Li y Shenqiang Ren, ambos de la Universidad en Buffalo (Universidad Estatal de Nueva York) en Estados Unidos se propuso crear un MOF libre de metales pesados para crear un detector de rayos X flexible con el que obtener imágenes.
+
+
+
+															Los investigadores mezclaron una solución de sal de cloruro de níquel y 2,5-diaminobenceno-1,4-ditiol (DABDT) durante varias horas, creando un MOF en el que el níquel unía las moléculas de DABDT. En las pruebas iniciales, el MOF que contenía níquel resultó ser más sensible que los de detectores previos cuando se le irradiaba con rayos X con una energía comparable a la de una radiografía. A continuación, para fabricar un detector de rayos X flexible, el equipo intercaló el MOF que contenía níquel entre electrodos de película de oro, uno de ellos sobre una superficie de plástico flexible. Utilizaron cables de cobre para transmitir la corriente desde cada píxel de una matriz de 12 x 12 y cubrieron todo el dispositivo con un polímero flexible a base de silicona. <ref>[81]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>FeCl<sub>3</sub></elemento></td>
+														<td><IUPAC>Triclururo de Hierro</IUPAC></td>
+														<td><Stock>Cloruro de Hierro (III)</Stock></td>
+														<td><Tradicional>Cloruro Férrico</Tradicional></td>
+														<td>
+															Tratamiento de aguas
+
+															Como se mencionó anteriormente, la venta de cloruro férrico más extendida es para el tratamiento de aguas residuales y potables domésticas e industriales debido a que con sus eficaces componentes y aditivos remueve materia orgánica, sólidos disueltos, turbiedad, metales pesados y olores de manera eficaz y funcional.
+															En el campo de la electrónica, el cloruro férrico es utilizado para la fabricación de placas de circuito impreso en bajas cantidades, ya que este compuesto reacciona con el cobre generado cloruro ferroso y cloruro cúprico.
+
+
+															El cloruro férrico también tiene varios usos en los laboratorios químicos como ácido para crear reacciones de catálisis como cloración y reacción de Friedel-Crafts de compuestos aromáticos. Además, se emplea para el control de corrosión. <ref>[83]</ref>
+
+														</td>
+														<td>
+															Medio De extinción: CO2, agua o espuma.
+															Los bomberos deben usar equipos de respiración autónoma y trajes resistentes al
+															ácido  clorhídrico.  Utilizar  niebla  de  agua  para  contener  los  vapores  de  ácido
+															clorhídrico.
+															Reacciona  con  metales,  cloruro  de  alilo,  sodio,  potasio,  álcalis.  Puede  formar
+															vapores tóxicos u corrosivos.
+															Inhalación:
+															Muy agresivo sobre las mucosas y el tracto respiratorio superior. Los síntomas
+															pueden incluir sensación y quemazón, tos, laringitis, acotamiento de la respiración,
+															dolor de cabeza, náuseas y vómitos.
+															Ingestión:
+															Es  corrosivo.  Puede  provocar  quemaduras  severas  de  la  boca,  e  incluso
+															estomago. Puede provocar vómitos y diarrea. Es poco tóxico en dosis bajas pero
+															por encima de los 30 mg/kg puede provocar náuseas, vómito y diarrea. La orina de
+															color rosado es un indicador de envenenamiento por hierro. Daño al hígado, y
+															muerte pueden sobrevenir hasta tres días después de la intoxicación.
+															Ojos:
+															Corrosivo.  El  contacto  puede  provocar  visión  borrosa,  enrojecimiento,dolor  y
+															quemaduras severas.
+															Piel:
+															Corrosivo. Puede haber enrojecimiento por irritación, dolor y quemaduras severas.
+															Use guantes, botas y delantal de neopreno, PVC u otros materiales resistentes a
+															los ácidos. Use las botas por dentro del pantalón. <ref>[84]</ref>
+														</td>
+														<td>
+															Finaliza la emergencia tras la explosión química en Igualada (Cataluña)
+															Tres trabajadores y tres bomberos, heridos leves tras inhalar ácido nítrico y cloruro férrico
+															La "reacción violenta", en palabras de los Bomberos de la Generalitat, se ha producido sobre las 9.30 durante una maniobra de descarga de un depósito de ácido nítrico que tras derramarse ha entrado en contacto con cloruro férrico. Ambos productos son corrosivos y su mezcla accidental ha provocado una nube tóxica de color anaranjado que a causa del viento se ha desplazado desde su epicentro, el polígono Les Comes en Igualada, hasta cubrir también el cielo de otras cinco poblaciones colindantes. <ref>[85]</ref>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</p>
+
+									<h4>Oxisales</h4>
+									<p>
+										Las oxisales, oxosales o sales ternarias son compuestos resultantes de la unión de un catión de un elemento metálico (a veces no metálico), un elemento no metálico y el oxígeno. Son producto de la sustitución de los átomos de hidrógeno de un oxácido. Se pueden obtener por la reacción entre un hidróxido y un oxácido.
+										<br>
+										<div class="Modelo">
+											<model-viewer class="Modelo" src="/static/Modelos/nano3.glb" alt="NaNO3" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+										</div>
+										<br>
+										<div class="table">
+
+											<table>
+												<tbody>
+													<tr>
+														<th rowspan=2>Molécula</th>
+														<th colspan=3>Nomenclatura</th>
+														<th rowspan=2>Usos y aplicaciones</th>
+														<th rowspan=2>Ficha de seguridad</th>
+														<th rowspan=2>Noticia</th>
+													</tr>
+													<tr>
+														<th>IUPAC</th>
+														<th>Stock</th>
+														<th>Tradicional</th>
+													</tr>
+													<tr>
+														<td><elemento>NaNO<sub>3</sub></elemento></td>
+														<td><IUPAC>Trioxinitrato de Sodio</IUPAC></td>
+														<td><Stock>Trioxinitrato (V) de Sodio</Stock></td>
+														<td><Tradicional>Nitrato sódico</Tradicional></td>
+														<td>
+															Debido a su contenido en nitrógeno se utiliza como fertilizante.
+															Fundido en una mezcla con carbonato de sodio se usa en la obtención del cromo de sus minerales por oxidación de este metal a cromato. (CrO42-).
+															Como conservante en la industria alimenticia (E251) y en la mezcla de sales empleada para tratar la carne en su conservación.
+															Como aditivo para el cemento.
+															Es uno de los ingredientes mayoritarios de ciertos tipos de pólvora negra.  <ref>[86]</ref>
+														</td>
+														<td>
+															H272: Puede agravar un incendio; comburente.
+															H319: Provoca irritación ocular grave.
+															P210: Mantener alejado del calor, de superficies calientes, de chispas, de llamas abiertas y de cualquier otra fuente de ignición. No fumar.
+															P220: Mantener alejado de la ropa y otros materiales combustibles.
+															P264: Lavarse la piel concienzudamente tras la manipulación.
+															P280: Utilice guantes y ropa de protección/ protección ocular/ facial y auditiva.
+															P305 + P351 + P338: EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente durante varios minutos. Quitar las lentes de contacto cuando estén presentes y pueda hacerse con facilidad. Proseguir con el lavado. <ref>[86]</ref>
+														</td>
+														<td>
+															¿Qué es el nitrato de sodio, el químico que habría provocado explosión en Beirut?
+															De acuerdo con Badri Daher, director general de Aduanas del Líbano, la explosión que se registró este martes 4 de agosto, en Beirut, Líbano, se originó en un almacén que contenía materiales inflamables, entre ellos, nitrato de sodio.
+															Según la cadena libanesa LBCI, precisó que la sustancia que estalló fue el nitrato de sodio, utilizado como fertilizante, conservante de alimentos y para producir explosivos. Esto fue confirmado por Daher, quien señaló que en el almacén había «toneladas de nitrato». <ref>[87]</ref>
+
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>NaNO<sub>2</sub></elemento></td>
+														<td><IUPAC>Dioxinitrato de Sodio</IUPAC></td>
+														<td><Stock>Dioxinitrato (III) de Sodio</Stock></td>
+														<td><Tradicional>Nitrito de Sodio</Tradicional></td>
+														<td>
+															El nitrito sódico se emplea principalmente como conservante alimenticio así como fijador del color de los derivados cárnicos. Suele emplearse en combinación con otras sales, en las denominadas sales de curado: nitritos y nitratos de sodio y de potasio (E249). Su empleo evita la intoxicación bacteriana, en especial botulismo. Estas sales son empleadas en las operaciones de salazón de carnes (como el caso de jamón y cecinas) y pescados. Otra de las funciones del uso de nitritos en la industria cárnica es la de mejorar alguna de las propiedades organolépticas (sabor y color). <ref>[88]</ref>
+														</td>
+														<td>
+															H272 Puede agravar un incendio; comburente
+															H301 Tóxico en caso de ingestión
+															H400 Muy tóxico para los organismos acuáticos
+															Consejos de prudencia
+															P210 Mantener alejado de fuentes de calor, chispas, llama abierta o superficies calien-
+															tes. No fumar.
+															P270 No comer, beber ni fumar durante su utilización.
+															P273 Evitar su liberación al medio ambiente.
+															Recomendaciones sobre medidas generales de higiene en el trabajo
+															No comer ni beber durante su utilización. Después de trabajar con el producto lavar inmediatamente
+															bien la piel <ref>[88]</ref>
+														</td>
+														<td>
+															Cierran una web italiana que ayudaba a jóvenes a suicidarse:
+															La página web contaba con 17.000 personas registradas, y en ellas se detallaba cómo usar algunas sustancias tóxicas y qué dieta debía de hacerse los días antes de cometer el suicidio.
+															Concretamente, el nombre de la web era "Sanctioned Suicide" y en ella se detallaba cómo obtener y consumir nitrito de sodio, una sustancia que ingerida en determinadas cantidades se vuelve tóxica porque puede inhibir el transporte de oxígeno en el cuerpo humano.
+															Además, se explicaba también los medicamentos a tomar previamente, como los fármacos contra los vómitos, para evitar que el cuerpo expulsara las sustancias tóxicas. <ref>[89]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub></elemento></td>
+														<td><IUPAC>Trisulfato de Dialuminio</IUPAC></td>
+														<td><Stock>Sulfato de aluminio</Stock></td>
+														<td><Tradicional>Sulfato aluminico</Tradicional></td>
+														<td>
+															El sulfato de aluminio se utiliza en las siguientes industrias:
+															•  Pulpa  y  Papel.-  Ajuste  de  pH,  encolado  (brea  o  cera)  y  ajuste  de  retención  (fino,  carga,  pigmentos,  etc.)
+															además de servir en el tratamiento de sus efluentes.
+															•  Tratamiento  de  aguas  residuales.-  El  sulfato  de  aluminio  es  un  producto  económico  y  efectivo  en  la
+															eliminación del fósforo en las planteas de tratamiento de agua residual, tanto municipal e industrial y clarifica el
+															agua al precipitar los sólidos suspendidos.
+															•  Tratamiento  de  agua  potable.-  El  sulfato  de  aluminio  permite  clarificar  el  agua  potable  ya  que  es  un
+															coagulante y por ello  sedimenta los sólidos en suspensión, los cuales por su tamaño requerirán un tiempo muy
+															largo para sedimentar.
+															•  Manufactura química.- Se emplea en producción de otras sales de aluminio
+															•  Jabones y grasas.- Se emplea en la producción de jabones de aluminio y grasas para usos industriales
+															•  Petróleo.- Manufactura de catalizadores sintéticos
+															•  Farmacéutica.- Como astringente en la preparación de drogas y cosméticos. <ref>[91]</ref>
+														</td>
+														<td>
+															Inhalación: Nunca proporcione nada por la boca a una persona en estado inconsciente.
+															Diríjase  al  aire  fresco.  Si  no  respira,  proporcione  respiración  artificial.  Si  la
+															respiración se dificulta, proporcione oxígeno. Consiga atención médica.
+															Contacto con la piel: En caso de contacto, enjuague inmediatamente la piel con bastante agua.
+															Remueva  la  ropa  y  zapatos  contaminados,  si  la  irritación  persiste,  consiga
+															atención médica.
+															Contacto con los ojos: En caso de contacto, enjuague inmediatamente los ojos con bastante agua por
+															al menos 15 minutos. Si la irritación persiste, consiga atención médica.
+															Ingestión:
+
+															Si  es  tragado,  NO  INDUZCA  EL  VOMITO.  Consiga  atención  médica  de
+															inmediato.  Si  la  victima  está  completamente  consciente,  proporcione  un  vaso
+															completo de agua.
+															Use  EPP  (Equipo  de  Protección  Personal)  básico  y  una  mascarilla  contra
+															polvos aprobada. Ver sección 8. <ref>[92]</ref>
+														</td>
+														<td>
+															Habitantes de Costa Oriental del Lago aclaran agua turbia con sulfato de aluminio
+
+															Desde el año 2019 vecinos han reportado turbidez en el agua que distribuye Hidrolago por tuberías. Los afectados compran de sulfato de aluminio para aclarar el agua y expertos advierten que utilizar químicos sin cumplir las medidas adecuadas por litros puede causar problemas gástricos, respiratorios y en la piel
+															José Mosquera, ingeniero químico que trabaja en una embotelladora de agua, explica que el sulfato de aluminio es un coagulante que sedimenta los sólidos, es decir que los agrupa y después suben a la superficie o se asientan, lo que permite aclarar el agua. También reducir la cantidad de bacterias y hongos que puede contener.
+															«Es agua no se puede ingerir. la inhalación del sulfato de aluminio, al ser molido para echar en el agua, produce tos, irritación en la fosas nasales y garganta. Al ser ingerido (genera) náuseas, problemas gástricos y problemas en la piel», <ref>[93]</ref>
+														</td>
+
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</p>
+
+									<h3>Hidruros</h3>
+									<p>
+										Un hidruro es un compuesto químico formado por cualquier elemento y un hidrógeno, los hidruros no metálicos se forman por un no metal + un hidrógeno.
+										<br>
+										<div class="Modelo">
+											<model-viewer class="Modelo" src="/static/Modelos/bh3.glb" alt="BH3" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+										</div>
+										<br>
+										<div class="table">
+
+											<table>
+												<tbody>
+													<tr>
+														<th rowspan=2>Molécula</th>
+														<th colspan=3>Nomenclatura </th>
+														<th rowspan=2>Usos y aplicaciones</th>
+														<th rowspan=2>Ficha de seguridad</th>
+														<th rowspan=2>Noticia</th>
+													</tr>
+													<tr>
+														<th>IUPAC</th>
+														<th>Stock</th>
+														<th>Tradicional</th>
+													</tr>
+													<tr>
+														<td><elemento>BH<sub>3</sub></elemento></td>
+														<td><IUPAC>Borano o Trihidruro de Bromo</IUPAC></td>
+														<td><Stock>Hidruro de Bromo (III)</Stock></td>
+														<td><Tradicional>Hidruro Hipobromoso</Tradicional></td>
+														<td>
+															Se utiliza en la síntesis orgánica de hidrocarburos insaturados, debido a su reactividad química. <ref>[94]</ref>
+														</td>
+														<td>
+															H225: Líquido y vapores muy inflamables.
+															H260: En contacto con el agua desprende gases inflamables que pueden inflamarse espontáneamente.
+															H302: Nocivo en caso de ingestión.
+															H318: Provoca lesiones oculares graves.
+															H335: Puede irritar las vías respiratorias.
+															H336: Puede provocar somnolencia o vértigo.
+															H351: Se sospecha que provoca cáncer.
+															EUH014: Reacciona violentamente con el agua.
+															EUH019: Puede formar peróxidos explosivos.
+															Consejos de precaución	P210: Mantener alejado del calor, de superficies calientes, de chispas, de llamas abiertas y de cualquier otra fuente de ignición. No fumar.
+															P231 + P232: Manipular y almacenar el contenido en un medio de gas inerte. Proteger de la humedad.
+															P280: Utilice guantes y ropa de protección/ protección ocular/ facial y auditiva.
+															P301 + P312: EN CASO DE INGESTIÓN: Llamar a un CENTRO DE TOXICOLOGÍA/médico si la persona se encuentra mal.
+															P305 + P351 + P338: EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente durante varios minutos. Quitar las lentes de contacto cuando estén presentes y pueda hacerse con facilidad. Proseguir con el lavado. <ref>[95]</ref>
+														</td>
+														<td>
+															¿Por qué es tan atractivo el hidrógeno?: Teniendo en cuenta que en su combustión sólo genera agua, posiblemente es el combustible ideal, por lo que se espera que en un futuro pueda reemplazar a los combustibles fósiles como la gasolina. Pero actualmente su empleo como fuente de energía para automoción está limitado por la dificultad para almacenarlo de forma segura y en cantidad suficiente.
+															Químicos de la Universidad de Oviedo: Estamos estudiando el aducto o combinación del amoniaco (NH3) con el borano (BH3), que es una molécula con un elevado contenido en hidrógeno, y de la que es mucho más fácil extraer el hidrógeno (deshidrogenarla) que del propio amoniaco. Además de esta molécula, que es la ideal, también estudiamos otros derivados, que aunque son menos interesantes de cara al almacenamiento de hidrógeno nos permiten detectar, aislar o caracterizar compuestos que pudieran ser intermedios de la deshidrogenación de NH3-BH3. <ref>[96]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td>NH<sub>3</sub></td>
+														<td><IUPAC>Trihidruro de Nitrógeno</IUPAC></td>
+														<td><Stock>Hidruro de Nitrógeno (III)</Stock></td>
+														<td><Tradicional>Amoniaco</Tradicional></td>
+														<td>
+															El amoniaco, un gas incoloro con un olor característico, es un elemento químico fundamental y un componente clave en la fabricación de muchos productos de uso diario. Se produce de manera natural en el ambiente, en el aire, el suelo y el agua, en plantas y animales, incluidos los seres humanos. El cuerpo humano produce amoniaco cuando descompone los alimentos que contienen proteínas y los transforma en aminoácidos y amoniaco, y luego convierte el amoniaco en urea.
+															El amoniaco es un elemento fundamental para los fertilizantes de nitrato de amonio que libera nitrógeno, un nutriente esencial para el cultivo de plantas, incluidos los cultivos agrícolas y céspedes.
+															Por sí solo o como ingrediente en muchos productos de limpieza para el hogar, el amoniaco puede utilizarse para limpiar una variedad de superficies como bañeras, lavabos y retretes, para encimeras y azulejos de baño y cocina. <ref>[97]</ref>
+														</td>
+														<td>
+															La exposición al amoniaco puede causar irritaciones en la piel, los ojos y los pulmones. No mezcle amoniaco con lejía de cloro, ya que esto produce gases tóxicos llamados cloraminas. La exposición a los gases de cloramina puede causar tos, dificultad para respirar, dolor en el pecho, náuseas, irritación en la garganta, la nariz y los ojos; o neumonía y líquido en los pulmones.
+															Ingerir un producto de limpieza que contiene amoniaco puede causar quemaduras en la boca, la garganta y el estómago, así como dolor abdominal intenso. <ref>[97]</ref>
+														</td>
+														<td>
+															Vacas aprenden a usar letrina para reducir contaminación por amoniaco
+															Las vacas que usan la letrina en una granja de Alemania ayudan a reducir la emisión de amoniaco, una sustancia que daña la calidad del aire.
+															Con el objetivo de reducir la contaminación por amoniaco, producido al combinarse la orina y las heces de las vacas, estos animales aprendieron a utilizar una letrina que facilita la recolección de sus desechos.
+															Las vacas que viven en granjas dejan sus desechos al aire libre, lo que suele contaminar el suelo y los depósitos naturales de agua; mientras que el ganado criado en establos tiene espacios muy cerrados en los que se combinan excrementos y orina. <ref>[98]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>PH<sub>3</sub> </elemento></td>
+														<td><IUPAC>Trihidrúro de fósforo</IUPAC></td>
+														<td><Stock>Hidrúro de fósforo</Stock></td>
+														<td><Tradicional>Hidrúro de fósforo</Tradicional></td>
+														<td>También conocido como fosfano o fosfina, es un gas incoloro, inflamable, que explota a temperatura ambiente y que huele a ajo. El fosfano es usado en las industrias de semiconductores y de plásticos, en la producción de un retardador de llamas y como insecticida en granos almacenados.
+
+														</td>
+														<td>La ruta más probable de exposición al fosfano es la inhalación. Los primeros síntomas de exposición aguda al fosfano incluyen dolor del diafragma, náusea, vómitos, excitación y un olor a fósforo en el aliento. La exposición a niveles más altos puede producir debilidad, bronquitis, edema pulmonar, falta de aliento, convulsiones y la muerte. </td>
+														<td>Vida en Venus: qué es la fosfina, la sustancia tóxica y con mal olor que encontraron en las nubes del planeta: En nuestro planeta la fosfina se asocia con la vida porque se encuentra en los microbios que viven en las entrañas de animales.
+															la fosfina es la sustancia encontrada por un grupo de astrónomos en las nubes Venus y que podría suponer un indicio de la presencia de vida.
+															Por ejemplo, ya que se halló PH3 en rocas que tenían excremento de pingüinos.
+
+															También la sustancia está presente en ambientes pobres en oxígeno como los pantanos.
+															La concentración es pequeña, forman solo 10-20 partes en cada mil millones de moléculas atmosféricas. Pero en este contexto, eso es mucho. <ref>[99]</ref>
+
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>AsH<sub>3</sub></elemento></td>
+														<td><IUPAC>Trihidruro de Arsénico</IUPAC></td>
+														<td><Stock>Hidruro de Arsénico (III)</Stock></td>
+														<td><Tradicional>Hidruro Arsénico o Arsina</Tradicional></td>
+														<td>
+															Entre las aplicaciones en las que interviene el trihidruro de arsénico se encuentran:
+
+															Industria electrónica.
+															Síntesis orgánicas.
+															Como gas en experimentos militares. <ref>[100]</ref>
+														</td>
+														<td>
+															Es un gas extremamente inflamable (H220), fatal si es inhalado (H330), Causa daño a los órganos mediante exposición prolongada (H373), muy toxico a la vida acuática (H400) con daños a largo plazo (H410),
+															Sospecha de riesgo de cáncer.
+															Un equipo de respiración autónomo  debe ser utilizado por rescatistas.
+															Olor: parecido al ajo.
+															En caso de Incendio: El flujo sólido de agua puede ser ineficaz. Remover las fuentes de ignición si no hay riesgo. Si
+															las llamas se extinguen accidentalmente, puede ocurrir una reignición explosiva. Reducir los vapores tóxicos
+															con rocío de agua o agua a presión. Detener el flujo de gas si no hay riesgo, mientras se continúa enfriando
+															con rocío de agua.
+															Proteger los cilindros contra daños. Utilizar una carretilla adecuada
+															para mover los cilindros; no arrastrarlos, rodarlos, deslizarlos o tirarlos. El equipo eléctrico debe ser a prueba
+															de explosión o chispas. <ref>[101]</ref>
+														</td>
+
+														<td>
+															El arsénico, un asesino silencioso: Considerado el "rey de los venenos" o el "veneno de reyes", nobles y plebeyos lo han utilizado en beneficio propio desde la Antigüedad. De hecho, personajes tan ilustres como Nerón o Napoleón fueron víctimas de esta letal sustancia.por ser insípido e inodoro, lo que lo convertía en una sustancia ideal para mezclarla con otros alimentos sin levantar sospechas. No fue hasta 1840 cuando se acabó la impunidad de los asesinos. Durante el caso del envenenamiento del señor Lafarge por parte de su esposa, el químico mallorquín Mateu Orfila fue el pionero en aplicar en el campo de la química forense el nuevo ensayo de Marsh, "un complicado proceso que combinaba con hidrógeno los alimentos o las partes del cuerpo sospechosas de contener arsénico para producir arsina: una sustancia más fácil de descomponer y en la que poder demostrar la presencia o no del arsénico". <ref>[102]</ref>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
+
+										</div>
+									</p>
+									<h3>Hidruro Metálico</h3>
+									<p>
+										<br>
+										<img src="/static/Imagenes/hidruro metalico.png" alt="nah">
+										<br>
+										Los hidruros metálicos se forman con un metal + un hidrógeno.
+										Los hidruros metálicos se caracterizan por ser los únicos compuestos en los que el hidrógeno funciona como número de oxidación de –1.
+										Para escribir la fórmula de un hidruro metálico primero se escribe el símbolo del elemento metálico (parte positiva) y después el del hidrógeno (parte negativa).
+										Para nombrarlos se utiliza la palabra hidruro, la preposición de y el nombre del elemento metálico.
+										Por ejemplo para el <IUPAC>Hidruro de Sodio</IUPAC> (<elemento>NaH</elemento>), la fórmula es la siguiente:
+										<br>
+										<img src="/static/Imagenes/nah.png" alt="nah">
+										<br>
+										<br>
+										<div class="Modelo">
+											<model-viewer class="Modelo" src="/static/Modelos/cah2.glb" alt="CaH2" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+										</div>
+										<br>
+										<div class="table">
+											<table>
+												<tbody>
+													<tr>
+														<th rowspan=2>Molécula</th>
+														<th colspan=3>Nomenclatura</th>
+														<th rowspan=2>Usos y aplicaciones</th>
+														<th rowspan=2>Ficha de seguridad</th>
+														<th rowspan=2>Noticia</th>
+													</tr>
+													<tr>
+														<th>IUPAC</th>
+														<th>Stock</th>
+														<th>Tradicional</th>
+													</tr>
+													<tr>
+														<td><elemento>LiH</elemento></td>
+														<td><IUPAC>Hidruro Monolítico</IUPAC></td>
+														<td><Stock>Hidruro de Litio</Stock></td>
+														<td><Tradicional>Hidruro Lítico</Tradicional></td>
+														<td>
+															Se  usa  como  precursor  para  la  síntesis
+															de  hidruros  metálicos,  como  el  de  litio  y
+															aluminio,  o  el  de  boro.  También  tiene importancia  como  fuente  de  hidrógeno
+															en  generadores,  como  desecante,  como
+															agente reductor en síntesis orgánica y en
+															la fabricación de cerámica y vidrio. <ref>[103]</ref>
+														</td>
+														<td>
+															El  hidruro  de  litio  es  un  sólido  cristalino  de  color  entre  blanquecino  y  gris.  Reacciona
+															violentamente  con  oxidantes,  hidrocarburos  halogenados  y  ácidos  produciendo  gas
+															inflamable  (hidrógeno).  Sus  partículas,  finamente  dispersas,  forman  mezclas  explosivas
+															en el aire.
+															Es muy higroscópico, reacciona con agua para formar hidróxido de litio, muy cáustico.
+															P231 + P232: Manipular y almacenar el contenido en un medio de gas inerte. Proteger de la humedad.
+															P260: No respirar el polvo o la niebla.
+															P280: Utilice guantes y ropa de protección/ protección ocular/ facial y auditiva.
+															P303 + P361 + P353: EN CASO DE CONTACTO CON LA PIEL (o el pelo): Quitar inmediatamente toda la ropa contaminada. Enjuagar la piel con agua.
+															P304 + P340 + P310: EN CASO DE INHALACIÓN: Transportar a la persona al aire libre y mantenerla en una posición que le facilite la respiración. Llamar inmediatamente a un CENTRO DE TOXICOLOGÍA/médico.
+															P305 + P351 + P338: EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente durante varios minutos. Quitar las lentes de contacto cuando estén presentes y pueda hacerse con facilidad. Proseguir con el lavado.
+															P402 + P404: Almacenar en un lugar seco. Almacenar en un recipiente cerrado. <ref>[104]</ref>
+														</td>
+														<td>
+															IBM centra sus desarrollos de IA en publicidad y computación cuántica :
+
+															Para mostrar el poder del software, IBM demostró recientemente cómo la molécula de hidruro de litio (LiH) podría modelarse en un dispositivo cuántico en 9 horas, cuando antes tomaba 45 días.
+
+															La presentación de esta innovación se produce después de algunos días que la marca presentó un chip de dos nanómetros, que permitirá que los centros de datos trabajen más rápido. <ref>[105]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>CaH<sub>2</sub> </elemento></td>
+														<td><IUPAC>Dihidruro de Calcio</IUPAC></td>
+														<td><Stock>Hidruro de Calcio</Stock></td>
+														<td><Tradicional>Hidruro de Calcio</Tradicional></td>
+														<td>
+															En la década de 1940, este compuesto estaba disponible como una fuente de hidrógeno bajo el nombre comercial de “Hydrolith”.
+
+															Se ha utilizado como fuente de hidrógeno durante mucho tiempo. Todavía se utiliza para producir hidrógeno puro en laboratorios para diversos experimentos, pilas de combustible avanzadas y aplicaciones de baterías (American Elements, S.F.).
+
+															El compuesto ha sido ampliamente utilizado durante décadas como un medio seguro y conveniente para inflar globos meteorológicos.
+															Cuando se calienta entre 600 y 1000 grados centígrados, el óxido de zirconio, niobio, uranio, cromo, titanio, vanadio y tántalo se puede reducir para preparar el polvo de estos metales, por lo que el hidruro de calcio se puede utilizar en la metalurgia de polvo. <ref>[106]</ref>
+														</td>
+														<td>
+															El hidruro de calcio es un producto químico estable, aunque es altamente reactivo al agua o la humedad. En contacto con el agua, libera gases inflamables de hidrógeno que pueden encenderse espontáneamente.
+
+															Se considera un compuesto explosivo. Muy peligroso en caso de contacto con la piel pues puede ser corrosivo.
+															El compuesto se debe mantener en un recipiente seco lejos del calor. Se debe mantener alejado de fuentes de ignición. No se debe respirar el polvo. No se debe añadir agua a este producto
+
+															En caso de ventilación insuficiente, use equipo respiratorio adecuado como una máscara con filtro. En caso de exposición, se debe buscar atención médica y mostrar la etiqueta en la medida de lo posible. Evitar el contacto con la piel y los ojos. <ref>[106]</ref>
+														</td>
+														<td>
+															Diseñan nuevo método para producir amoniaco usando menos energía: El amoniaco se usa comúnmente como refrigerante (conocido como R717). Científicos del Instituto de Tecnología de Tokio han desarrollado un catalizador mejorado que facilita la síntesis de amoniaco a solo 50 ° C (cuando las técnicas convencionales requieren temperaturas de 450 ° C). Su catalizador comprende una solución sólida de CaFH, con nanopartículas de rutenio (Ru) depositadas en su superficie. La adición de fluoruro (F-) al hidruro de calcio (CaH2), un agente deshidratante común, es lo que hace que el catalizador sea eficaz a temperaturas y presiones más bajas.<ref>[107]</ref>
+														</td>
+													</tr>
+													<tr>
+														<td><elemento>MgH<sub>2</sub></elemento></td>
+														<td><IUPAC>Dihidruro de Magnesio</IUPAC></td>
+														<td><Stock>Hidruro de Magnesio</Stock></td>
+														<td><Tradicional>Hidruro Magnésico</Tradicional></td>
+														<td>
+															Entre las aplicaciones en las que interviene el hidruro de magnesio se encuentran:
+
+															Industria farmacéutica.
+															Utilizado como reactivo.
+															Almacenamiento de hidrógeno. <ref>[108]</ref>
+														</td>
+														<td>
+															Esta substancia química está en la Lista Especial de
+															Substancias Peligrosas para la Salud porque es
+															INFLAMABLE y REACTIVA. Es posible que los siguientes efectos agudos (de corta duración)
+															en  la  salud  ocurran  inmediatamente  o  poco  tiempo  después  de
+															haberse expuesto al hidruro de magnesio:
+
+															∗ El  contacto  con  esta  substancia  puede  irritar  y  quemar  la
+															piel y los ojos.
+															∗ Respirar  el  polvo  puede  irritar  la  nariz  y  la  garganta,
+															causando garganta irritada y tos con flema. No  existe  una  prueba  especial  para  esta  substancia  química.
+															Sin embargo, si se enferma o sospecha que tuvo una
+															sobreexposición, se recomienda que busque atención médica. Evite  el  contacto  de  la  piel  con  el  hidruro  de  magnesio.
+															Use  ropa  y  guantes  de  protección.    Los  proveedores  y/o
+															fabricantes  de  equipos  de  seguridad  pueden  su ministrar
+															recomendaciones acerca del material para guantes y
+															vestimenta  que  provea  mayor  protección  para  operar  con
+															esta substancia.
+															∗ Toda la ropa de protección (trajes, guantes, calzado, gorros
+															y  cascos)  debe  estar  limpia,  disponible  cada  día  y  debe
+															ponerse antes de comenzar a trabajar. <ref>[109]</ref>
+														</td>
+														<td>
+															Motos eléctricas de hidrógeno alimentadas por una pasta de magnesio llamada Powerpaste. Powerpaste es una pasta de color gris basada en hidruro de magnesio sólido desarrollada por un equipo de investigación del Instituto Fraunhofer de Tecnología de Fabricación y Materiales Avanzados IFAM en Dresde. Proporciona una forma segura de almacenar hidrógeno químicamente fácil de transportar y reponer sin la necesidad de una costosa red de estaciones de servicio. El hidrógeno se almacena a temperatura ambiente y presión atmosférica para luego ser liberado bajo demanda al mezclar la pasta con agua, lo que la convierte en una fuente de alimentación ideal para vehículos eléctricos de pequeño tamaño y, más en concreto, para las motos eléctricas. <ref>[110]</ref>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
+
+										</div>
+									</p>
+
+<h2>Referencias de la sección 'Compuestos Inorgánicos'</h2>
+<div class="ref">
+	<table>
+		<tbody>
+			<tr>
+				<td>[13]</td>
+				<td>  <p style="margin-bottom: 0cm; line-height: 100%">
+					Escuela
+				Nacional Colegio de Ciencias y Humanidades, &quot;Reglas de
+				nomenclatura | Portal Académico del CCH&quot;, 2017. [En línea].
+				Disponible en:
+				<a href="https://e1.portalacademico.cch.unam.mx/alumno/quimica1/u2/oxigeno_elementos/reglas_nomenclatura">https://e1.portalacademico.cch.unam.mx/alumno/quimica1/u2/oxigeno_elementos/reglas_nomenclatura</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>[14]</td>
+				<td>  <p style="margin-bottom: 0cm; line-height: 100%">Iowa State
+				University, &quot;Copper (II) oxide&quot;, 2016. [En línea].
+				Disponible en:
+				<a href="https://web.archive.org/web/20071016184537/http://avogadro.chem.iastate.edu/MSDS/CuO.html">https://web.archive.org/web/20071016184537/http://avogadro.chem.iastate.edu/MSDS/CuO.html</a>
+					</p></td>
+			</tr>
+			<tr>
+				<td>[15]</td>
+				<td>  <p style="margin-bottom: 0cm; line-height: 100%">20 Minutos,
+				&quot;Convertir el CO2 en energía a través de la fotosíntesis
+				para luchar contra el cambio climático&quot;, 2017. [En línea].
+				Disponible en:
+				<a href="https://www.20minutos.es/noticia/3117258/0/fotosintesis-cambio-climatico/">https://www.20minutos.es/noticia/3117258/0/fotosintesis-cambio-climatico/</a>
+					</p></td>
+			</tr>
+			<tr>
+				<td>[16]</td>
+				<td>  <p style="margin-bottom: 0cm; line-height: 100%">Formulación
+				Química. &quot;Ag2O / óxido de plata&quot;, 2016. [En línea].
+				Disponible en: <a href="https://www.formulacionquimica.com/Ag2O/">https://www.formulacionquimica.com/Ag2O/</a>
+					</p></td>
+			</tr>
+			<tr>
+				<td>[17]</td>
+				<td>  <p style="margin-bottom: 0cm; line-height: 100%">Reactivos
+				Meyer, “Hoja de datos de seguridad”, Óxido de Plata. 2015. [En
+				línea]. Disponible en:
+				<a href="http://reactivosmeyer.com.mx/datos/pdf/reactivos/hds_1905.pdf">http://reactivosmeyer.com.mx/datos/pdf/reactivos/hds_1905.pdf</a>
+					</p></td>
+			</tr>
+			<tr>
+				<td>[18]</td>
+				<td>
+					  <p style="margin-bottom: 0cm; line-height: 100%">Hoy Tamaulipas.
+					“Hoy Tamaulipas - Gobierno de Tamaulipas evita contaminacion con
+					pilas usadas inservibles”. 2020. [En línea]. Disponible en:
+					<a href="https://www.hoytamaulipas.net/notas/416169/Gobierno-de-Tamaulipas-evita-contaminacion-con-pilas-usadas-inservibles.html">https://www.hoytamaulipas.net/notas/416169/Gobierno-de-Tamaulipas-evita-contaminacion-con-pilas-usadas-inservibles.html</a>
+						</p>
+				</td>
+			</tr>
+			<tr><td>[19]</td>
+			<td>
+				  <p style="margin-bottom: 0cm; line-height: 100%">New Jersey
+				Department of Health and Senior Services. “Hoja Informativa Sobre
+				Sustancias Peligrosas: Hidróxido de Calcio”, 2005. [En línea].
+				Disponible en:
+				<a href="https://www.state.nj.us/health/eoh/rtkweb/documents/fs/0322sp.pdf">https://www.state.nj.us/health/eoh/rtkweb/documents/fs/0322sp.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[20]</td>
+			<td>
+				  <p style="margin-bottom: 0cm; line-height: 100%">Rosalía Nieves
+				| El Sol de San Juan del Río. “Profeco recomienda cal como
+				desinfectante”, 2021. [En línea]. Disponible en:
+				<a href="https://www.elsoldesanjuandelrio.com.mx/local/profeco-recomienda-cal-como-desinfectante-7145488.html">https://www.elsoldesanjuandelrio.com.mx/local/profeco-recomienda-cal-como-desinfectante-7145488.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[21]</td>
+			<td>
+				  <p style="margin-bottom: 0cm; line-height: 100%">Gunnar
+				Nordberg. “Metales: Propiedades Quimicas y Toxicidad” en
+				<i>Enciclopedia de Salud y Seguridad en el Trabajo</i>. [En línea].
+				Disponible en:
+				<a href="https://www.insst.es/documents/94886/162520/Cap%C3%ADtulo+63.+Metales+propiedades+qu%C3%ADmicas+y+toxicidad">https://www.insst.es/documents/94886/162520/Cap%C3%ADtulo+63.+Metales+propiedades+qu%C3%ADmicas+y+toxicidad</a>
+					</p>
+			</td>
+			</tr>
+			<tr><td>[22]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">El Diario de
+			 Coahuila. “Hallan en Salamanca un amuleto de la diosa egipcia
+			 Hathor que data de hace casi 3000 años”, 2021. [En línea].
+			 Disponible en:
+			 <a href="https://eldiariodecoahuila.com.mx/2021/08/23/hallan-en-salamanca-un-amuleto-de-la-diosa-egipcia-hathor-que-data-de-hace-casi-3000-anos/">https://eldiariodecoahuila.com.mx/2021/08/23/hallan-en-salamanca-un-amuleto-de-la-diosa-egipcia-hathor-que-data-de-hace-casi-3000-anos/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[23]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Forbes. “La
+				Luna se está oxidando y el oxígeno de la Tierra sería la causa”,
+				2020. [En línea]. Disponible en:
+				<a href="https://www.forbes.com.mx/noticias-la-luna-se-esta-oxidando-y-el-oxigeno-de-la-tierra-seria-la-causa/">https://www.forbes.com.mx/noticias-la-luna-se-esta-oxidando-y-el-oxigeno-de-la-tierra-seria-la-causa/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[24]</td>
+			<td>
+
+					<p style="margin-bottom: 0cm; line-height: 100%">Pontifica
+				Universidad Javeriana Bogotá .“TARJETA DE EMERGENCIA  HIDRÓXIDO
+				DE LITIO ”, 2015. [En línea]. Disponible en:
+				<a href="https://www.javeriana.edu.co/documents/4486808/5015296/HIDR%C3%93XIDO+DE+LITIO+TE.pdf/9b3ae258-b218-4dd5-9cf5-879c0efc9d70?version=1.0">https://www.javeriana.edu.co/documents/4486808/5015296/HIDR%C3%93XIDO+DE+LITIO+TE.pdf/9b3ae258-b218-4dd5-9cf5-879c0efc9d70?version=1.0</a>
+					</p>
+			</td>
+			</tr>
+			<tr><td>[25]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">El País. “Las
+				minas españolas resucitan”, 2021. [En línea]. Disponible en:
+				<a href="https://elpais.com/economia/2021-08-22/las-minas-espanolas-resucitan.html">https://elpais.com/economia/2021-08-22/las-minas-espanolas-resucitan.html</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[26]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">New Jersey
+			Department of Health and Senior Services. “Hoja Informativa Sobre
+			Sustancias Peligrosas: Hidrxido de Calcio”, 2005. [En línea].
+			Disponible en:
+			<a href="https://www.state.nj.us/health/eoh/rtkweb/documents/fs/0322sp.pdf">https://www.state.nj.us/health/eoh/rtkweb/documents/fs/0322sp.pdf</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[27]</td>
+			<td>
+
+			 	<p style="margin-bottom: 0cm; line-height: 100%">Pubchem
+			 “Calcium hydroxide”, 2021. [En línea]. Disponible en:
+			 <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Calcium-hydroxide">https://pubchem.ncbi.nlm.nih.gov/compound/Calcium-hydroxide</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[28]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Rubén Salvador
+			 Roux Gutiérre y José Adán Espuna Mujica. “The Calcium Hydroxide
+			 and compressed earth blocks, an alternative and sustainable
+			 construction”, Nova scientia&nbsp;vol.5&nbsp;no.9&nbsp;, 2012. [En
+			 línea]. Disponible en:
+			 <a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S2007-07052013000100011">http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S2007-07052013000100011</a>
+			  </p>
+			</td>
+			</tr>
+			<tr><td>[29]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Marilu Stea.
+		“Hidróxido de níquel (II): estructura, propiedades, usos,
+		riesgos”, 2019. [En línea]. Disponible en:
+		<a href="https://www.lifeder.com/hidroxido-de-niquel-ii/">https://www.lifeder.com/hidroxido-de-niquel-ii/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[30]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Chem-Lab.
+			“FICHA DE DATOS DE SEGURIDAD: Niquel(II) hidróxido carbonato
+			t.p”, 2021. [En línea]. Disponible en:
+			<a href="https://doc.chem-lab.be/MSDS?client=serviquimia&amp;lang=SP&amp;prodnr=CL001425">https://doc.chem-lab.be/MSDS?client=serviquimia&amp;lang=SP&amp;prodnr=CL001425</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[31]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Mariela León.
+			“Logran producir combustible de hidrógeno con agua del mar”,
+			2021. [En línea]. Disponible en:
+			<a href="https://www.cambio16.com/logran-producir-combustible-de-hidrogeno-a-partir-de-agua-del-mar/">https://www.cambio16.com/logran-producir-combustible-de-hidrogeno-a-partir-de-agua-del-mar/</a>
+				</p>
+
+			</td>
+			</tr>
+			<tr><td>[32]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">CarlRoth.
+			“Ficha de Datos de Seguridad: Hidróxido de Sodio”, 2020. [En
+			línea]. Disponible en:
+			<a href="https://www.carlroth.com/medias/SDB-6771-ES-ES.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNzk0OTd8YXBwbGljYXRpb24vcGRmfHNlY3VyaXR5RGF0YXNoZWV0cy9oN2MvaDA3Lzg5OTAzOTE2MzE5MDIucGRmfGM5MDkwNWZlY2YxYTg5ZTM4OTBmZDNmYzBlMjM0NmI0ZWI2ZDE4MzAwM2EyNGVmMDQxZWVkMjMzNTQzNWE1NmU">https://www.carlroth.com/medias/SDB-6771-ES-ES.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNzk0OTd8YXBwbGljYXRpb24vcGRmfHNlY3VyaXR5RGF0YXNoZWV0cy9oN2MvaDA3Lzg5OTAzOTE2MzE5MDIucGRmfGM5MDkwNWZlY2YxYTg5ZTM4OTBmZDNmYzBlMjM0NmI0ZWI2ZDE4MzAwM2EyNGVmMDQxZWVkMjMzNTQzNWE1NmU</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[33]</td>
+			<td>
+
+				  <p style="margin-bottom: 0cm; line-height: 100%">Milenio.
+				“Derrame de sosa cáustica moviliza a las autoridades en Gómez
+				Palacio”, 2021. [En línea]. Disponible en:
+				<a href="https://www.milenio.com/policia/gomez-palacio-derrame-sosa-caustica-moviliza-autoridades">https://www.milenio.com/policia/gomez-palacio-derrame-sosa-caustica-moviliza-autoridades</a>
+</p>
+			</td>
+			</tr>
+			<tr><td>[34]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">CarlRoth.
+			“Ficha de Datos de Seguridad: Hidróxido de aluminio”, 2020. [En
+			línea]. Disponible en:
+			<a href="https://www.carlroth.com/medias/SDB-3254-ES-ES.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMzMxNDh8YXBwbGljYXRpb24vcGRmfHNlY3VyaXR5RGF0YXNoZWV0cy9oZTgvaDQyLzg5NTA4OTM1NDM0NTQucGRmfGZiNzdkZmY5ZTVmMDdhYmE4MDRlMmU0NTNjNDVmNTc5ZTZlMzEzZjY4OTU0ZWNiNzk4YzliZjRmM2E3ZGI1ODY">https://www.carlroth.com/medias/SDB-3254-ES-ES.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMzMxNDh8YXBwbGljYXRpb24vcGRmfHNlY3VyaXR5RGF0YXNoZWV0cy9oZTgvaDQyLzg5NTA4OTM1NDM0NTQucGRmfGZiNzdkZmY5ZTVmMDdhYmE4MDRlMmU0NTNjNDVmNTc5ZTZlMzEzZjY4OTU0ZWNiNzk4YzliZjRmM2E3ZGI1ODY</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[35]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Barbara García.
+			“Todo sobre ‘Sinopharm’ la vacuna que muy pronto podría
+			autorizar la cofepris”, 2021. [En línea]. Disponible en:
+			<a href="https://www.saludiario.com/todo-sobre-sinopharm-la-vacuna-que-muy-pronto-podria-autorizar-la-cofepris/">https://www.saludiario.com/todo-sobre-sinopharm-la-vacuna-que-muy-pronto-podria-autorizar-la-cofepris/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[36]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Formulación
+			Química. &quot;Fe(OH)3 / hidróxido de hierro (III)&quot;, 2016.
+			[En línea]. Disponible en:
+			<a href="https://www.formulacionquimica.com/Fe(OH)3/">https://www.formulacionquimica.com/Fe(OH)3/</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[37]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Pubchem.
+			 “Ferric hydroxide”, 2021. [En línea]. Disponible en:
+			 <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Ferric-hydroxide">https://pubchem.ncbi.nlm.nih.gov/compound/Ferric-hydroxide</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[38]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Con Salud.
+			“Desarrollan una nueva membrana de filtro de agua que hace que los
+			virus sean inofensivos ”, 2021. [En línea]. Disponible en:
+			<a href="https://www.consalud.es/tecnologia/tecnologia-sanitaria/desarrollan-membrana-filtro-agua-virus-inofensivos_98020_102.html">https://www.consalud.es/tecnologia/tecnologia-sanitaria/desarrollan-membrana-filtro-agua-virus-inofensivos_98020_102.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[39]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">F. G.
+	Calvo-Flores. “Formulación de Química Inorgánica”. [En
+	línea]. Disponible en:
+	<a href="https://pubchem.ncbi.nlm.nih.gov/compound/Ferric-hydroxide">https://pubchem.ncbi.nlm.nih.gov/compound/Ferric-hydroxide</a>
+		</p>
+			</td>
+			</tr>
+			<tr><td>[40]</td>
+			<td>
+
+					  <p style="margin-bottom: 0cm; line-height: 100%">Merck.
+					“Germanio(IV) óxido”, 2021. [En línea]. Disponible en:
+					<a href="https://www.merckmillipore.com/MX/es/product/GermaniumIV-oxide,MDA_CHEM-112177">https://www.merckmillipore.com/MX/es/product/GermaniumIV-oxide,MDA_CHEM-112177</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[41]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%"><a name="part1286123"></a>
+			 Redacción Interempresas. “Nueva fibra óptica con capacidad diez
+			 mil veces mayor a la actual”, 2016. [En línea]. Disponible en:
+			 <a href="https://www.interempresas.net/Robotica/Articulos/159726-Nueva-fibra-optica-con-capacidad-diez-mil-veces-mayor-a-la-actual.html">https://www.interempresas.net/Robotica/Articulos/159726-Nueva-fibra-optica-con-capacidad-diez-mil-veces-mayor-a-la-actual.html</a>
+</p>
+			</td>
+			</tr>
+			<tr><td>[42]</td>
+			<td>
+<p style="margin-bottom: 0cm; line-height: 100%">Biocor. “Ficha
+de Datos de Seguridad: Anhídrido Sulfuroso”, 2015.[En línea].
+Disponible en:
+<a href="http://www.biocor.es/wp-content/uploads/2017/01/FDS-ANH%C3%8DDRIDO-SULFUROSO.pdf">http://www.biocor.es/wp-content/uploads/2017/01/FDS-ANH%C3%8DDRIDO-SULFUROSO.pdf</a>
+</p>
+			</td>
+			</tr>
+			<tr><td>[43]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Tecnovino.
+			“Demuestran que un extracto de madera de la vid conserva el
+			vino”,2016 . [En línea]. Disponible en:
+			<a href="https://www.tecnovino.com/demuestran-que-un-extracto-de-madera-de-la-vid-conserva-el-vino/">https://www.tecnovino.com/demuestran-que-un-extracto-de-madera-de-la-vid-conserva-el-vino/</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[44]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%"> California
+			Dental Association. “Óxido Nitroso”. [En línea]. Disponible
+			en:
+			<a href="https://www.cda.org/Portals/0/pdfs/fact_sheets/nitrous_oxide_spanish.pdf">https://www.cda.org/Portals/0/pdfs/fact_sheets/nitrous_oxide_spanish.pdf</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[45]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">PRTR España.
+			“N2O (Óxido nitroso)”, 2020. [En línea]. Disponible en:
+			<a href="https://prtr-es.es/N2O-oxido-nitroso,15592,11,2007.html">https://prtr-es.es/N2O-oxido-nitroso,15592,11,2007.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[46]</td>
+			<td>
+
+					<p style="margin-bottom: 0cm; line-height: 100%"><a name="content1"></a>
+				Francisco López Muñoz, BBC. “Cómo el gas de la risa pasó de
+				ser una atracción de feria a un elemento indispensable de la
+				medicina”, 2021. [En línea]. Disponible en:
+				<a href="https://www.bbc.com/mundo/57748915">https://www.bbc.com/mundo/57748915</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[47]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Pubchem.
+			 “Chlorine dioxide”, 2021. [En línea]. Disponible en:
+			 <a href="https://pubchem.ncbi.nlm.nih.gov/compound/2487">https://pubchem.ncbi.nlm.nih.gov/compound/2487</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[48]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Chemical Safety
+				Facts. “Dióxido de cloro”, 2021. [En línea]. Disponible en:
+				<a href="https://www.chemicalsafetyfacts.org/es/dioxido-de-cloro/">https://www.chemicalsafetyfacts.org/es/dioxido-de-cloro/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[49]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">El Universal.
+			 “¿Qué es el dióxido de cloro y por qué no cura al Covid-19?</p>
+			 <p style="margin-bottom: 0cm; line-height: 100%">”, 2021. [En
+			 línea]. Disponible en:
+			 <a href="https://www.eluniversal.com.mx/ciencia-y-salud/que-es-el-dioxido-de-cloro-y-por-que-no-cura-al-covid-19">https://www.eluniversal.com.mx/ciencia-y-salud/que-es-el-dioxido-de-cloro-y-por-que-no-cura-al-covid-19</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[50]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">EPA (Agencia de
+			 	Protección Ambiental de Estados Unidos). “Monóxido de carbono”,
+			 	2021. [En línea]. Disponible
+			 	en:<a href="https://espanol.epa.gov/cai/monoxido-de-carbono">https://espanol.epa.gov/cai/monoxido-de-carbono</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[51]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">El Comentario.
+			“Fallecen 3 mineros por inhalación de monóxido de carbono en el
+			Cerro Rico de Potosí, en Bolivia”, 2021. [En línea]. Disponible
+			en:
+			<a href="https://elcomentario.ucol.mx/fallecen-3-mineros-por-inhalacion-de-monoxido-de-carbono-en-el-cerro-rico-de-potosi-en-bolivia/">https://elcomentario.ucol.mx/fallecen-3-mineros-por-inhalacion-de-monoxido-de-carbono-en-el-cerro-rico-de-potosi-en-bolivia/</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[52]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Huelva. “Ácido
+			flourhídrico: nuevo contaminante en el aire de Huelva que podría
+			ser la causa del asma”, 2020. [En línea]. Disponible en:
+			<a href="https://cadenaser.com/emisora/2020/01/20/radio_huelva/1579529499_951981.html">https://cadenaser.com/emisora/2020/01/20/radio_huelva/1579529499_951981.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[53]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">CarlRoth.
+	  	“Ficha de Datos de Seguridad: Ácido Bromhídrico”, 2020. [En
+	  	línea]. Disponible en:
+	  	<a href="https://www.carlroth.com/medias/SDB-HN67-ES-ES.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyODc1MTd8YXBwbGljYXRpb24vcGRmfHNlY3VyaXR5RGF0YXNoZWV0cy9oYWEvaDkxLzg5OTYyNzQzMzk4NzAucGRmfGU5YjM3MDQ2NmUzOTMwYjE0ZTBjNzRjMjczZjJmNWVjOWE2MDE5NjQ1MGY3NWZmNDJhNGRmNWRiYjEzM2I5OWM">https://www.carlroth.com/medias/SDB-HN67-ES-ES.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyODc1MTd8YXBwbGljYXRpb24vcGRmfHNlY3VyaXR5RGF0YXNoZWV0cy9oYWEvaDkxLzg5OTYyNzQzMzk4NzAucGRmfGU5YjM3MDQ2NmUzOTMwYjE0ZTBjNzRjMjczZjJmNWVjOWE2MDE5NjQ1MGY3NWZmNDJhNGRmNWRiYjEzM2I5OWM</a>
+	  		</p>
+			</td>
+			</tr>
+			<tr><td>[54]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%"><a name="firstHeading"></a>
+				EcuRed. “Ácido bromhídrico”. [En línea]. Disponible en:
+				<a href="https://www.ecured.cu/%C3%81cido_bromh%C3%ADdrico">https://www.ecured.cu/%C3%81cido_bromh%C3%ADdrico</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[55]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Crónica Norte.
+	“El viento empujó el humo del incendio de Ávila creando una
+	lluvia de ceniza en el norte de Madrid”, 2021. [En línea].
+	Disponible en:
+	<a href="https://www.cronicanorte.es/el-viento-empujo-el-humo-del-incendio-de-avila-creando-una-lluvia-de-ceniza-en-el-norte-de-madrid/162367">https://www.cronicanorte.es/el-viento-empujo-el-humo-del-incendio-de-avila-creando-una-lluvia-de-ceniza-en-el-norte-de-madrid/162367</a>
+		</p>
+			</td>
+			</tr>
+			<tr><td>[56]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Instituto
+			Nacional de Seguridad y Salud en el Trabajo. “YODURO DE
+			HIDRÓGENO”, 2010. [En línea]. Disponible
+			en:<a href="https://www.ilo.org/dyn/icsc/showcard.display?p_lang=es&amp;p_card_id=1326&amp;p_version=2">https://www.ilo.org/dyn/icsc/showcard.display?p_lang=es&amp;p_card_id=1326&amp;p_version=2</a>
+				</p>
+			</td>
+			</tr>
+			<tr><td>[57]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Juan Levario,
+				El Diario. “Encuentran instalaciones clandestinas para producción
+				de droga”, 2021. . [En línea]. Disponible en:
+				<a href="https://www.ntrguadalajara.com/post.php?id_nota=164652">https://www.ntrguadalajara.com/post.php?id_nota=164652</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[58]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Gurpo Pochteca.
+			 “Ácido clorhídrico”, 2015. [En línea]. Disponible
+			 en:<a href="https://mexico.pochteca.net/productos/acido-clorhidrico/">https://mexico.pochteca.net/productos/acido-clorhidrico/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[59]</td>
+			<td>
+					  	 	  <p style="margin-bottom: 0cm; line-height: 100%">UNAM. “HOJA
+					DE SEGURIDAD III  ACIDO CLORHIDRICO”, 2016. [En línea].
+					Disponible
+					en:<a href="https://quimica.unam.mx/wp-content/uploads/2016/12/3hshcl.pdf">https://quimica.unam.mx/wp-content/uploads/2016/12/3hshcl.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[60]</td>
+			<td>
+					<p style="margin-bottom: 0cm; line-height: 100%">José María
+				Olmo, El Confidencial. “La receta del caos de los CDR: ácido
+				clorhídrico al 39% para cortar la red eléctrica”, 2021. [En
+				línea]. Disponible
+				en:<a href="https://www.elconfidencial.com/espana/2021-01-26/la-receta-del-caos-de-los-cdr-acido-clorhidrico-para-cortar_2922100/">https://www.elconfidencial.com/espana/2021-01-26/la-receta-del-caos-de-los-cdr-acido-clorhidrico-para-cortar_2922100/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[61]</td>
+			<td>
+
+					 <p style="margin-bottom: 0cm; line-height: 100%">ATSDR.
+				“ToxFAQsTM: Ácido sulfhídrico (Hydrogen Sulfide) ”, 2016. [En
+				línea]. Disponible
+				en:<a href="https://www.atsdr.cdc.gov/es/toxfaqs/es_tfacts114.html">https://www.atsdr.cdc.gov/es/toxfaqs/es_tfacts114.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[62]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">ASDR. “Resumen
+		de Salud Pública: Ácido sulfhídrico”, 2016. [En línea].
+		Disponible en:<a href="https://www.atsdr.cdc.gov/es/phs/es_phs114.html">https://www.atsdr.cdc.gov/es/phs/es_phs114.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[63]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Alejandor
+			Echartea, El Mañana. “Mató ácido sulfhídrico a empleados de
+			Comapa”, 2021. [En línea]. Disponible
+			en:<a href="https://www.elmanana.com/mato-acido-sulfhidrico-a-empleados-de-comapa-comapa-capital-caja-de-valvulas/5371746">https://www.elmanana.com/mato-acido-sulfhidrico-a-empleados-de-comapa-comapa-capital-caja-de-valvulas/5371746</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[64]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Formulación
+			Química. &quot;H3PO4 / ácido tetraoxofosfórico (V)&quot;, 2016.
+			[En línea]. Disponible en:<a href="https://www.formulacionquimica.com/H3PO4/">https://www.formulacionquimica.com/H3PO4/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[65]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%"> CIAFA. “
+			FICHA DE DATOS DE SEGURIDAD DE MATERIALES :ÁCIDO FOSFÓRICO ”.
+			[En línea]. Disponible
+			en:<a href="https://www.ciafa.org.ar/files/yCJjUbVuIvWR3FxAoenEJdP37zdCtpW9BuVx7f2I.pdf">https://www.ciafa.org.ar/files/yCJjUbVuIvWR3FxAoenEJdP37zdCtpW9BuVx7f2I.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[66]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Andina.
+		“Nutricionista explica por qué las gaseosas son dañinas para la
+		salud ”, 2016. [En línea]. Disponible
+		en:<a href="https://andina.pe/agencia/noticia-nutricionista-explica-por-las-gaseosas-son-daninas-para-salud-849386.aspx">https://andina.pe/agencia/noticia-nutricionista-explica-por-las-gaseosas-son-daninas-para-salud-849386.aspx</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[67]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%"><a name="firstHeading1"></a>
+			 Enciclopedia. “<span lang="es-ES">Ácido sulfuroso</span>”,
+			 2019. [En línea]. Disponible
+			 en:<a href="http://enciclopedia.us.es/index.php/%C3%81cido_sulfuroso">http://enciclopedia.us.es/index.php/%C3%81cido_sulfuroso</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[68]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Reactivos
+			Meyer, “Hoja de datos de seguridad”, Acido Sulfuroso. 2018. [En
+			línea]. Disponible en: Reactivos Meyer, “Hoja de datos de
+			seguridad”, Óxido de Plata. 2015. [En línea]. Disponible en:
+			<a href="http://reactivosmeyer.com.mx/datos/pdf/reactivos/hds_1905.pdf">http://reactivosmeyer.com.mx/datos/pdf/reactivos/hds_1905.pdf</a>
+			</p>
+
+			</td>
+			</tr>
+			<tr><td>[69]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">BBC. “El
+			extraño y &quot;hermoso&quot; fuego de azufre que sorprendió a un
+			equipo de bomberos en Estados Unidos”, 2017. [En línea].
+			Disponible en:<a href="https://www.bbc.com/mundo/media-40585896">https://www.bbc.com/mundo/media-40585896</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[70]</td>
+			<td>
+
+									<p style="margin-bottom: 0cm; line-height: 100%">Pochteca.
+				“Ácido nítrico”, 2015. [En línea]. Disponible
+				en:<a href="https://mexico.pochteca.net/productos/acido-nitrico/">https://mexico.pochteca.net/productos/acido-nitrico/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[71]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">UNAM. “HOJA
+			DE SEGURIDAD III  ACIDO NITRICO”, 2016. [En línea]. Disponible
+			en:<a href="https://quimica.unam.mx/wp-content/uploads/2016/12/6nitrico.pdf">https://quimica.unam.mx/wp-content/uploads/2016/12/6nitrico.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[72]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Lus Mendez
+			 Urich, France 24. “Aumenta el temor por posible desastre ambiental
+			 tras hundimiento de un barco en Sri Lanka”, 2021. [En línea].
+			 Disponible
+			 en:<a href="https://www.france24.com/es/asia-pac%C3%ADfico/20210602-sri-lanka-barco-incendio-contaminacion">https://www.france24.com/es/asia-pac%C3%ADfico/20210602-sri-lanka-barco-incendio-contaminacion</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[73]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">ING. HUGO A.
+		ROLON PELAYO, UAEH. “Formulación y Nomenclatura de Química
+		Inorgánica”, 2015. [En línea]. Disponible
+		en:<a href="https://www.uaeh.edu.mx/docencia/P_Presentaciones/b_atotonilco_tula/2015/unidad_5_formulacion_quimica_inorganica.pdf">https://www.uaeh.edu.mx/docencia/P_Presentaciones/b_atotonilco_tula/2015/unidad_5_formulacion_quimica_inorganica.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[74]</td>
+			<td>
+
+							 	  <p style="margin-bottom: 0cm; line-height: 100%">Todini.
+					“Fluoruro de Litio”, 2021. . [En línea]. Disponible
+					en:<a href="https://www.todini.com/es/productos-quimicos/litio/litio-fluoruro">https://www.todini.com/es/productos-quimicos/litio/litio-fluoruro</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[75]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">ThermoFisher
+			Scientific. “FICHA DE DATOS DE SEGURIDAD: Lithium Fluoride”,
+			2020. [En línea]. Disponible
+			en:<a href="https://www.fishersci.es/chemicalProductData_uk/wercs?itemCode=10401051&amp;lang=ES">https://www.fishersci.es/chemicalProductData_uk/wercs?itemCode=10401051&amp;lang=ES</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[76]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Hardy Graupner,
+				DW. “Litio en Alemania: el oro blanco de la movilidad eléctrica”,
+				2019. [En línea]. Disponible
+				en:<a href="https://www.dw.com/es/litio-en-alemania-el-oro-blanco-de-la-movilidad-el%C3%A9ctrica/a-50081637">https://www.dw.com/es/litio-en-alemania-el-oro-blanco-de-la-movilidad-el%C3%A9ctrica/a-50081637</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[77]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">QUIMIPUR.
+			“FICHA DE DATOS DE SEGURIDAD: SODIO SULFURO ”, 2017. [En línea].
+			Disponible en:<a href="https://quimipur.com/pdf/sodio-sulfuro-rev-3.pdf">https://quimipur.com/pdf/sodio-sulfuro-rev-3.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[78]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Laboratorium
+			 Discounter. “Sulfuro de sodio”, 2021. [En línea]. Disponible
+			 en:<a href="https://www.laboratoriumdiscounter.nl/es/quimicos/a-z/n/sulfuro-de-sodio/">https://www.laboratoriumdiscounter.nl/es/quimicos/a-z/n/sulfuro-de-sodio/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[79]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">El Medico
+				Interactivo. “Nanopartículas derivadas de hojas de té destruyen
+				células de cáncer de pulmón”, 2018. [En línea]. Disponible
+				en:<a href="https://elmedicointeractivo.com/nanoparticulas-derivadas-de-hojas-de-te-destruyen-celulas-de-cancer-de-pulmon/">https://elmedicointeractivo.com/nanoparticulas-derivadas-de-hojas-de-te-destruyen-celulas-de-cancer-de-pulmon/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[80]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">ORGAL Ltda.
+					“CLORURO DE NIQUEL”. [En línea]. Disponible
+					en:<a href="http://sistemas.corpoica.org.co/sitioweb/intranet/Download/Hojas_Seguridad/Espanol/7718-54-9.pdf">http://sistemas.corpoica.org.co/sitioweb/intranet/Download/Hojas_Seguridad/Espanol/7718-54-9.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[81]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Noticias de la
+				ciencia y la tecnología. “Detector de rayos X flexible”, 2021.
+				[En línea]. Disponible
+				en:<a href="https://noticiasdelaciencia.com/art/42568/detector-de-rayos-x-flexible">https://noticiasdelaciencia.com/art/42568/detector-de-rayos-x-flexible</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[82]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Gobierno De
+				Canarias. “Formulación y Nomenclatura de Química Inorgánica”.
+				2020. [En línea]. Disponible
+				en:<a href="https://www3.gobiernodecanarias.org/medusa/mediateca/ieslaaldeadesannicolas/wp-content/uploads/sites/139/2020/03/formulacion-inorganica-iupac-2005.pdf">https://www3.gobiernodecanarias.org/medusa/mediateca/ieslaaldeadesannicolas/wp-content/uploads/sites/139/2020/03/formulacion-inorganica-iupac-2005.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[83]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Amoquímicos.
+				“Cloruro férrico: características, usos y medidas de seguridad”.
+				[En línea]. Disponible
+				en:<a href="https://www.amoquimicos.com/propiedades-del-cloruro-ferrico">https://www.amoquimicos.com/propiedades-del-cloruro-ferrico</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[84]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Corporación
+			 Química Omega S.A. de C.V. “CLORURO FERRICO”. [En línea].
+			 Disponible
+			 en:<a href="http://iio.ens.uabc.mx/hojas-seguridad/cloruro-ferrico.pdf">http://iio.ens.uabc.mx/hojas-seguridad/cloruro-ferrico.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[85]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Javier OMS, El
+				Mundo. “Finaliza la emergencia tras la explosión química en
+				Igualada”, 2015. [En línea]. Disponible
+				en:<a href="https://www.elmundo.es/cataluna/2015/02/12/54dc7450268e3ebe438b4586.html">https://www.elmundo.es/cataluna/2015/02/12/54dc7450268e3ebe438b4586.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[86]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Merck. “Sodio
+					nitrato”, 2021. [En línea]. Disponible
+					en:<a href="https://www.merckmillipore.com/MX/es/product/Sodium-nitrate,MDA_CHEM-106537">https://www.merckmillipore.com/MX/es/product/Sodium-nitrate,MDA_CHEM-106537</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[87]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Redacción 24
+				horas. “¿Qué es el nitrato de sodio, el químico que habría
+				provocado explosión en Beirut? ”, 2020. [En línea]. Disponible
+				en:<a href="https://www.24-horas.mx/2020/08/04/que-es-el-nitrato-de-sodio-el-quimico-que-habria-provocado-explosion-en-beirut/">https://www.24-horas.mx/2020/08/04/que-es-el-nitrato-de-sodio-el-quimico-que-habria-provocado-explosion-en-beirut/</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[88]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">ROTH. “Ficha
+			de datos de seguridad: Nitrito de Sodio”, 2018. [En línea].
+			Disponible
+			en:<a href="https://www.uv.mx/pozarica/cq/files/2021/02/360.-Sodio-nitrito.pdf">https://www.uv.mx/pozarica/cq/files/2021/02/360.-Sodio-nitrito.pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[89]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">La Sexta.
+				“Cierran una web italiana que ayudaba a jóvenes a suicidarse”,
+				2021. [En línea]. Disponible
+				en:<a href="https://www.lasexta.com/noticias/internacional/cierran-web-italiana-que-ayudaba-jovenes-suicidarse_2021060760be4a5d5c811f000113925b.html">https://www.lasexta.com/noticias/internacional/cierran-web-italiana-que-ayudaba-jovenes-suicidarse_2021060760be4a5d5c811f000113925b.html</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[90]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">Gobierno del
+					Estado de Mexico. “La química y los metales aplicado a la
+					pirotecnia”, 2020. [En línea]. Disponible
+					en:<a href="http://imepi.edomex.gob.mx/sites/imepi.edomex.gob.mx/files/files/Tripticos/02_TRIPTICO%20QUIMICA%20Y%20METALES%202016.pdf">http://imepi.edomex.gob.mx/sites/imepi.edomex.gob.mx/files/files/Tripticos/02_TRIPTICO%20QUIMICA%20Y%20METALES%202016.pdf</a></p>
+			</td>
+			</tr>
+			<tr><td>[91]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">SIDESA.
+				“Sulfato de Aluminio”. [En línea]. Disponible
+				en:<a href="https://aniq.org.mx/pqta/pdf/Respaldo/Sulfato%20de%20Al.Sol.%20Libre%20de%20Fe(toda%20LIT).pdf">https://aniq.org.mx/pqta/pdf/Respaldo/Sulfato%20de%20Al.Sol.%20Libre%20de%20Fe(toda%20LIT).pdf</a></p>
+
+			</td>
+			</tr>
+			<tr><td>[92]</td>
+			<td>
+				<p style="margin-bottom: 0cm; line-height: 100%">CLARVI.
+				“Sulfato de Aluminio Sólido”, 2018. [En línea]. Disponible
+				en:<a href="https://clarvi.com/pdfs/files/Hojas%20de%20Seguridad/SULFATO%20DE%20ALUMINIO%20SOLIDO%20CLARVI%20HDS%20SGA%20(20181222).pdf">https://clarvi.com/pdfs/files/Hojas%20de%20Seguridad/SULFATO%20DE%20ALUMINIO%20SOLIDO%20CLARVI%20HDS%20SGA%20(20181222).pdf</a></p>
+
+			</td>
+		</tr>
+			<tr>
+				<td>[93]</td>
+				<td>
+					<p style="margin-bottom: 0cm; line-height: 100%">Mayreth
+					Casanova, El Pitazo. “Habitantes de Costa Oriental del Lago
+					aclaran agua turbia con sulfato de aluminio”, 2021. [En línea].
+					Disponible
+					en:<a href="https://elpitazo.net/occidente/habitantes-de-costa-oriental-del-lago-aclaran-agua-turbia-con-sulfato-de-aluminio/">https://elpitazo.net/occidente/habitantes-de-costa-oriental-del-lago-aclaran-agua-turbia-con-sulfato-de-aluminio/</a></p>
+
+				</td>
+			</tr>
+
+		<tr><td>[94]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">UAH. “Boranos
+			en Sintesis Orgánica”. [En línea]. Disponible
+			en:<a href="https://portal.uah.es/portal/page/portal/epd2_asignaturas/asig66315/informacion_academica/Tema%203-boro.pdf">https://portal.uah.es/portal/page/portal/epd2_asignaturas/asig66315/informacion_academica/Tema%203-boro.pdf</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[95]</td>
+		<td>
+
+								<p style="margin-bottom: 0cm; line-height: 100%">Merck.
+			“Borano-tetrahidrofurano (complejo)”, 2021. [En línea].
+			Disponible
+			en:<a href="https://www.merckmillipore.com/MX/es/product/Boron-hydride-tetrahydrofuran-complex,MDA_CHEM-841077">https://www.merckmillipore.com/MX/es/product/Boron-hydride-tetrahydrofuran-complex,MDA_CHEM-841077</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[96]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Hibridos Y
+			Eléctricos. “¿Por qué es tan atractivo el hidrógeno?”,
+			2013. [En línea]. Disponible
+			en:<a href="https://www.hibridosyelectricos.com/articulo/actualidad/tan-atractivo-hidrogeno/20130726200251006008.html">https://www.hibridosyelectricos.com/articulo/actualidad/tan-atractivo-hidrogeno/20130726200251006008.html</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[97]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Chemical Safety
+			Facts. “Amoniaco”, 2021. [En línea]. Disponible
+			en:<a href="https://www.chemicalsafetyfacts.org/es/amoniaco/">https://www.chemicalsafetyfacts.org/es/amoniaco/</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[98]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Azteca
+			Noticias. “Vacas aprenden a usar letrina para reducir
+			contaminación por amoniaco”, 2021. [En línea]. Disponible
+			en:<a href="https://www.tvazteca.com/aztecanoticias/vacas-letrina-amoniaco-especiales">https://www.tvazteca.com/aztecanoticias/vacas-letrina-amoniaco-especiales</a></p>
+
+
+		</td>
+		</tr>
+		<tr><td>[99]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%"><a name="content"></a>
+			BBC. “Vida en Venus: qué es la fosfina, la sustancia tóxica y
+			con mal olor que encontraron en las nubes del planeta”, 2020. [En
+			línea]. Disponible en: <a href="https://www.bbc.com/mundo/noticias-54156929">https://www.bbc.com/mundo/noticias-54156929</a>
+			</p>
+		</td>
+		</tr>
+		<tr><td>[100]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Pubchem.
+		“Arsine”, 2021. [En línea]. Disponible en:
+		<a href="https://pubchem.ncbi.nlm.nih.gov/compound/Arsine"><u>https://pubchem.ncbi.nlm.nih.gov/compound/Arsine</u></a>
+			</p>
+		</td>
+		</tr>
+		<tr><td>[101]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Praxair .“Hoja
+		de Datos de Seguridad de Producto PRAXAIR: Arsina”, 1997. [En
+		línea]. Disponible en:
+		<a href="https://www.linde.mx/-/media/corporate/praxair-mexico/documents/safety-data-sheets/arsina-hds-p4565d-1997.pdf">https://www.linde.mx/-/media/corporate/praxair-mexico/documents/safety-data-sheets/arsina-hds-p4565d-1997.pdf</a>
+			</p>
+		</td>
+		</tr>
+		<tr><td>[102]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Republica. “El
+		arsénico, un asesino silencioso” , 2016. [En línea]. Disponible
+		en:
+		<a href="https://www.republica.com/ciencia-para-todos/2016/08/09/el-arsenico-un-asesino-silencioso/">https://www.republica.com/ciencia-para-todos/2016/08/09/el-arsenico-un-asesino-silencioso/</a>
+
+		</p>
+		</td>
+		</tr>
+		<tr><td>[103]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Instituto
+		Nacional de Seguridad Y Salud en el trabajo. “Hidruro de Litio”,
+		2019. [En línea]. Disponible
+		en:<a href="https://www.insst.es/documents/94886/431980/DLEP+127+Hidruro+de+litio+2019.pdf/6f63ae68-deff-430d-9cfe-bb01e2aa686c?version=1.1&amp;t=1578966352679">https://www.insst.es/documents/94886/431980/DLEP+127+Hidruro+de+litio+2019.pdf/6f63ae68-deff-430d-9cfe-bb01e2aa686c?version=1.1&amp;t=1578966352679</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[104]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Merck. “Litio
+			Hidruro”, 2021. [En línea]. Disponible
+			en:<a href="https://www.merckmillipore.com/MX/es/product/Lithium-hydride,MDA_CHEM-820753">https://www.merckmillipore.com/MX/es/product/Lithium-hydride,MDA_CHEM-820753</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[105]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Expansion. “IBM
+		 centra sus desarrollos de IA en publicidad y computación cuántica
+		 ”, 2021. [En línea]. Disponible
+		 en:<a href="https://expansion.mx/tecnologia/2021/05/11/ibm-centra-sus-desarrollos-de-ia-en-publicidad-y-computacion-cuantica">https://expansion.mx/tecnologia/2021/05/11/ibm-centra-sus-desarrollos-de-ia-en-publicidad-y-computacion-cuantica</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[106]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Rafael Díaz.
+		“Hidruro de calcio ( CaH2): propiedades, reactividad y usos”,
+		2017. [En línea]. Disponible en:
+		<a href="https://www.lifeder.com/hidruro-de-calcio/">https://www.lifeder.com/hidruro-de-calcio/</a>
+			</p>
+		</td>
+		</tr>
+		<tr><td>[107]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">ACR
+	Latinoamérica.“Diseñan nuevo método para producir amoniaco
+	usando menos energía”, 2020. [En línea]. Disponible en:
+	<a href="https://www.acrlatinoamerica.com/202009229494/noticias/empresas/disenan-nuevo-metodo-para-producir-amoniaco-usando-menos-energia.html">https://www.acrlatinoamerica.com/202009229494/noticias/empresas/disenan-nuevo-metodo-para-producir-amoniaco-usando-menos-energia.html</a></p>
+
+
+		</td>
+		</tr>
+		<tr><td>[108]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Formulación
+		 Química. &quot;MgH2 / hidruro de magnesio&quot;, 2016. [En línea].
+		 Disponible en: <a href="https://www.formulacionquimica.com/MgH2/">https://www.formulacionquimica.com/MgH2/</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[109]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">New Jersey
+			Department of Health and Senior Services. “Hoja Informativa Sobre
+			Sustancias Peligrosas: Hidruro de Magnesio”, 1999. [En línea].
+			Disponible en:
+			<a href="https://nj.gov/health/eoh/rtkweb/documents/fs/1142sp.pdf">https://nj.gov/health/eoh/rtkweb/documents/fs/1142sp.pdf</a></p>
+
+		</td>
+		</tr>
+		<tr><td>[110]</td>
+		<td>
+			<p style="margin-bottom: 0cm; line-height: 100%">Gonzalo
+García.“Motos eléctricas de hidrógeno alimentadas por una pasta
+de magnesio llamada Powerpaste” ,2021 . [En línea]. Disponible
+en:
+<a href="https://www.hibridosyelectricos.com/articulo/tecnologia/motos-electricas-hidrogeno-alimentadas-pasta-magnesio-powerpaste/20210211103953042422.html"><u>https://www.hibridosyelectricos.com/articulo/tecnologia/motos-electricas-hidrogeno-alimentadas-pasta-magnesio-powerpaste/20210211103953042422.html</u></a>
+</p>
+
+
+		</td>
+		</tr>
+
+		</tbody>
+	</table>
+</div>
+
+									<link rel="stylesheet" href="/static/css/botones_nav.css">
+									<div class="left" onclick="window.location.href = '/static/temas/Fuerzas Intra e Intermoleculares.html'">
+										<p>Tema anterior: Fuerzas Intramoleculares</p>
+									</div>
+									<div class="main" onclick="window.location.href = '/'">
+										<p>Indice</p>
+									</div>
+									<div class="right" onclick="window.location.href = '/static/temas/Quimica Organica.html'">
+										<p>Siguiente tema: Quimica Organica</p>
+									</div>
+
+								</body>
+								</html>

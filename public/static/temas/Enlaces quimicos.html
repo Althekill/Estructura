@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <!-- <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script> -->
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Tipos de enlaces quimicos</title>
+    <style>
+        body{
+          font-family: monaco,Consolas,Lucida Console,monospace;
+
+        }
+          h2{
+          color:olive;
+              font-size: 4em;
+              font-family:'Sofia',sans-serif;
+          }
+          h3{
+          color:fuchsia;
+              font-size: 2em;
+              font-family:'Sofia',sans-serif;
+          }
+          h4{
+          color:mediumturquoise;
+              font-size: 4em;
+                font-family:'Amatic SC',sans-serif;
+          }
+          h5{
+          color:coral;
+              font-size: 3em;
+                font-family:'Amatic SC',sans-serif;
+          }
+          q{
+          font-style: oblique;
+          font-weight: bold;
+          color:crimson
+          }
+          img{
+            max-width: 100%;
+          }
+          elemento{
+            color:maroon;
+            font-style: normal;
+            font-weight: bold;
+            font-size:1.5em;
+          }
+          todo{
+            font-style: italic;
+            font-weight: bold;
+            font-size:3em;
+          }
+          .table {
+            background-color: lawngreen;
+            overflow: auto;
+
+          }
+          .Modelo{
+            height: 500px;
+            width: 100%;
+          }
+          td{
+            background-color: lightyellow
+          }
+          @media screen and (device-width: 200px) {
+            h2,h3,h4,h5 {
+              font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+            }
+          }
+          .ref{
+            width:90%;
+            overflow: auto;
+          }
+          .ref>table>tbody>tr>td{
+            background-color: white;
+          }
+          .ref>table>tbody>tr>td:first-child ,ref{
+            color: navy;
+            font-weight: bold;
+          }
+
+      </style>
+  </head>
+  <body>
+    <h2>Enlaces quimicos</h2>
+    <p>
+<q>Los átomos se combinan entre sí para formar compuestos con propiedades diferentes de los átomos
+que contienen. La fuerza de atracción entre los átomos en un compuesto es un enlace químico</q>
+Los enlaces quimicos tambien son considerados fuerzas intramoleculares <a href="/static/temas/Fuerzas Intra e Intermoleculares.html">Vease la seccion de fuerzas intramoleculares</a>
+Los tipos de enlaces quimicos mas importantes (y de los que se hara una explicacion en esta seccion) en la quimica inorganica son:
+<li>El enlace iónico</li>
+<li>El enlace covalente</li>
+<li>El enlace metálico</li>
+</p>
+<h3>Estructura de Lewis</h3>
+<p>
+  Antes de abordar a los enlaces quimicos y explicarlos, vale la pena explicar las estructuras de Lewis.
+  Se sabe que los átomos pueden interactuar con otros atomos para formar nuevos compuestos, y tambien se sabe que esta interaccion se lleva a cabo en la capa mas externa del atomo en cuestion (o nivel de energia),
+  pues en esta capa los electrones del atomo pueden cambiar mas facilmente. A estos electrones en la capa externa se les denomina <b>electrones de valencia</b>. El modelo de lewis sirve para representar estos electrones
+  y hace uso de puntos alrededor del simbolo del elemento para representar los electrones libres.
+  <q>El modelo de lewis limita los elementos de la segunda fila de la tabla periodica (Li, Be, B, C, N, O, F, Ne) <ref>[1]</ref>a un total de 8 electrones (compartidos y no compartidos)
+  en sus capas de valencia. El hidrogeno esta limitado a dos</q>
+  La mayoria de los elementos obedecen a la llamada <b>regla del octeto</b>, que dice que al formar compuestos, los compuestos cambian su cantidad de electrones
+  (ganan, pierden o comparten) para lograr una configuracion electronica estable caracterizada por 8 electrones de valencia.
+  En el caso de los elementos C, N, O, F, si el octeto de lewis se completa, cada uno tiene una configuracion analoga a la del neon (que es un gas noble),
+  en otras palabras <q>La estabilidad máxima se logra cuando un átomo es isoelectrónico con un gas noble <ref>[2]</ref></q>
+<br>
+  Por ejemplo, para el carbono, la configuracion electronica <a href="/static/temas/El Atomo.html">Vease la seccion de atomo para mas informacion</a> termina en 2p<sup>2</sup>, lo que significa que tiene cuatro electrones en su segundo orbital
+  (los dos p y otros dos del 2s<sup>2</sup>), y su representacion es la siguiente:
+<br>
+  <img src="/static/Imagenes/carbono.png" alt="carbono_lewis">
+  <br>
+  Para citar otro ejemplo, esta el hidrogeno, que tiene 1 electron de valencia, por lo que su representacion con el octeto de lewis es la siguiente:
+  <br>
+    <img src="/static/Imagenes/hidrogeno.png" alt="hidrogeno_lewis">
+    <br>
+</p>
+
+
+<h3>Enlace iónico</h3>
+<p>
+  El enlace iónico es un enlace formado por las fuerzas de atracción entre iones de diferente carga.
+  Es decir, este enlace se crea mediante atracción electrica entre aniones (con carga negativa) y cationes (con carga positiva).
+  La manera en que estos enlaces se forman es debido a que los atomos buscan tener un configuracion electronica estable imitando la
+  configuracion electronica de un gas noble (que tiene sus orbitales llenos)
+  En general ,los metales alcalinos y alcalinotérreos tienen mas probabilidad de formar cationes (positivos); por su parte los halógenos y el oxígeno son los mas aptos para formar aniones (negativos).
+  Por eso es muy común que los enlaces iónicos ocurran mayoritariente entre un metal del grupo 1A y 2A y un halógeno u oxígeno.
+  Entonces los enlaces iónicos son las fuerzas electrostaticas entre compuestos iónicos.
+
+  <q>El enlace iónico es común en compuestos inorgánicos, pero relativamente raro en compuestos orgánicos.
+</q> <ref>[1]</ref>
+</p>
+<h4>Ejemplo</h4>
+<p>
+Tomemos como ejemplo la formacion del cloruro de sodio, también conocido como sal de mesa.
+La configuración electrónica del sodio es: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>1</sup>, lo que quiere decir que en su ultimo nivel de energía
+(3) tiene 1 e<sup>-</sup>, lo que lo convierte en un compuesto que es propenso a perder electrones y por lo tanto convertirse en un cation (con carga positiva);
+en cambio el cloro tiene la siguiente configuracion: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>5</sup>, con 7 e<sup>-</sup> en su capa 3, con lo que
+este tiende a ganar un electrón para completar su octeto y convertirse en un anion (con carga negativa). Cuando estos dos forman un enlace, el sodio dona un electrón al cloro, lo que
+hace que el primero se vuelva positivo y el segundo negativo, creando fuerazs electrostaticas entre ellos, es decir, un enlace iónico. A su vez este compuesto es electricamente neutro. Con esto se puede
+hablar de otra caracteristica de los enlaces iónicos: <b>en ellos siempre hay un elemento que pierde electrones y otro que los gana</b>.
+<br>
+<img src="/static/Imagenes/nacl.png" alt="NaCl">
+<br>
+</p>
+<h3>Enlace Covalente</h3>
+<p>
+El modelo covalente (también llamado modelo de par de electrones compartido) fue propuesto por
+G. N. Lewis en 1916, y lo hizo mediante el hidrogeno. Todos sabemos que el hidrogeno solamente tiene un electrón en el primer nivel de energía,
+y ya que el nivel n=1 acepta maximo 2 electrones, esto quiere decir, que al hidrogeno le hace falta un electrón para ser estable. Lewis se dio cuenta que en el hidrogeno molecular (h<sub>2</sub>), los electrones de
+ambos hidrogenos se compartían entre sí, es decir, a diferencia del enlace iónico el hidrogeno compartia sus electrones con otro hidrogeno, haciendo que -tecnicamente- ambos hidrogenos tuvieran su nivel de energía lleno. <ref>[1]</ref>
+<br>
+<img src="/static/Imagenes/h2.png" alt="h2">
+<br>
+Otro ejemplo es el átomo de flúor, que tiene configuracion de 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>5</sup> , y tiene 7 electrones en su ultimo nivel de energía (n=2), por lo que le falta un electrón para ser estable
+y completar el octeto. Por lo que este hace un enlace parecido al del hidrogeno:
+<br>
+<img src="/static/Imagenes/f2.png" alt="h2">
+<br>
+La cantidad de energía requerida para disociar una molécula de hidrógeno H2 en dos átomos
+de hidrógeno separados se llama entalpía de disociación de enlace. Para el H2 esta energía es
+bastante grande, ascendiendo a 1435 kJ/mol (1104 kcal/mol). La causa principal de la fuerza del
+enlace covalente en H 2 es la gran fuerza de atracción ejercida sobre sus dos electrones. Cada electrón
+en H2 “siente” la fuerza de atracción de dos núcleos, en lugar de uno, como en un átomo de hidró-
+geno aislado.
+Otra forma de representar los enlaces covalentes en las moleculas en la estructura de Lewis es mediante una linea, la cual indica la comparticion de electrones entre los dos atomos, esta nomenclatura se utilizara muy
+ampliamente mas adelante en la sección de química orgánica.
+<br>
+<img src="/static/Imagenes/ch4.png" alt="h2">
+<br>
+Es lo mismo que:
+<br>
+<img src="/static/Imagenes/ch32.png" alt="h2">
+<br>
+</p>
+
+<h3>Electronegatividad</h3>
+<p>
+En algunos enlaces covalentes, se descubrió de manera experimental que los electrones -aunque pertenecientes a ambos atomos- solian estar mayormente en un átomo, que en otro. Esto, sin embargo, no pasaba para enlaces
+covalentes de dos elementos iguales como H2 o F2, sino que ocurría en sustancias con diferentes átomos, como en el caso del ácido fluorhídrico HF.
+<br>
+<img src="/static/Imagenes/HF_polar.png" alt="hfpolar">
+<br>
+Como se ve en la imágen, las partes mas rojas tienen mayor distribución de densidad electrónica que las más azules, o sea que en el flúor los electrones suelen pasar mas tiempo que en el hidrogeno.
+A este tipo de enlaces covalentes se les llama <b>enlaces covalentes polares</b> y se les suele describir como un punto intermedio entre los enlace iónicos y los enlaces covalentes (ya que en un enlace covalente la
+comparticion de electrones es equitativa y en un enlace polar uno de los atomos se queda completamente con el electron) pues hay una comparticion media pero no completa de electrones.
+<br>
+La manera en la que se distinguen y calculan estos enlaces de los covalentes normales es que en un enlace polar hay una diferencia de <b>electronegatividad</b>, que es <i>la capacidad de un átomo para atraer hacia sí
+los electrones de un enlace químico</i> <ref>[1]</ref>. Los elementos con alta electronegatividad atraeran mas a los electrones.
+Este valor es un concepto relativo, es decir, que solo se puede medir con respecto de los valores de otros átomos (como en el caso de la física, en la que debes tener un punto de referencia para medir velocidades y
+aceleraciones).
+En la tabla periodica <a href="/static/temas/Tabla Periodica.html">Consulte aqui</a>, la electronegatividad es menor en elementos que esten abajo y a la izquierda, siendo el Fr el elemento menos electronegativo  el F el más electronegativo.
+</p>
+<h3>Enlace metálico</h3>
+<p>
+  <q> Los enlaces metálicos son el resultado de la atracción electrostática entre cationes metálicos y electrones deslocalizados. La naturaleza del enlace metálico explica muchas de las propiedades físicas de los metales, como son la conductividad y la maleabilidad.</q> <ref>[12]</ref>
+  En estos enlaces (que son entre varios átomos del mismo elemento metálico), los metales pierden un electrón y se vuelven cationes (con carga positiva), y lo donan, no a otro átomo metálico, sino a un llamado 'mar de electrones', es decir, que estos electrones vagan
+  libremente por los átomos de metal, y debido a que estos electrones son aniones (con carga negativa), estos atraen a los cationes formados por los metales que que donaron al electrón. Esto signofica que los electrones se encuentran libremente vagando por la red metálica
+  Se dice que estos electrones estan <i>deslocaliazdos</i>
+  <br>
+  <div class="Modelo">
+  <model-viewer class="Modelo" src="/static/Modelos/enlace metalico.glb" alt="A 3D model of an astronaut" ar scale="0.2 0.2 0.2" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+  </div>
+  <br>
+
+  Este  <i>mar de electrones</i> puede explicar la alta conductividad de los metales y tambien su ductilidad (resistencia al estres mecanico, es decir, no se rompen al ser doblados). Debido a que los atomos no estan estrictamente unidos, sino que estan mantenidos en un mar
+  de electrones, por lo que al ser doblados, se matienen unidos, solo que un poco mas separados. En cuanto a la conductividad, si se le inyecta una corriente eléctrica a los metales, como los electrones pueden desplazarse libremente (y sabemos que
+  la corriente eléctrica es solo el flujo de electrones en un material), una corriente electrica no presentara grandes pérdidas de calor al pasar por el metal, es decir, la resistencia del metal es baja.
+  Tambien, la geometría de estos enlaces esta basada mayoritariamente en la eficiencia de
+  empaquetamiento (mas atomos en menos espacio), como se observa en el modelo.
+</p>
+<h2>Referencias de la sección 'Enlaces Químicos'</h2>
+<div class="ref">
+  <table>
+    <tbody>
+      <td>[1]</td>
+      <td>Chang, Raymond, “Química”, McGraw-Hill, Séptima Edición, 2002.</td>
+    </tr>
+<tr>
+<td>[2]</td>
+<td>Wade, Leroy, “Química orgánica. Volumen 1”, Pearson Educación, Séptima edición, 2011.</td>
+</tr>
+<tr>
+<td>[3]</td>
+<td>Carey, Francis & M. Guiliano, Robert, “Química orgánica”, McGraw-Hill, Novena Edición, may. 2014.</td>
+</tr>
+<tr>
+  <td>[12]</td>
+  <td>Shackelford, James, “Introducción a la ciencia de materiales para ingenieros”, Pearson Educación, pp. 23-53, 2005.</td>
+</tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/Tabla Periodica.html'">
+  <p>Tema anterior: Tabla Periodica</p>
+</div>
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+<div class="right" onclick="window.location.href = '/static/temas/Fuerzas Intra e Intermoleculares.html'">
+  <p>Siguiente tema: Fuerzas Intramoleculares</p>
+</div>
+
+  </body>
+</html>
