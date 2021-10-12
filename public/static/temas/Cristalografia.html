@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>Cristalografia</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    overflow: auto;
+
+  }
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .e{
+    border: 1px solid black;
+  }
+  td{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    width:85px;
+    height:55px;
+  }
+
+  @media screen and (device-width: 200px) {
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+  IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+  </style>
+</head>
+<body onload="load()">
+
+<h2>¿Que es un cristal?</h2>
+<p>
+
+</p>
+<h3>Difracción</h3>
+<p>
+La difracción es un fenomeno natural que ocurre cuando una onda incide sobre un obstaculo que esta separado por una distancia del mismo orden de magnitud de la longitud de onda del haz de luz incidente <ref>[183]</ref>
+Este fenomeno se puede observar en objetos difusos, es decir,  que distorsionan la luz haciendo que lo que se observa tenga poco detalle y se vea menos nítido.
+<br>
+<img src="/static/Imagenes/difraccion.png" alt="difraccion">
+<br>
+La manera en que se miden las distancis usando difracción es mediante el uso de rayos X (que tienen una baja longitud de onda), los cuales se inciden en la superficie del solido a medir y se reflejan
+a un determinado ángulo. Segun el ángulo que se utilize la energía no cambiara radicalmente, hasta que se llegue a un ángulo especifico; en el cual dos ondas paralelas (lanzadas a la misma longitud de onda) inciden en planos
+diferentes de la estructura cristalina (las capas de la estructura cristalina), de manera que al difractarse, las dos longitudes de onda estan en fase (son iguales y la segunda tiene una frecuencia que es multiplo de la primera)
+, por lo que al sumarse estas ondas producen un pico de energía muy grande que se detecta por el medidor.
+</p>
+<h3>Ley de Bragg</h3>
+<p>
+En el fenómeno de difracción, la ley de Bragg explica como obtener a partir del ángulo y la longitud de onda, la distancia interplanar, mediante la ecuación:
+<br>
+<IUPAC>n·λ=2·d·sin(φ)</IUPAC>
+<br>
+donde
+<br>
+λ -> longitud de onda
+<br>
+n -> indica que hay valores para cada multiplo de la longitud de onda
+<br>
+d -> Distancia interplanar,  po lo tanto la distancia entre los átomos
+<br>
+φ -> ángulo al que se incide la onda y que produce una difracción
+<br>
+
+Al hacer el experimento en cuestión se obtiene una gráfica como la siguiente, llamado difractorama:
+<br>
+<img src="/static/Imagenes/grafico_difraccion.png" alt="grafica de difraccion">
+<br>
+Donde se puede observar que los picos de la señal obtenida son aquellos en los que los ángulos cumplen la ley de Bragg, es decir, todos los multiplos de la longitud de onda de los rayos X
+</p>
+
+
+<h3>Determinar el tipo de estructura</h3>
+<p>
+Dependiendo de la estructura cristalina, no todos los planos que cumplen la ley de bragg presentan difracción.
+En el caso de la estructura centrada en el cuerpo, la suma de todos los índices de refraccion debe ser par:
+<br>
+h+k+l = par
+<br>
+Para una estructura centrada en las caras, todos los índices deben ser pares o impares:
+<br>
+h,k,l = par    ó    h,k,l = impar
+<br>
+<img src="/static/Imagenes/indices de moeller.png" alt="indices de moeller">
+<br>
+En el caso del difractorama de la figura anterior, estos indices cumplen que son todos impares o todos pares, por lo que estamos en presencia de una estructura cúbica centrada en las caras.
+</p>
+<h3>Referencias de la sección 'Difraccion de Rayos X'</h3>
+<div class="ref">
+  <table>
+    <tbody>
+      <tr>
+        <td>[183]</td>
+        <td>Busquets Mataix David Jeronimo, “Determinación de las estructuras cristalinas: Difracción de rayos X”, Universitát Politecnica de Valencia, 2011. [En línea]. Disponible en: https://www.youtube.com/watch?v=NOQJ-NLixj4 </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/SistemasCritalinos.docx.html'">
+  <p>Tema anterior: Sistemas Cristalinos</p>
+</div>
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+
+
+      </body>
+      </html>
