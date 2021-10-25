@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>Practica de Cristales</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  .elemento{
+    color:maroon;
+    font-style: normal;
+    font-size:1.1em;
+
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    overflow: auto;
+
+  }
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .e{
+    border: 1px solid black;
+  }
+  td{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    width:85px;
+    height:55px;
+  }
+
+  @media screen and (device-width: 200px) {sudo gpasswd -a $USER input
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+  IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+  </style>
+</head>
+<body>
+
+<!-- Documento embebido de google drive-->
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vS9tc77fYzsIsZxRDR0G8fxdvSSV0JZUXc8SKJdfYIHEjoE3SL333KfiQ6GipIgZQ/pub?embedded=true"></iframe>
+<br>
+<p>
+<a href="https://docs.google.com/document/d/1iydldR6K-qSAvke8sdwi28TmbqJqpze3/edit?usp=sharing&ouid=101284811755657825134&rtpof=true&sd=true">Ver editable en Google Drive</a>
+</p>
+<h3>Referencias de la sección 'Practica de Cristales'</h3>
+<p><i>Nota de continuidad: La numeracion esta de acorde a todas las referencias de esta pagina web,listadas en la <a href="/static/temas/Bibliografia.html">Sección de Referencias</a>, y no de acuerdo al orden de la practica, para ver la numeracion con respecto a la practica, remitase al documento embebido anterior. </i> </p>
+<div class="ref">
+  <table>
+    <tbody>
+      <tr>
+        <td>[185]</td>
+        <td>Husband, Tom. “La ciencia dulce de hacer caramelos”. ChemMatters, Octubre/Noviembre, pp. 1-5. 2014. [En línea]. Disponible en: <a href="https://www.acs.org/content/dam/acsorg/education/resources/highschool/chemmatters/spanishtranslations/chemmatters-oct2014-candymaking-spanish-trans.pdf">https://www.acs.org/content/dam/acsorg/education/resources/highschool/chemmatters/spanishtranslations/chemmatters-oct2014-candymaking-spanish-trans.pdf</a>  </td>
+      </tr>
+      <tr>
+        <td>[186]</td>
+        <td>Huerta Ochoa, Sergio (2021, octubre, 23). “Cristalización”. UAM, Iztapalapa. [Internet]. Disponible en: <a href="http://sgpwe.izt.uam.mx/files/users/uami/sho/Cristalizacion.pdf">http://sgpwe.izt.uam.mx/files/users/uami/sho/Cristalizacion.pdf</a> </td>
+      </tr>
+      <tr>
+        <td>[187]</td>
+        <td>Henao Vásquez, Martha. “Cristalografía Recreativa”. Universidad Nacional de Colombia, 2010. [En línea]. Disponible en: <a href="https://www.academia.edu/9796227/CRISTALOGRAF%C3%8DA_RECREATIVA ">https://www.academia.edu/9796227/CRISTALOGRAF%C3%8DA_RECREATIVA </a> </td>
+      </tr>
+      <tr>
+        <td>[188]</td>
+        <td>Bello Isidoro, Marco Antonio. “Estudio de la pérdida de eficiencia en el proceso de cristalización por enfriamiento de la sacarosa”. Tesis de maestría. Facultad de Ingeniería de Química. Benemérita Universidad Autónoma de Puebla. 2016. [En línea]. Disponible en: <a href="https://repositorioinstitucional.buap.mx/handle/20.500.12371/2285">https://repositorioinstitucional.buap.mx/handle/20.500.12371/2285</a> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="right" onclick="window.location.href = '/static/temas/Aleaciones Metalicas.html'">
+  <p>Tema Anterior: Aleaciones Metalicas</p>
+</div>
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+
+
+      </body>
+      </html>
