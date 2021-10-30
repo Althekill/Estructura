@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>Polimeros</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  .elemento{
+    color:maroon;
+    font-style: normal;
+    font-size:1.1em;
+
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    overflow: auto;
+
+  }
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .e{
+    border: 1px solid black;
+  }
+  td{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    width:85px;
+    height:55px;
+  }
+
+  @media screen and (device-width: 200px) {sudo gpasswd -a $USER input
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+  IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+  .resaltado{
+    font-weight: bold;
+    color: lawngreen;
+    text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+  }
+  </style>
+</head>
+<body>
+
+<h2>¿Qué es un polímero?</h2>
+<p>
+Los polimeros son moleculas de cadena larga que se forman mediante el enlace de varias moleculas iguales, llamadas <b>monómeros</b>.
+Por lo general repetidos cientos o miles de veces en una estructura similar a una cadena. La mayoría de los
+monómeros son materiales orgánicos en los que los átomos de carbono se unen mediante enlaces covalentes.
+
+<!-- TODO: Agregar los modelos de polimeros y monomeros, con una animacion que muestre como se van uniendo los monomeros para formar un polimero -->
+</p>
+<h2>Tipos de polimerización</h2>
+<p>
+  Conforme los monómeros empiezan a conectarse entre sí para
+formar cadenas, se convierten en oligómeros. Conforme más monómeros se
+agregan a la cadena oligómera, ésta crece y al final se convierte en un polímero
+con la adición de una unidad más de monómero que no tendrá un efecto discernible en las propiedades de la cadena. <ref>[190]</ref>
+
+  Los monómeros se pueden unir como polímeros en unidades repetitivas para producir
+  moléculas más y más largas mediante un proceso químico llamado reacción de polimerización.
+Se destacan dos tipos importantes: <b class="resaltado">La polimerización por condensación</b> y <b class="resaltado">La polimerización por adición</b>.
+<ul>
+  <li>En la polimerización por condensación se condensan productos derivados por reacción . A este proceso también se le llama polimerización de crecimiento por etapas o por
+reacción por etapas, ya que la molécula del polímero crece etapa por etapa hasta que se
+consume uno de los reactivos.
+</li>
+<li>La polimerización por adición tambien es conocida como polimerización por reacción en cadena, debido a su velocidad para formar
+moleculas largas, del orden de segundos. Esta reacción utiliza un iniciador para abrir el doble enkace de una molecula, convrtiendola en un monómero que posteriormente
+se une a otros monomeros y crea una cadena de polimeros</li>
+</ul>
+</p>
+
+<h2>Conceptos importantes sobre polímeros</h2>
+<p>
+<ul>
+  <li>
+<b class="resaltado">Peso molecular</b>: El peso molecular de un polímero es la suma de los pesos de cada monómero en el.
+Debido a la aleatoriedad en la cantidad exacta, este valor se suele obtener de una distribución media. Este atributo tiene influencia en  la
+resistencia a la tensión y al impacto, la resistencia al agrietamiento y a la viscosidad (mientras mayor el peso, mayor son estas propiedades).
+  </li>
+  <li>
+<b class="resaltado">Grado de polimerización</b>: El número de unidades de
+repetición se llama grado de polimerización de la cadena polimérica y se
+representa por el símbolo DP<sub>n</sub>. A mayor DP, mayor viscosidad del
+polímero. La viscosidad elevada eleva el costo global de procesamiento.
+  </li>
+  <li>
+<b class="resaltado">Enlace</b>:
+
+Los átomos enlazados covalentemente (usualmente el carbono) incluyen el
+largo centro repetido de la cadena llamado esqueleto del polímero. Los átomos
+anexados al esqueleto se llaman grupos laterales o sustituyentes. El hidrógeno
+es el grupo lateral más común.
+Debido a su resistencia, a los enlaces covalentes
+también se les llama enlaces primarios. A su vez, las cadenas de polímeros se mantienen
+unidas mediante enlaces secundarios, como los enlaces Van der Waals, de hidrógeno e iónicos.
+Cuanto más larga sea la cadena del polímero, mayor será la energía necesaria para vencer la resistencia
+combinada de los enlaces secundarios.
+  </li>
+</ul>
+</p>
+<h2>Cristalinidad en los polímeros</h2>
+<p>
+En los polimeros tambien existen las clasificaciones de sólido amorfo y cristalino. Un polímero amorfo es aquel en el cual las cadenas de polímeros no tienen un orden especifico,
+sino que son como un monton de spaguethi: desordenados. Un <b class="resaltado">polímero cristalino</b> generalmente es inducido en la sintesis del polímero o es deformado en un proceso posterior.
+En un polímero, las regiones cristalinas reciben el nombre de <b class="resaltado">cristalitas</b>, partes ordenadas en las que la cadena de monomeros se dobla adecuadamente como una manguera.
+Un polímero que tiene secciones cristalinas y secciones amorfas en una misma cadena se le llama <b class="resaltado">semicristalino</b>. De hecho, ningun polimero puede llegar a tener una cristalinidad del 100%
+Un polimero ramificado generalmente no puede llegar a ser cristalino, pues las diferentes ramas interfieren en la creacion del mismo.
+</p>
+<h3>Efectos de la cristalinidad</h3>
+<p>
+Asi como en otros tipos de cristales, a medida que aumenta la cristalinidad, aumenta la rigidez, dureza y densidad (<b class="resaltado">contracción por cristalización</b>) del polimero, al mismo tiempo que se reduce su flexibilidad y ductilidad.
+</p>
+<h3>Temperatura de transición vitrea</h3>
+<p>
+Si bien los polimeros no tienen un punto de fusión especifico, a determinada temperatura, se alcanza un punto conocido como <b class="resaltado">temperatura de transición vitrea (T<sub>g</sub>)</b> pasan de ser duros, frágiles y rigidos a ser gomosos o correosos. El policarbonato es una excepción a
+esta regla, que no es frágil a bajas temperaturas, sino que es muy tenaz a temperatura ambiente.
+</p>
+
+<h2>Clasificación de los polímeros</h2>
+<p>
+<ul>
+  <li>
+<b class="resaltado">Polímero líneal</b>: Los polímeros líneales tienen una estructura en secuencia, lo que significa que cada
+monómero esta unido a solo dos monómeros, el siguiente y el anterior, como si fuera una cadena.
+  </li>
+  <li>
+<b class="resaltado">Polímero ramificado</b>: Etos polímeros consisten de una cadena principal, a partir de la cual hay ramificaciones,
+lo que significa que hay monómeros que estaran unidos a otros tres monomeros. Esta ramificación  aumenta la resistencia a la deformación y el
+agrietamiento por esfuerzo. También, tienen una menor densidad que los polímeros lineales, pues las ramificaciones interfieren con el empaquetamiento.
+  </li>
+  <li>
+<b class="resaltado">Polímero de enlace cruzado</b>: Generalmente tienen una estructura tridimensional, también se les conoce como <b>Plásticos termofijos</b>, de los que se hara mencion más adelante.
+Estos polímeros tienen enlaces cruzados  como si de una malla se tratara, hay monómeros que pueen estar unidos hasta con otros 4 monómeros,
+  </li>
+  <li>
+<b class="resaltado">Polimeros en red</b>: Constan de redes tridimensionales , se puede obtener un polímero en red a partir de un polímero termoplastico mediante radiación ultravioleta.
+  </li>
+  <li>
+<b class="resaltado">Copolímeros y terpolímeros</b>: Muchos polímeros están hechos de una sola unidad estructural repetida muchas veces, pero ésta no es la única posibilidad. Cuando un polímero se
+forma a partir de la polimerización de dos o más monómeros se llama copolímero. Estos a su vez tienen 4 diferentes posibilidades:
+<ul>
+  <li><b><i>Al azar</i> </b>: no hay un patrón entre los diferentes monomeros  </li>
+  <li><b><i>En bloque</i> </b>: tiras de un monómero, seguidas de tiras de otro, etc.  </li>
+  <li><b><i>Alternante</i> </b>: un monómero siempre va seguido de otro diferente  </li>
+  <li><b><i>De injerto</i> </b>: cadenas de monomeros conectadas a cadenas de otros monomeros  </li>
+</ul>
+  </li>
+</ul>
+</p>
+<h4>Termoplasticos</h4>
+<p>
+A los polímeros con enlaces secundarios débiles, como los de van der Waals, que se les puede llevar por encima de su
+temperatura de transición vitrea, debilitando el enlace y cambiando sus propiedades para volverse más moldeables y formarlos,
+para luego bajar la temperatura y que el plástico retome sus propiedades iniciales; se les conoce como termoplásticos.
+Algunos plásticos que entran en esta categoría son:
+<ul>
+  <li>Acrilicos</li>
+  <li>Celulósicos</li>
+  <li>Nailons</li>
+  <li>Polietilenos</li>
+  <li>Cloruro de polivinilo</li>
+</ul>
+Otras características de estos materiales es que son vitreos (frágiles) a temperaturas bajo el punto T<sub>g</sub>, por lo que experimentan fatiga, perdiendo flexibilidad con el tiempo y finalmente rompiendose.
+Los termoplásticos pueden claentarse por encima de la tempeatura T<sub>m</sub> para convertirse en moldeables y viscosos; y regresar asu temperatura ambiente con las mismas propiedades, aunque despues de repetir mucho este
+proceso, sufren de degradación, de hecho, a temperaturas relativamente baja, como 80 grados, aumentan considerablemente se ductilidad.
+<br>
+Cuando los termoplásticos se deforman (digamos, estirándolos), las mo-
+léculas de cadena larga tienden a alinearse en la misma dirección del elongación; a este
+proceso se le llama <b class="resaltado">orientación</b>. Y aumenta la resistencia en la dirección en la que ocurrió la transformación.
+<br>
+Algunos termoplásticos (como el poliestireno y el polimetilmetacrilato), cuando se someten a esfuerzos de tensión o a doblez, desarrollan estrechas regiones
+localizadas con forma de cuña, de material muy deformado, denominadas <b class="resaltado">cuarteaduras</b>.
+Aunque pueden parecer grietas, las cuarteaduras son material esponjoso que suele contener 50% de huecos. Esto contribuye al desgast del polímero y su consecuente resgadura.
+La manera en que esto se puede visualizar es mediante el <b class="resaltado">emblanquecimiento por esfuerzo</b>. Cuando se somete a esfuerzos de tensión (como los causados por el plegamiento o el doblez), el plástico adquiere un color más claro, fenómeno usualmente atribuido a la formación
+de huecos microscópicos en el material. El resultado es que el material se vuelve menos
+translúcido (transmite menos luz) o más opaco.
+<br>
+Una característica importante de algunos polímeros, como los
+nailons, es su capacidad para absorber agua. Este líquido actúa como un agente plastificante, lubrica las
+cadenas en la región amorfa. Con una creciente absorción de humedad, la temperatura de
+transición vítrea,, las dimensiones, el esfuerzo de fluencia y el módulo de elasticidad del polímero se reducen drásticamente.
+
+</p>
+<h4>Termofijos</h4>
+<p>
+
+</p>
+<h4>Elastómeros</h4>
+<p>
+
+</p>
+
+<h3>Referencias de la sección 'Aleaciones Metálicas'</h3>
+<div class="ref">
+  <table>
+    <tbody>
+      <tr>
+        <td>[184]</td>
+        <td>Kalpakjian, Serope, “Manufactura, ingeniería y tecnología”, Pearson Educacion, Quinta Edición, 2008.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/Cristalografia.html'">
+  <p>Tema anterior: Difracción de Rayos X</p>
+</div>
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+
+<div class="right" onclick="window.location.href = '/static/temas/Practica de Cristales.html'">
+  <p>Siguiente tema: Practica de Crecimiento de Cristales</p>
+</div>
+
+
+      </body>
+      </html>
