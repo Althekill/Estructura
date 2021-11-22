@@ -1,0 +1,3 @@
+En la seccion de fuerzas moleculares, el primer modelo no aparece, posible problema con cambio de nombre del modelo de hf
+No se puede probar el proyecto de AR con el emulador de firebase, pues utiliza http y esto no permite mostrar (por ejemplo) anotaciones en la AR, sin
+embargo, todo se ve correcto sin entrar a la AR
