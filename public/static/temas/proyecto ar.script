@@ -1,0 +1,15 @@
+Este es el script de la escena del proyecto de ar
+I. Introduccion:
+-Antes que nada, el usuario debe saber que no puede acceder a la inmersion completa sin entrar en la AR, avisarle de esto
+-El primer objeto debe ser solo un señuelo, como un cuadro que diga 'Comenzar'
+-Una vez que coloque el primer objeto en la pared, comenzar con la escena
+-Explicar conceptos importantes de la UI con div's que no sean invasivos y  cambien dependiendo de la escena
+-Esperar un click o touch del usuario en el primer cuadro para comenzar
+II.Primer contacto:
+-Debe ser atractivo, e introducir las mecanicas de toda la aplicacion.
+-Toda la interaccion deberia realizarse mediante botones en el layout de la app o tocando el modelo, nunca arrastrar nada ni dejar al usuario mover onjetos en especifico
+III.Menú:
+-Sera similar al indice de la pagina web, con cuadros con imagenes y el nombre del tema en la pantalla y dos botones para girar el cuadro y cambiar el tema.
+IV.Temas
+-No van a estar divididos como en la pagina, porque no quedarian muy bien, mejor
+  a).El atomo

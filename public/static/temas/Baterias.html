@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>Baterías</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+    background-image: url("/static/Imagenes/bateria.jpg");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+
+  }
+  h1{
+    color:indianred;
+    font-size: 5em;
+    font-family:'Sofia',sans-serif;
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    overflow: auto;
+
+  }
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .e{
+    border: 1px solid black;
+  }
+  td{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    width:85px;
+    height:55px;
+  }
+
+  @media screen and (device-width: 200px) {
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+  IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+  </style>
+</head>
+<body>
+  <h1>Baterias</h1>
+  <img src="/static/Imagenes/void.png" style="height:100%"alt="">
+<h2>Celdas electroquimicas</h2>
+<p>
+  Una celda electroquimica es un dispositivo experimental que genera electricidad mediante una reaccion redox espontanea.
+  Tambien se le llama celda galvanica o voltaiva por sus creadores: Alessandro Volta y Luiig Galvani.
+  Es decir, una celda electroquimica es lo que comunmente se conoce como pila; pues genera electricidad mediante una reaccion de redox.
+  Hay que recordar que la electricidad es el flujo de electrones, y en las reacciones de redox, hay un flujo de electrones de un átomo a otro.
+  La siguiente imagen, tomada del libro de Raymond Chang <ref>[1]</ref> ilustra las partes y reacciones de una celda galvanica:
+  <br>
+  <img src="/static/Imagenes/celda voltaica.png" alt="voltaica">
+  <br>
+  En las celdas galvanicas, hay dos elementos: aquel que se reduce se conoce como <b class="resaltado">catodo</b>; y aquel que se ocida se conoce como <b class="resaltado">anodo</b>.
+  Para que pueda existir la tranferencia de electrones, ambos anodo y catodo deben estar juntos para poder ceder sus electrones, sin embargo, en la celda galvanica, ambos estan separados y no existe manera en que sus electrones puedan viajar eun elemento a otro.
+  Por esto es necesario el puente salino y el cable conductor, para que las cargas puedan fluir por el conductor y produzcan electricidad, y al llegar las cargas a los electrodos no se queden en este, si no que fluyan al puente salino, logrando que la bateria siga funcionando.
+  La manera estandar de representar a las celdas electroquimicas es con un diagrama de celda, en el cual se colocan lo elementos y sus concentraciones, por ejemplo ,para la celda anterior, el diagrama de celda es:
+  <br>
+  <elemento>Zn(s)|Zn<sup>+2</sup>(1M)||Cu<sup>+2</sup>(1M)|Cu(s)</elemento>
+  <br>
+  Donde la doble linea representa el puente salino y la linea simple son los limites de las fases de la reaccion.
+</p>
+<h3>Fuerza electromotriz</h3>
+<p>
+La cantidad de energia que se produce en la celda se le conoce como fuerza electromotriz o fem. Esta depende de la composicion de los ectrodos, la concetracion, e incluso de la temperatura.
+La fuerza electromotriz esta directamente relacionada con el voltaje que produce la bateria y se obtiene de forma experimental. La fem estandar resulta de las contribuciones de ambos electrodos al voltaje de la bateria.
+<br>
+E<sup>o</sup><sub>celda</sub> = E<sup>o</sup><sub>ánodo</sub> + E<sup>o</sup><sub>cátodo</sub>
+<br>
+Arbitrariamente se le asigna un 0 a uno de estos dos valores para obtener la feme estandar del otro elemento, resultando en que el catodo tiene un fem estandar positivo y el anodo tiene el mismo fem estandar pero negativo. A continuacion se expone una tabla con los diferentes potenciales para diferentes reacciones:
+<br>
+<img src="/static/Imagenes/tabla fem.png" alt="fem">
+<br>
+</p>
+<h4>Celda de concentración</h4>
+<p>
+  Debido a que la fem depende de la concentracion de los electrodos, es posible crear una celda electrica con el mismo material a diferentes concentraciones, sin embargo producen muy poco voltaje. Por ejemplo: una celda de zinc 1M y zinc 0.1M:
+  <br>
+  <elemento>Zn(s)|Zn<sup>+2</sup>(0.1M)||Zn<sup>+2</sup>(1.0M)|Zn(s)</elemento>
+  <br>
+  Produce:
+  <br>
+  E = 0- (0.0257/2)*ln(0.1) = 0.0296 V
+</p>
+
+
+<h2>¿Que es una batería?</h2>
+<p>
+  Una batería es una celda electroquimica que sirve como fuente de voltaje constante.
+  <br>
+  Tecnicamente es una celda electroquimica, sin embargo, la bateria es un elemento con todos los components necesarios, como el Puente salino.
+
+</p>
+<h3>Celda seca</h3>
+<p>
+  <br>
+  <img src="/static/Imagenes/pila seca.jpg" alt="bateria seca">
+  <br>
+  Una celda seca es una bateria que no tienen un componente fluido, o liquido.
+  La mas comun esta compuesta de un anodo de zinc con dioxide de manganeso MnO<sub>2</sub> y
+  un electrolito en solucion clouro de amonio y cloruro de zinc. El catodo es una barra de carbon que esta al centro de la celda en el electrolito.
+  Produce aroximadamente 1.5 v. De manera simplificada, estas son las semireacciones:
+  <br>
+    <img src="/static/Imagenes/celda seca.png" alt="bateria seca">
+<br>
+</p>
+<h3>Bateria de mercurio</h3>
+<p>
+  <br>
+  <img src="/static/Imagenes/bateria de mercurio.jpg" alt="bateria seca">
+  <br>
+  Esta bateria es mas costosa que la celda comun, sin embargo entrega un voltaje mas constante que la celda seca a 1.35 v por bateria. Ademas de tener una capacidad mayor y durar mas tiempo, lo que las hace ideales para relojes, marcapasos, aparatos auditivos, etc
+  Se compone de un cilindro de acero inoxidable con un anodo de zinc amalgamado  de mercurio. En contacto con un electrolito alcalino de oxido de zinc y oxido de mercurio (II):
+<br>
+<img src="/static/Imagenes/bateria mercurio.png" alt="bateria seca">
+<br>
+</p>
+<h3>Acumulador de plomo</h3>
+<p>
+  <br>
+  <img src="/static/Imagenes/acumulador de plomo.jpg" alt="bateria seca">
+  <br>
+  A diferencia de las baterias anteriores, las baterias de plomo suelen ser varias celdas identicas ensambladas en serie, de manera que sus voltajes se suman. En un automovil cada celda suministra 2 volts, para dar los 12 volts estandares en las bateris de auto se necesitan de 6 celdas.
+  El anodo de las celdas esta compuesto de plomo y el catodo de dioxido de plomo PbO2, empacados en una placa metalica. Ambos estan sumergidos en un electrolito de acido sulfurico
+  <br>
+  <img src="/static/Imagenes/acumulador.png" alt="plomo">
+  <br>
+  Un acumulador de plomo puede entregar gran corriente, necesaria para encender un auto, en un periodo corto de tiempo.
+Este tipo de bateria es recargable, que significa qie la reaccion de redox se puede revertir, entregandole energia a la celda, en un proceso conocido como electrolisis.
+Algo importante a destacar es que la reaccion consume acido sulfurico, por lo que hay casos en los que reemplazar este acido puede revivir la bateria, pues se puede seguir realizando la reaccion de redox que produce voltaje.
+<br>
+<img src="/static/Imagenes/acido plomo.jpg" alt="bateria seca">
+<br>
+</p>
+<h4>Acumulador de plomo en clima frio</h4>
+<p>
+  En un clima frio puede ser dificil encender el auto, pues la bateria ya no tiene voltaje suficiente para funcionar, la razon por la que ocurre este tiene que ver con la viscosidad del acido sulfurico, aldisminuir su temperatura, tambien disminuye la conductividad de este, causando que los electrones no puedan viajar por los cables, por tanto no dan energia suficiente paraq encenderel auto.
+</p>
+<h3>Baterias de litio</h3>
+<p>
+  <br>
+  <img src="/static/Imagenes/pila litio.jpg" alt="bateria seca">
+  <br>
+  Este tipo de baterias se conocen como baterias de estado solido, pues no contienen ningun liquido en su reaccion.
+  La ventaja de las baterias de litio, es que producen la mayor cantidad de energia electrica, usando la menor cantidad de material ,pues solo se necesitan 6.9 g para producir un mol de electrones.
+  El electrolito es un polimero que permite el paso de los iones, y su catodo esta hecho de TiS<sub>2</sub>.
+  Su voltaje puede ser de hasta 3V.
+  Al igual que el acumulador de plomo, estas baterias son recargables.
+
+</p>
+
+<h3>Referencias de la sección 'Baterias'</h3>
+<div class="ref">
+  <table>
+    <tbody>
+      <tr>
+        <td>[1]</td>
+        <td>Chang, Raymond, “Química”, McGraw-Hill, Séptima Edición, 2002.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/Redox.html'">
+  <p>Tema anterior: Redox</p>
+</div>
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+<div class="right" onclick="window.location.href = '/static/temas/Practica Integradora.html'">
+  <p>Siguiente tema: Practica Integradora</p>
+</div>
+
+
+      </body>
+      </html>

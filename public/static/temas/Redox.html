@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>Reaciones Redox</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    overflow: auto;
+
+  }
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .e{
+    border: 1px solid black;
+  }
+  td{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    width:85px;
+    height:55px;
+  }
+
+  @media screen and (device-width: 200px) {
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+  IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+  h1{
+    color:indianred;
+    font-size: 5em;
+    font-family:'Sofia',sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <h1>Redox</h1>
+<h2>¿Que son las reacciones de oxido-reduccion?</h2>
+<p>
+Las reaciones de oxido-reducción son aquellas en las que existe una transferencia de electrones de un elemento a otro.
+Esto significa que el numero de oxidacion de los elementos que participan en la eraccion cambian despues de esta. Las reacciones redox contituyen una parte muy importante de la electroquimica, que es <b class="resaltado">La rama de la quimica que estudia la transformacion de la energia electrica y la energia quimica</b> <ref>[1]</ref>
+<br>
+<img src="/static/Imagenes/redox.jpg" alt="redox">
+<br>
+</p>
+<h3>Diferentes procesos en una reaccion redox</h3>
+<p>
+  En todas las reacciones redox intervienen dos procesos: <b class="resaltado">La oxidacion y la reduccion</b>.
+  <ul>
+    <li>La oxidacion es el proceso mediante el cual un elemento disminuye su cantidad de electrones, aumentando su numero de oxidacion.</li>
+    <li>Por el contrario, la reduccion de un elemento implica un aumento de electrones, diminuyendo el numero de oxidacion.</li>
+  </ul>
+  <br>
+  Por ejemplo, en la siguente ecuacion, existe un cambio en la cantidad de electrones de dos elementos, y un tercer elemento que no cambia su cantidad de electrones:
+  <br>
+  <elemento>2Fe<sup>+3</sup>Cl<sub>3</sub><sup>-3</sup> + Cu<sup>0</sup> → 2Fe<sup>+2</sup>Cl<sub>2</sub><sup>-2</sup> + Cu<sup>+2</sup>Cl<sub>2</sub><sup>-2</sup>.</elemento>
+  <br>
+  Se puede observar que en esta reaccion, el Hierro gano un electron, pues su carga disminuyo, por lo tanto este elemento se redujo. Por el contrario, en el cobre la carga aumento, lo que significa que
+  perdio electrones, po tanto se oxidó.
+</p>
+<h3>Semireacciones y balanceo con redox</h3>
+<p>
+Para analizar de manera correcta cada uno de los elementos, se hace uso de las semireacciones, las cuales aislan a cada elemento y hacen que sea mas
+facil estudiar su carga. Por ejemplo, para la ecuacion anterior, las semireacciones son:
+<br>
+<elemento>Fe<sup>+3</sup> → Fe<sup>+2</sup></elemento>
+<br>
+<elemento>Cl<sup>-1</sup> → Cl<sup>-1</sup></elemento>
+<br>
+<elemento>Cu<sup>0</sup> → Cu<sup>+2</sup></elemento>
+<br>
+Asi, se puede identificar que elemento se oxida y que elemento se reduce.
+Adeams, con este metodo, se puede balancear la ecuacion, utilizando el teorema de la conservacion de la masa: los elementos en los reactivos deben ser igual a los de los productos; extendida a los electrones, es decir
+la cantidad total de electrones en los reactivos debe ser igual a la cantidad de electrones en los productos.
+<br>
+<elemento>1 e<sup>-</sup> +Fe<sup>+3</sup> → Fe<sup>+2</sup></elemento>
+<br>
+<elemento>Cl<sup>-1</sup> → Cl<sup>-1</sup></elemento>
+<br>
+<elemento>Cu<sup>0</sup> → Cu<sup>+2</sup> + 2e<sup>-</sup></elemento>
+<br>
+Se puede ver que la cantidad de electrones no coincide, entonces hay que duplicar el elemento con Fe para que conicida:
+<br>
+<elemento>2 x 1 e<sup>-</sup> → 2e<sup>-</sup></elemento>
+<br>
+<elemento>2Fe<sup>+3</sup>Cl<sub>3</sub><sup>-3</sup> → 2Fe<sup>+2</sup>Cl<sub>2</sub><sup>-2</sup></elemento>
+<br>
+Y asi, se puede balancear la ecuacion. Sin embargo, existen otro tipo de ecuaciones en las que es necesario agregar nuevas sustancias para que se balancee:
+<elemento>Fe<sup>+2</sup> + Cr<sub>2</sub><sup>+6</sup>O<sub>7</sub><sup>-2</sup> → Fe<sup>+3</sup> + Cr<sup>+3</sup></elemento>
+<br>
+Vease que de un lado hay oxigeno, pero del otro no, entonces la ecuacion no se puede balancear.
+el metodo para balancear esta ecuacion es balancear los atomos de <elemento>O</elemento> con <elemento>H<sub>2</sub>O</elemento> y los atomos de <elemento>H</elemento> con <elemento>H<sup>+</sup></elemento>.
+Primero se agrega <elemento>H<sub>2</sub>O:</elemento>
+<br>
+<elemento>Fe<sup>+2</sup> + Cr<sub>2</sub><sup>+6</sup>O<sub>7</sub><sup>-2</sup> → Fe<sup>+3</sup> + Cr<sup>+3</sup> + 7H<sub>2</sub>O</elemento>
+  <br>
+Ahora se balancean los <elemento>H</elemento> con <elemento>H<sup>+</sup></elemento>:
+<br>
+<elemento>14H<sup>+</sup> + Fe<sup>+2</sup> + Cr<sub>2</sub><sup>+6</sup>O<sub>7</sub><sup>-2</sup> → Fe<sup>+3</sup> + Cr<sup>+3</sup> + 7H<sub>2</sub>O</elemento>
+<br>
+Ya se pueden balancear las cargas:
+<elemento>14H<sup>+</sup> + Fe<sup>+2</sup> + Cr<sub>2</sub><sup>+6</sup>O<sub>7</sub><sup>-2</sup> + 6e<sup>-</sup> → Fe<sup>+3</sup> + Cr<sup>+3</sup> + 7H<sub>2</sub>O + e<sup>-</sup></elemento>
+<br>
+Y entonces, <elemento>Fe</elemento> se multiplica por 7 para obtener 7 electrones
+<br>
+<elemento>14H<sup>+</sup> + 6Fe<sup>+2</sup> + Cr<sub>2</sub><sup>+6</sup>O<sub>7</sub><sup>-2</sup> + 6e<sup>-</sup> → 6Fe<sup>+3</sup> + Cr<sup>+3</sup> + 7H<sub>2</sub>O + 6e<sup>-</sup></elemento>
+<br>
+Ahora, la ecuacion ya esta balanceada.
+</p>
+<h2>Asignacion de numeros de oxidacion para compuestos organicos</h2>
+<p>
+  La asignacion de numeros de oxidacion para compuestos inorganicos es un proceso sencillo: obtener el numero de oxidacion de uno de los compuestos, multiplicarlo por la cantidad de moleculas que hay, multiplicarlo por -1 y asignarlse ese valor al otro compuesto. En caso de que el elemento este solo, su numero de oxidacn es de 0. Existen mas reglas como que el hidrogeno tiene numero de oxidacion -1 en los hidruros o que hay moleculas que no son neutras y por tanto cambia la carga de un elemento, pero siguen siendo reglas muy simples e intuitivas.
+  <br>
+  Sin embargo, para compuestos organicos, la geometria de los enlaces hace que lo numeros de oxidacion no se puedan onseguir tan facilmente. Afortunadamente existen algunas simplificaciones al metodo que hacen que se vuelva mas didactico como la siguiente [2]:
+  <ol>
+    <li>Se escribe la estructura de Lewis del elemento</li>
+    <li>Los electrones solitarios (iones) se asignan al atomo que los contiene</li>
+    <li>Los electrones de cada enlace covalente se asignan al núcleo más electronegativo de los que forman el enlace. <a href="/static/temas/Tabla Periodica.html">Vease la tabla periodica.</a> </li>
+    <li>Si existen uniones de un elemento consigo mismo, los electrones de enlace se dividen equitativamente entre los dos átomos.</li>
+    <li>Se cuentan los electrones asignados a cada átomo, y se les llama e<sub>a</sub>.</li>
+    <li>El número de oxidación se obtiene restando e<sub>a</sub> al número de electrones de valencia del elemento e<sub>v</sub>: No<sub>x</sub> = e<sub>v</sub> – e<sub>a</sub></li>
+  </ol>
+
+</p>
+
+
+<h3>Referencias de la sección 'Redox'</h3>
+<div class="ref">
+  <table>
+    <tbody>
+      <tr>
+        <td>[1]</td>
+        <td>Chang, Raymond, “Química”, McGraw-Hill, Séptima Edición, 2002.</td>
+      </tr>
+      <tr>
+        <td>[2]</td>
+        <td>Sosa, Plinio, "Representación algebraica del método de Kauffman para asignar números de oxidación.", Educación Química, Volume 25, Supplement 1, 2014. [En línea]. Disponible en: <a href="https://doi.org/10.1016/S0187-893X(14)70561-0">https://doi.org/10.1016/S0187-893X(14)70561-0</a>.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/Ceramicos.html'">
+  <p>Tema anterior: Ceramicos</p>
+</div>
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+<div class="right" onclick="window.location.href = '/static/temas/Baterias.html'">
+  <p>Siguiente tema: Baterias</p>
+</div>
+
+
+      </body>
+      </html>

@@ -82,6 +82,16 @@
             color: navy;
             font-weight: bold;
           }
+          .top-menu{
+            width: 100%;
+            overflow:scroll;
+            position: absolute;
+            top: 32px;
+            left: 20px;
+          }
+          .m{
+            position: absolute; bottom: 16px; left: 16px;
+          }
           #annotation{
   background-color: #888888;
   position: absolute;
@@ -93,41 +103,130 @@
 :not(:defined) > * {
   display: none;
 }
+/* CSS */
+.button-62 {
+background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+border: 0;
+border-radius: 12px;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 2.5;
+outline: transparent;
+padding: 0 1rem;
+text-align: center;
+text-decoration: none;
+transition: box-shadow .2s ease-in-out;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+}
 
+.button-62:not([disabled]):focus {
+box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+details > summary {
+  color: black;
+  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  color: black;
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+.d{
+  position: absolute;
+  max-height: 50%;
+  overflow-y: scroll;
+  bottom: 40px;
+  right: 15px;
+  width:30%;
+}
+.c{
+  position: relative;
+  padding-left: 20%;
+}
       </style>
     <script type="text/javascript" src="tabla periodica.js"></script>
-    <script type="text/javascript" src="atomo.js"></script>
+    <script type="text/javascript" src="/static/temas/proyecto.js"></script>
   </head>
   <body>
 
-    <h2>Proyecto AR</h2>
+    <h2>Exposicion de AR</h2>
 
 <div class="Modelo">
 
 
-<model-viewer id="pan-demo" class="Modelo" src="/static/Modelos/zirconia.glb" alt="Modelo 3d del spin" autoplay ar
-ar-placement="wall" environment-image="/static/Modelos/spruit_sunrise_1k.hdr"
-scale="0.05 0.05 0.05"
+<model-viewer id="pan-demo" class="Modelo" src="" alt="Modelo 3d del spin" autoplay ar
+environment-image="neutral" scale="0.05 0.05 0.05"
 ar-modes="webxr scene-viewer quick-look"
  auto-rotate camera-controls>
+ <div class="top-menu">
+<table>
+  <tr>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(1)">El Atomo</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(3)">Enlaces Quimicos</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(4)">Fuerzas intermoleculares</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(5)">Compuestos Inorganicos</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(6)">Quimica Organica</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(7)">Compuestos Organicos</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(8)">Sistemas Cristalinos</button></td>
+    <td> <button type="button" class="button-62" role="button" name="seccion" onclick="seccio(9)">Aleaciones Metalicas</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(10)">Polimeros</button></td>
+    <td><button type="button" class="button-62" role="button" name="seccion" onclick="seccio(11)">Ceramicos</button></td>
+  </tr>
+</table>
 
-  <button slot="ar-button" style="background-color: cyan; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+</div>
+<div class="d">
+  <details id="info">
+
+  </details>
+</div>
+    <div class="m">Modelo: <select id="glb"></select></div>
+  <button slot="ar-button" style="background-color: cyan; border-radius: 4px; border: none; position: absolute; bottom: 16px; right: 16px; ">
       👋 Activar AR
   </button>
-  <button style="background-color: cyan; border-radius: 4px; border: none; position: absolute; bottom: 16px; right: 16px;" id="magic">
+  <!-- <button style="background-color: cyan; border-radius: 4px; border: none; position: absolute; bottom: 16px; right: 16px;" id="magic">
       Touch me
   </button>
 <div id="annotation">
   Este es un div
   <br>
   dentro del AR
-</div>
+</div> -->
 
 
 </model-viewer>
 </div>
+<br>
+<div style="width: 100%;">
+<div class="c">
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/vaSTpdIK_hQ?autoplay=1&mute=1" allowfullscreen>
+  </iframe>
+</div>
 
-<script>
+
+</div>
+
+<!-- <script>
     const models = ['zirconia.glb', 'carburo de tungsteno.glb'];
     const toggleModel = document.querySelector('#pan-demo');
     let j = 0;
@@ -247,16 +346,21 @@ ar-modes="webxr scene-viewer quick-look"
 
     }
   }, true);
-</script>
+</script> -->
 
 <link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="right" onclick="window.location.href = '/static/temas/Estudio de caso.html'">
+  <p>Tema Anterior: Estudio de Caso</p>
+</div>
 
 <div class="main" onclick="window.location.href = '/'">
   <p>Indice</p>
 </div>
-<div class="right" onclick="window.location.href = '/static/temas/Tabla Periodica.html'">
-  <p>Siguiente tema: Tabla Periodica</p>
+<div class="left" onclick="window.location.href = '/static/temas/Bibliografia.html'">
+  <p>Tema Siguiente: Referencias</p>
 </div>
+
+
 
   </body>
 </html>
