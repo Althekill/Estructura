@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <meta charset="utf-8">
+    <title>Mol</title>
+    <style>
+    * {
+    box-sizing: border-box;
+  }
+
+    body{
+      font-family: monaco,Consolas,Lucida Console,monospace;
+
+    }
+    h2{
+      color:olive;
+      font-size: 4em;
+      font-family:'Sofia',sans-serif;
+    }
+    h3{
+      color:fuchsia;
+      font-size: 2em;
+      font-family:'Sofia',sans-serif;
+    }
+    h4{
+      color:mediumturquoise;
+      font-size: 4em;
+      font-family:'Amatic SC',sans-serif;
+    }
+    h5{
+      color:coral;
+      font-size: 3em;
+      font-family:'Amatic SC',sans-serif;
+    }
+    q{
+      font-style: oblique;
+      font-weight: bold;
+      color:crimson
+    }
+    img{
+      max-width: 100%;
+    }
+    elemento{
+      color:maroon;
+      font-style: normal;
+      font-weight: bold;
+      font-size:1.5em;
+    }
+    .elemento{
+      color:maroon;
+      font-style: normal;
+      font-size:1.1em;
+
+    }
+    todo{
+      font-style: italic;
+      font-weight: bold;
+      font-size:3em;
+    }
+    .table {
+      overflow: auto;
+
+    }
+    .grupo>td{
+      font-size:18px;
+    }
+    .grupo{
+      font-size:18px;
+    }
+    .Modelo{
+      height: 500px;
+      width: 100%;
+    }
+    table{
+      border-collapse: collapse;
+    }
+    .e{
+      border: 1px solid black;
+    }
+    td{
+      background-color: white;
+      font-size: 30px;
+      text-align: center;
+      width:85px;
+      height:55px;
+    }
+
+    @media screen and (device-width: 200px) {sudo gpasswd -a $USER input
+      h2,h3,h4,h5 {
+        font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+      }
+    }
+    .ref{
+      width:90%;
+      overflow: auto;
+    }
+    .ref>table>tbody>tr>td{
+      background-color: white;
+      font-size: 1em;
+      text-align: left;
+      width:80%;
+    }
+    .ref>table>tbody>tr>td:first-child ,ref{
+      color: navy;
+      font-weight: bold;
+      width:10%;
+    }
+    IUPAC{
+      font-style: italic;
+      font-weight: bold;
+      color:lightsalmon;
+      font-size:1.2em;
+    }
+    .resaltado{
+      font-weight: bold;
+      color: lawngreen;
+      text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="Modelo">
+
+
+    <model-viewer id="pan-demo" class="Modelo" src="/static/Modelos/atomos/atomo_93.glb" alt="Modelo 3d del alumina" autoplay ar
+    ar-placement="wall" environment-image="/static/Modelos/spruit_sunrise_1k.hdr"
+    scale="0.05 0.05 0.05"
+    ar-modes="webxr scene-viewer quick-look"
+     auto-rotate camera-controls>
+    </div>
+  </body>
+</html>

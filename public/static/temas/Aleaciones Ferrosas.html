@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>Aleaciones Ferrosas</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+
+  .e{
+    border: 1px solid black;
+  }
+  .t{
+    width:50%
+  }
+.t>tbody>tr>td, .t>tbody>tr{
+    border: 1px solid black;
+}
+  td>img{
+    width:100%
+  }
+  @media screen and (device-width: 200px) {
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+  IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+  </style>
+</head>
+<body onload="load()">
+
+
+<h3>¿Que son las aleaciones Ferrosas?</h3>
+
+<p>
+  Contienen hierro como metal base y sus categorías generales son aceros al carbono y aleados, aceros inoxidables, aceros para matrices y herramentales, hierros y aceros fundidos.
+</p>
+<h3>Produccion de Hierro y Acero</h3>
+<p>
+Los tres materiales utilizados en la fabricacione de hierro son el mineral de hierrro, la piedra caliza y el coque
+<br>
+<img src="#piedra caliza" alt="">
+<cite>El hierro es uno de los elementos más abundantes en el mundo, pues constituye alrededor de 5% de la corteza terrestre</cite>
+Sus pricipales minerales son la taconita, la hematita y la limonita. Una vez extraido, el mineral se tritura en finas particulas y se forma de pellets, que se constituyen de 65% hierro puro.
+<br>
+<img src="" alt="pellets">
+El coque se obtiene de grados especiales de carbón bituminoso (un carbón suave rico en hidrocarburos volátiles y en materia alquitranada), que se calienta en hornos verticales a temperaturas de hasta 1150 °C (2100 °F) y después se enfrían con agua en torres
+de enfriamiento. Tiene varias funciones en la fabricación del acero, incluyendo (a) generar el nivel de calor requerido para que ocurran las reacciones químicas necesarias enproducción del hierro, y (b) producir el monóxido de carbono (un gas reductor, lo que
+significa que retira oxígeno) que se utiliza así para reducir el óxido de hierro a hierro.
+<br>
+La función de la piedra caliza (carbonato de calcio) es retirar impurezas del hierro
+fundido, pues reacciona químicamente con ellas y actúa como fundente (esto es, fluye como un fluido), lo cual hace que se fundan a baja temperatura.
+</p>
+<h4>Fabricación del Hierro</h4>
+<p>
+La piedra caliza, el hierro y el coque se transpotan a la parte superior de un <b>horno alto</b> y se depositan en el. El cual
+es básicamente un gran cilindro de acero revestido con ladrillo refractario (resistente al
+calor); tiene la altura de un edificio de 10 pisos.  La mezcla de carga se funde en una reacción a 1650 °C (3000 °F) con el
+aire precalentado a unos 1100 °C (2000 °F) e inyectado dentro del horno.
+<br>
+La Reaccion que ocurre es la de el oxigeno con el carbono para producir <elemento>Monoxido de carbono</elemento>, que reacciona con el <elemento>óxido de hierro</elemento> y lo reduce a <elemento>hierro</elemento>. A intervalos de cuatro a cinco horas, se extrae (sangra) el metal en ca-
+rros olla, con hasta 160 toneladas de hierro fundido cada uno de ellos. El metal fundido
+en esta etapa se llama arrabio o hierro cochino, o simplemente metal caliente; tiene una
+composición característica de 4% de C, 1.5% de Si, 1% de Mn, 0.04% de S, 0.4% de P,
+y el resto es hierro puro.
+<br>
+<img src="/static/Imagenes/alto horno.png" alt="">
+</p>
+<h3>Fabricacion del acero</h3>
+<p>
+  El metal fundido que procede del alto horno se transporta a uno de tres tipos de hornos: de hogar abierto (que ya no se utiliza y fue remplazado por el eléctrico), eléctrico
+o básico de oxígeno.
+<br>
+En el <strong>horno eléctrco</strong>  la fuente de calor es un arco eléctrico continuo que se
+forma entre los electrodos y el metal cargado en el horno En este tipo de
+aparatos se generan temperaturas tan altas como 1925 °C.
+Las capacidades de los hornos eléctricos varían de 60 a 90 toneladas de acero por día. La calidad del acero producido es mejor que la del horno de hogar abierto y que la del proceso básico de oxígeno.
+<br>
+<strong>El convertidor básico de oxígeno</strong> (BOF, por sus siglas en inglés) es el proceso de fabricación de acero más rápido. En general, se cargan
+200 toneladas de arrabio y 90 toneladas de chatarra en un recipiente. Después
+se inyecta oxígeno puro dentro del horno por alrededor de 20 minutos mediante unaza (un tubo largo) enfriada por agua, a una presión de unos 1250 kPa (180 psi). La vigorosa agitación del oxígeno refina el metal fundido mediante un proceso de oxidación en el que se produce óxido de hierro. El óxido reacciona con el carbono en el metal fundido, produciendo monóxido y bióxido de carbono.
+Este proceso puede refinar 250 toneladas de acero en 30-50 minutos.
+<br>
+También se puede fundir acero en hornos de inducción de los que se
+ha retirado el aire llamados <strong>hornos de vacio</strong>. Debido a que el proceso retira las impurezas gaseosas del metal fundido, se producen aceros de alta calidad.
+</p>
+<h3>Fundicion de Lingotes</h3>
+<p>
+  Una ez hecho este proceso, el acero se debe fundir en un molde llamado <strong>lingotera</strong>.  En general, las lingoteras se fabrican de hierro de cubilote o hierro de alto horno
+con 3.5% de C.  Los lin-
+gotes enfriados se retiran (extraen) de los moldes y se introducen en hornos de empape,
+donde se recalientan a una temperatura uniforme de unos 1200 °C (2200 °F) para su
+procesamiento posterior mediante laminado. Los lingotes pueden ser de sección
+transversal cuadrada, rectangular o redonda y sus pesos van desde unos cuantos kilos hasta
+40 toneladas.
+<br>
+Este proceso puede conducir a tres tipos diferentes de acero:
+<ul>
+  <li> Acero calmado. Éste es un acero totalmente desoxidado; esto es, se retira el oxígeno eliminando así la porosidad. En el proceso de desoxidación, el oxígeno disuelto
+en el metal fundido se hace reaccionar con elementos como aluminio, silicio, manganeso y vanadio, que deben agregarse al metal fundido. Estos elementos tienen
+afinidad con el oxígeno y forman óxidos metálicos. El nombre del metal que se utiliza se agrega al nombre, por ejemplo, si se utiliza aluminio, al producto se le llama acero calmado en aluminio </li>
+<li> Acero semicalmado. Contiene alguna porosidad en algunas areas, lo que significa que se desperdicia menos acero, por tanto su produccion es económica.</li>
+<li>Acero efervescente. Tiene un contenido bajo de carbono (menos de 0.15%), los gases desarrollados se  controlan
+parcialmente mediante la adición de otros elementos, como el aluminio. Tiene menor calidad, pues los productos
+fabricados con este acero pueden resultar defectuosos y deben inspeccionarse.
+</li>
+</ul>
+
+</p>
+<h4>Colada continua</h4>
+<p>
+  La colada continua o fundicion en hilos se desarrolló inicialmente para fundir tiras de metales no ferrosos. Ahora el proceso se utiliza ampliamente para producir acero, con mejoras importantes en la productividad y reducción de
+costos.
+
+Antes de iniciar el proceso de colada, se inserta una barra inicial (barra ficticia) en
+el fondo del molde. Cuando se cuela el metal fundido se solidifica sobre dicha barra,cual se retira a la misma velocidad que a la que se vierte el metal. La velocidad de enfriamiento es tanta que el metal desarrolla una superficie exterior solidificada (costra) quesoporta durante su recorrido hacia abajo, de manera característica a unos 25 mm/s (1 pulgada/s). El espesor de la costra en el extremo de salida del molde es de entre 12 mm18 mm (0.5 a 0.75 pulgadas). Se provee enfriamiento adicional mediante rociado de
+agua a lo largo de la trayectoria del metal que está solidificándose. En general, los moldes
+se recubren con grafito o con lubricantes sólidos similares para reducir tanto la fricción
+como la adhesión en las interfaces molde-metal. De igual manera, se someten a vibración para disminuir la fricción y el pegado.
+<br>
+<img src="/static/Imagenes/colada continua.png" alt="">
+</p>
+<h4>Aceros al carbono y aleados</h4>
+<p>
+  Los usos del acero son extremadamte amplio, como se ve en la tabla:
+  <table class="t">
+    <tbody>
+      <tr>
+        <td>Alambre</td>
+        <td>Acero</td>
+        <td>Imagen</td>
+      </tr>
+      <tr>
+        <td>Alambre</td>
+        <td>1045, 1055</td>
+        <td><img src="/static/Imagenes/alambre.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td>Cuerda de guitarra</td>
+        <td>1085</td>
+        <td><img src="/static/Imagenes/cuerda.jpg" alt=""></td>
+      </tr>
+      <tr>
+        <td>Bielas</td>
+        <td>1040,3141,4340</td>
+        <td><img src="/static/Imagenes/biela.jpg" alt=""></td>
+      </tr>
+      <tr>
+        <td>Cadenas de transmision</td>
+        <td>3135,3140</td>
+        <td><img src="/static/Imagenes/cadena.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td>Engrane diferencial</td>
+        <td>4023</td>
+        <td><img src="/static/Imagenes/engrane diferencial.jpg" alt=""></td>
+      </tr>
+      <tr>
+        <td>Tuberia de acero</td>
+        <td>1040</td>
+        <td><img src="/static/Imagenes/tuberia.jpg" alt=""></td>
+      </tr>
+    </tbody>
+  </table>
+</p>
+
+<h3>Aditivos al acero</h3>
+<p>
+  A los aceros se agregan diversos elementos para impartirles propiedades como templabilidad, resistencia, dureza, tenacidad, resistencia al desgaste y capacidad para trabajarlos,
+  soldarlos y maquinarlos
+  <br>
+  <table class="t" style="width:100%">
+    <tr>
+      <td>Azufre</td>
+      <td>Reduce la
+resistencia al impacto y la ductilidad, además de dañar la calidad de la superficie y la soldabilidad.
+</td>
+    </tr>
+    <tr>
+      <td>Boro</td>
+      <td>mejora la templabilidad, empeora en la maquinabilidad y la formabilidad.
+</td>
+    </tr>
+    <tr>
+      <td>Calcio</td>
+      <td>mejora la tenacidad y puede mejorar la formabilidad y
+la maquinabilidad.
+</td>
+    </tr>
+    <tr>
+      <td>Carbono</td>
+      <td> mejora la templabilidad, resistencia, dureza y resistencia al desgaste; re-
+duce la ductilidad, la soldabilidad y la tenacidad.
+</td>
+    </tr>
+    <tr>
+      <td>Cerio</td>
+      <td>controla la forma de las inclusiones y mejora la tenacidad en los aceros de
+baja aleación de alta resistencia; desoxida los aceros.
+</td>
+    </tr>
+    <tr>
+      <td>Cobalto</td>
+      <td>mejora la resistencia y la dureza a temperaturas elevadas.
+</td>
+    </tr>
+    <tr>
+      <td>Cobre</td>
+      <td>mejora la resistencia a la corrosión atmosférica y, en menor medida, incrementa la resistencia con una pequeña pérdida de ductilidad; afecta el trabajo en
+  caliente y la calidad de la superficie.</td>
+    </tr>
+<tr>
+  <td>Cromo</td>
+  <td> mejora la tenacidad, templabilidad y resistencia al desgaste, a la corrosión
+  y a la alta temperatura; incrementa la profundidad de penetración de dureza resultante del tratamiento térmico, al promover la carburización.</td>
+</tr>
+<tr>
+<td>Fósforo</td>
+<td> mejora la resistencia, templabilidad, resistencia a la corrosión y maquina-
+bilidad; reduce severamente la ductilidad y la tenacidad.</td>
+</tr>
+
+<tr>
+  <td>Magnesio</td>
+  <td>tiene los mismos efectos del cerio.</td>
+</tr>
+<tr>
+  <td>Manganeso</td>
+  <td>mejora la templabilidad, resistencia, resistencia a la abrasión y maquinabilidad; desoxida el acero fundido, reduce la fragilización en caliente y disminuye la soldabilidad.</td>
+</tr>
+<tr>
+  <td>Molibdeno</td>
+  <td>mejora la templabilidad, resistencia al desgaste, tenacidad, resistencia
+  a la temperatura elevada, resistencia a la termofluencia y dureza; minimiza la
+  fragilización por revenido.</td>
+</tr>
+<tr>
+  <td>Niobio</td>
+  <td>refina el tamaño del grano y mejora la resistencia y tenacidad al
+  impacto; reduce la temperatura de transición y puede disminuir la templabilidad.
+</td>
+</tr>
+<tr>
+  <td>Niquel</td>
+  <td> mejora la resistencia, tenacidad y resistencia a la corrosión; mejora la tem-
+  plabilidad.</td>
+</tr>
+<tr>
+  <td>Plomo</td>
+  <td>mejora la maquinabilidad; provoca la fragilización por metal líquido.</td>
+</tr>
+<tr>
+  <td>Selenio</td>
+  <td> mejora la maquinabilidad.</td>
+</tr>
+<tr>
+  <td>Silicio</td>
+  <td>mejora la resistencia, dureza, resistencia a la corrosión y conductividad
+  eléctrica; disminuye la pérdida por histéresis magnética, maquinabilidad y formabilidad en frío.</td>
+</tr>
+<tr>
+  <td>Tantalio</td>
+  <td>tiene efectos similares a los del niobio.</td>
+</tr>
+<tr>
+  <td>Telurio</td>
+  <td> mejora la maquinabilidad, formabilidad y tenacidad.</td>
+</tr>
+<tr>
+  <td>Titanio</td>
+  <td>mejora la templabilidad; desoxida los aceros.</td>
+</tr>
+<tr>
+  <td>Tungsteno</td>
+  <td>tiene los mismos efectos que el cobalto.</td>
+</tr>
+<tr>
+  <td>Vanadio</td>
+  <td>mejora la resistencia, tenacidad, resistencia a la abrasión y dureza a temperaturas elevadas; inhibe el crecimiento del grano durante el tratamiento térmico.</td>
+</tr>
+  </table>
+</p>
+<h4>Nomenclatura del Sistema unificado de numeracion UNS</h4>
+<p>
+  El sistena UNS ha sido ampliamente adoptado por las industrias de
+metales ferrosos y no ferrosos. Consta de una letra que indica la clase general de la aleación, seguida de cinco dígitos que denominan su composición química:
+<ul>
+  <li>G: para aceros AISI y SAE al carbono y aleados</li>
+  <li>J: para aceros fundidos</li><li>K: para aceros diversos y aleaciones ferrosas</li>
+  <li>S: para aceros inoxidables y superaleaciones</li>
+  <li>T: para aceros para herramientas</li>
+</ul>
+</p>
+<h4>Aceros al carbono</h4>
+<p>
+  Se clasifican en 4 tipos:
+  <ul>
+    <li>Acero al bajo carbono, también llamado acero dulce, tiene menos de 0.30% de C.
+Con frecuencia se utiliza para productos industriales comunes (como pernos, tuercas, hojas, placas y tubos) y para componentes de máquinas que no requieren alta
+resistencia.</li>
+<li>Acero al medio carbono, tiene de 0.30% a 0.60% de C. Generalmente se utiliza en
+aplicaciones que requieren una mayor resistencia que la disponible en los aceros al
+bajo carbono, como en maquinaria, partes de equipos automotores y agrícolas (engranes, ejes, bielas, cigüeñales), equipo ferroviario y partes de maquinaria para el
+trabajo de los metales.</li>
+<li>Acero al alto carbono, tiene más de 0.60% de C. En general, el acero de alto carbono se utiliza en partes que requieren resistencia, dureza y resistencia al desgaste,
+como herramientas de corte, cables, alambre musical, resortes y cuchillería. Después
+de formársele, usualmente se da tratamiento térmico y revenido a las partes. Cuanto
+más carbono tenga el acero, mayores serán su dureza, resistencia y resistencia al desgaste luego del tratamiento térmico.</li>
+<li>Los aceros al carbono que contienen azufre y fósforo se conocen como aceros al
+carbono resulfurizados (serie 11xx) y como aceros al carbono refosforizados y resulfurizados (serie 12xx). Por ejemplo, el acero 1112 es resulfurizado con un contenido de carbono de 0.12%. Estos aceros tienen una maquinabilidad mejorada.</li>
+
+  </ul>
+</p>
+<h4>Aceros bifasicos</h4>
+<p>
+Los aceros bifásicos se procesan especialmente para tener una estructura mixta de ferrita y martensita, tienen una característica elevada de endurecimiento por
+ trabajo, que mejora su ductilidad y formabilidad.
+</p>
+<h3>Aceros Inóxidables</h3>
+<p>
+  Los aceros inoxidables se caracterizan por su resistencia a la corrosión, alta resistencia y
+  ductilidad, así como por su elevado contenido de cromo. Se les llama inoxidables porque,
+  en la presencia de oxígeno (aire), desarrollan una delgada película de óxido de cromo, dura y adherente, que protege al metal de la corrosión. Los aceros inoxidables se fabrican mediante
+hornos eléctricos o por el proceso básico de oxígeno y se procesan mediante técnicas similares a las utilizadas en otros tipos de producción de acero
+Generalmente, se dividen en 5 tipos:
+<ul>
+
+  <li>Austeníticos (series 200 y 300). En general, estos aceros están compuestos de cromo, níquel y manganeso en hierro. No son magnéticos y tienen excelente resistencia a la
+corrosión, pero son susceptibles al agrietamiento por esfuerzo-corrosión.</li>
+<li>Ferríticos (serie 400). Estos aceros tienen un alto contenido de cromo (hasta 27%),
+son magnéticos y poseen buena resistencia a la corrosión, pero su ductilidad es más baja
+que la de los aceros inoxidables austeníticos.</li>
+<li>Martensíticos (series 400 y 500). La mayoría de los aceros inoxidables martensíticos carecen de níquel y se endurecen mediante tratamiento térmico. Su contenido de
+cromo puede ser hasta de 18%, son magnéticos y tienen alta resistencia, dureza y resistencia a la fatiga, buena ductilidad y resistencia moderada a la corrosión. Se utilizan comúnmente en cuchillería, herramientas quirúrgicas, instrumentos, válvulas y resortes.
+</li>
+<li>
+  De endurecimiento por precipitación (PH, por sus siglas en inglés). Estos
+  aceros contienen cromo y níquel, junto con cobre, aluminio, titanio o molibdeno. Tienen
+  buena resistencia a la corrosión, ductilidad y alta resistencia a temperaturas elevada
+</li>
+<li>De estructura dúplex. Estos aceros tienen una mezcla de austenita y ferrita. Poseen
+buena resistencia y una mayor resistencia a la corrosión (en la mayoría de los ambientes)
+y al agrietamiento por esfuerzo-corrosión que los aceros austeníticos</li>
+</ul>
+</p>
+<h3>Aceros de alta velocidad</h3>
+<p>
+  Son los aceros para herramentales y matrices con mayores aleaciones. Mantienen
+  su dureza y resistencia a elevadas temperaturas de operación. Existen dos tipos básicos
+  de aceros de alta velocidad: el tipo molibdeno (serie M) y el tipo tungsteno (serie T).
+  Los aceros deserie M por lo general tienen una mayor resistencia a la abrasión que los de la serie T, sufren menos distorsión durante el tratamiento térmico y su costo es menor.
+</p>
+
+
+<h3>Referencias de la sección 'Aleaciones Ferrosas'</h3>
+<div class="ref">
+  <table>
+    <tbody>
+      <td>[1]</td>
+      <td>Kalpakjian, Serope, “Manufactura, ingeniería y tecnología”, Pearson Educacion, Quinta Edición, 2008.</td>
+    </tr>
+    <tr>
+    <td>[2]</td>
+    <td>Shackelford, James, “Introducción a la ciencia de materiales para ingenieros”, Pearson Educación, pp. 23-53, 2005.</td>
+    </tr>
+    <tr>
+      <td>[3]</td>
+      <td>Ashby, Michael F. "Materiales para Ingeniería 1", Reverté, España, 2008.</td>
+    </tr>
+
+    <tr>
+      <td>[4]</td>
+      <td>Newell, James. "Ciencia de Materiales: Aplicaciones en ingeniería". Alfaomega. México, 2011.</td>
+    </tr>
+    <tr>
+      <td>[5]</td>
+      <td>Askeland, Donald R. "Ciencia e Ingenieria de Materiales", Cengage Learning, Séptima Edición, México, 2017.</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/Aleaciones Metalicas.html'">
+  <p>Tema Anterior: Aleaciones Metalicas</p>
+</div>
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+<div class="right" onclick="window.location.href = '/static/temas/No ferrosos.html'">
+  <p>Siguiente tema: Aleaciones no Ferrosas</p>
+</div>
+
+
+      </body>
+      </html>

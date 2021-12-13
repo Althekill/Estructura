@@ -46,6 +46,7 @@
     color:crimson
   }
   img{
+    width: 40%;
     max-width: 100%;
   }
   elemento{
@@ -106,6 +107,21 @@
     color: navy;
     font-weight: bold;
     width:10%;
+  }
+  .descripcion{
+    width:100%;
+
+  }
+  .descripcion>table{
+    width:100%;
+        border-style:none;
+  }
+  .descripcion>table>tbody>tr>td{
+    text-align: left;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+    font-size: 1em;
+    width:50%;
+    border-style:none;
   }
 
   </style>
@@ -426,9 +442,30 @@ La Tabla Periodica
 <br>
 <canvas id="e" width="150" height="150"></canvas>
 <br>
-<p id="elementinfo">
+<div  class="descripcion">
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <p id="elementinfo" style="width:50%">
 
-</p>
+      </p>
+    </td>
+      <td>
+        <div class="Modelo" id="model">
+
+        </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<img id="imagen_elemento" src="" alt="">
+</div>
+
+<br>
+
 <h4>¿Por qué el hidrógeno esta en el grupo IA?</h4>
 <p>
   Las especiales características del átomo de hidrógeno y

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CDosis:400,500,700&amp;subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="tabla periodica.js"></script>
+  </script>
+  <title>Aleaciones No Ferrosas</title>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+  body{
+    font-family: monaco,Consolas,Lucida Console,monospace;
+
+  }
+  h2{
+    color:olive;
+    font-size: 4em;
+    font-family:'Sofia',sans-serif;
+  }
+  h3{
+    color:fuchsia;
+    font-size: 2em;
+    font-family:'Sofia',sans-serif;
+  }
+  h4{
+    color:mediumturquoise;
+    font-size: 4em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  h5{
+    color:coral;
+    font-size: 3em;
+    font-family:'Amatic SC',sans-serif;
+  }
+  q{
+    font-style: oblique;
+    font-weight: bold;
+    color:crimson
+  }
+  img{
+    max-width: 100%;
+  }
+  elemento{
+    color:maroon;
+    font-style: normal;
+    font-weight: bold;
+    font-size:1.5em;
+  }
+  .elemento{
+    color:maroon;
+    font-style: normal;
+    font-size:1.1em;
+
+  }
+  todo{
+    font-style: italic;
+    font-weight: bold;
+    font-size:3em;
+  }
+  .table {
+    overflow: auto;
+
+  }
+  .grupo>td{
+    font-size:18px;
+  }
+  .grupo{
+    font-size:18px;
+  }
+  .Modelo{
+    height: 500px;
+    width: 100%;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .e{
+    border: 1px solid black;
+  }
+  td{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    width:85px;
+    height:55px;
+  }
+
+  @media screen and (device-width: 200px) {sudo gpasswd -a $USER input
+    h2,h3,h4,h5 {
+      font-size:1vw; /* The width is 100%, when the viewport is 800px or smaller*/
+    }
+  }
+  .ref{
+    width:90%;
+    overflow: auto;
+  }
+  .ref>table>tbody>tr>td{
+    background-color: white;
+    font-size: 1em;
+    text-align: left;
+    width:80%;
+  }
+  .ref>table>tbody>tr>td:first-child ,ref{
+    color: navy;
+    font-weight: bold;
+    width:10%;
+  }
+  IUPAC{
+		font-style: italic;
+		font-weight: bold;
+		color:lightsalmon;
+		font-size:1.2em;
+	}
+  </style>
+</head>
+<body>
+
+<h2>Aluminio y sus Aleaciones</h2>
+<p>
+Generalmente cuando se habla de compuestos quimicos se hace referencia a compuestos que son completamente periodicos y que estan formados por los mismos átomos para todo su volumen, en el caso de
+la explicacion de cristales y estructuras cristalinas, se suponía que toda la estructura pertenecía a un solo compuesto. En el caso de los metales, también existen variaciones en las que se da que
+no toda la estructura esta formada por un solo compuesto, a este tipo de metales se les llama <strong>aleaciones</strong> y estan formadas por al menos un metal y otro elemento. Tambien puede existir el caso en
+que todo el material este compuesto de los mismos átomos através de toda su estructura, y cuando esto ocurre, al metal se le denomina <strong>metal puro</strong>.
+<br>
+<img src="/static/Imagenes/aluminio.jpeg" alt="">
+</p>
+
+
+<h2>Soluciones sólidas substitucionales e intersticiales</h2>
+<p>
+Debido a que las aleaciones estan compuestas de dos materiales diferentes, a cada uno se le denomina con un nombre: <strong> <i>Soluto</i> y <i>Solvente</i> </strong>, siendo el soluto
+aquel elemento que se agrega al solvente para crear la aleacion. Cuando la estructura cristalina del solvente se mantiene durante la aleación, a ésta se le llama solución sólida <ref> [184, p. 116] </ref>.
+De las que se encuentran dos tipos:
+<br>
+<ol>
+  <li> <strong>Soluciones sólidas substitucionales:</strong> En las que el tamaño de los átomos de ambos compuestos es similar y por lo tanto
+  se sustituye el átomo del solvente con el del soluto sin cambiar la composicion de la estructura. Requieren de dos condiciones llamadas <i>Reglas de Hume-Rothery</i>: <p class="elemento">Los dos metales deben tener estructuras cristalinas similares
+  y la diferencia de sus radios atómicos debe ser menor al 15%</p> <ref>[184, p. 116]</ref> Ejemplo: el latón, compuesto por zinc y cobre
+<br>
+<div class="">
+<img src="../Imagenes/laton.jpg" alt="laton">
+<br>
+<p width="100%">Fig. 10.1: El latón</p>
+</div>
+
+</li>
+
+  <li> <strong>Soluciones sólidas intersticiales:</strong> Ocurren cuando el tamaño del soluto es menor al del solvente, con las iguientes condiciones: <p class="elemento">El solvente debe tener más de una valencia y el radio atómico del soluto debe ser menor al 59% del radio del solvente.</p>Ej: el acero
+<br>
+    <div class="">
+    <img src="../Imagenes/acero.jpeg" alt="acero">
+    <br>
+    <p width="100%">Fig. 10.2: El acero</p>
+    </div>
+  </li>
+
+</ol>
+</p>
+<h2>Fases y sistemas de dos fases</h2>
+
+<p>
+  Una fase se define como una porción físicamente distinta y homogénea en un materia  <ref>[184, p. 117]</ref>. Cuando se habla de sistemas de dos fases,
+  se hace referencia a mezclas en las cuales el soluto y el solvente no se disuelven y son distinguibles, muy similar al concepto de una mezcla heterogenea.
+  En el caso de las aleaciones, cuando estas tienen dos fases, se refiere a que las particulas del soluto estan 'dispersas por toda la mezcla'. En general, las aleaciones de dos fases son más fuertes y menos dúctiles que las soluciones sólidas.
+</p>
+<h2>Diagramas de fase</h2>
+<p>
+Los elementos puros tienden a tener puntos de fusión y de solidificación definidos y que ocurren a una temperatura constante, véase el caso del agua:
+<div class="">
+<img src="../Imagenes/diagrama-de-fases-agua.png" alt="dwf">
+<br>
+<p width="100%">Fig. 10.3: El agua tiene un diagrama de fase convencional</p>
+</div>
+Pero, a diferencia de estos elementos y de los metales puros, las aleaciones se solidifican en un intervalo de temperaturas, lo que quiere decir que hay puntos en los
+que la aleacion no es líquida ni sólida, sino que esta aleación esta en un estado <i>blando o pastoso</i> <ref>[184, p. 118]</ref>. La aleacion completamente solidificada en una aleación se crea cuando el soluto
+se disuelve completamente en el solvente y cada grano tiene la misma composición.
+<br>
+<div class="">
+<img src="../Imagenes/diagrama-fases-aleacion.png" alt="dfa">
+<br>
+<p width="100%">Fig. 10.4: La aleación níquel cobre tiene un punto en el cual no es líquida ni sólida,  [184, fig. 4.5]</p>
+</div>
+Para el estudio de estos fenomenos se hace uso de un diagrama de fases,tambien conocido como diagrama de equilibrio o constitucional, como el que se vio en el ejemplo del agua,
+pero en las aleaciones, estos no toman en cuenta la presión atmosférica, sino la composición de la aleación. Existen tres tipos de diagramas de fase: (1) soluciones sólidas
+completas; (2) eutécticas, como los hierros fundidos; y (3) eutectoides, como los aceros.
+
+
+</p>
+<h2>Hierro-Carbono</h2>
+<p>
+Generalmente, el hierro y el carbono son elementos inseparables, ya que hasta el hierro comercialmente puro contiene un porcentaje de carbono. El siguiente diagrama de fases muestra lo que le ocurre al hierro dependiendo del porcentaje de carbono en este:
+<br>
+<div class="">
+<img src="../Imagenes/diagrama-fases-hierro-carbono.png" alt="dfhc">
+<br>
+<p width="100%">Fig. 10.5: Diagrama de fases del hierro-carbono  [184, fig. 4.8]</p>
+</div>
+En este diagrama se puede observar que el hierro puro forma ferrita austenita y cementita a diferentes temperaturas:
+<ul>
+  <li> <strong>Ferrita:</strong> simplemente ferrita, es una solución sólida de hierro cúbico centrado en el cuerpo. La ferrita delta es estable sólo a temperaturas muy altas y
+no tiene importancia práctica en la ingeniería. La ferrita es relativamente suave y dúctil; es magnética en todas las temperaturas hasta la temperatura de Curie (7698 grados centigrados)
+<br>
+<div class="">
+<img src="../Imagenes/ferrita.jpeg" alt="ferrita">
+<br>
+<p width="100%">Fig. 10.6: La ferrita se utiliza para nucleos de transformadores</p>
+</div>
+<br>
+<div class="Modelo">
+<model-viewer src="/static/Modelos/ferrita.glb" alt="Modelo 3d de la bcc" ar scale="1 1 1" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+<br>
+<p width="100%">Fig. 10.7: La ferrita tiene una estructura cúbica centrada en el cuerpo</p>
+</div>
+</li>
+<li>
+<strong>Austenita:</strong> Dentro de cierto margen de temperatura, el hierro sufre una transformación polimórfica de la estructura bcc a una estructura
+fcc para convertirse en hierro gama o (más comúnmente) austenita. Posee buena formabilidad y no es magnética.
+<br>
+<div class="Modelo">
+<model-viewer src="/static/Modelos/austenita.glb" alt="Modelo 3d de la fcc" ar scale="1 1 1" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+<br>
+<p width="100%">Fig. 10.8: La austenita tiene una estructura cúbica centrada en las caras</p>
+</div>
+</li>
+<li>
+<strong>Cementita:</strong> Tambien llamada <strong>carburo</strong>, es 100% de carburo de hierro <elemento>Fe<sub>3</sub>C</elemento> y tiene un contenido de carbono de 6.67%. es un compuesto intermetálico muy duro
+y frágil que tiene una influencia significativa en las propiedades de los aceros. Puede incluir otros elementos de aleación, como cromo, molibdeno y manganeso. <ref>[184, p. 123]</ref>
+</li>
+</ul>
+</p>
+<h2>Hierros Fundidos</h2>
+<p>
+  El término hierro fundido se refiere a una familia de aleaciones ferrosas compuestas por
+  hierro, carbono (que va de 2.11% a casi 4.5%) y silicio (casi hasta 3.5%). Segun su composicion, se clasifican en:
+  <ol>
+    <li><strong>Hierro fundido gris, o hierro gris.</strong>
+      El grafito existe mayormente en la forma de
+     hojuelas. Tiene una ductilidad despreciable y es de baja resistencia a la tensión (aunque
+de alta resistencia a la compresión), esto y la presencia de hojuelas de grafito hacen que sea un metal muy útil para amortiguar vibraciones y por tanto disipar energía.
+    </li>
+    <li>
+<strong>Hierro dúctil nodular:  En la estructura del hierro dúctil, el grafito se encuentra en
+forma nodular o esferoidal, la cual permite que el material sea de alguna ma-
+nera dúctil y resistente al impacto</strong>
+    </li>
+    <li>
+      <strong>Hierro fundido blanco. </strong>Su estructura es muy dura, resistente al desgaste y frágil, debido a la presencia de grandes cantidades de carburo de hierro (en lugar de grafito), se obtiene mediante el enfriamiento rápido del hierro gris.
+
+    </li>
+    <li>
+<strong>Hierro maleable</strong> El hierro maleable se obtiene recociendo hierro fundido blanco en
+una atmósfera de monóxido de carbono y bióxido de carbono, a entre 800 °C y 900 °C, tiene una estructura similar a la del hierro nodular. Esta estructura promueve la ductilidad, resistencia y resistencia al impacto
+    </li>
+    <li>
+<strong>Hierro de grafito compactado</strong> En esta estructura, el grafito se encuentra en la forma de hojuelas cortas, gruesas e interconectadas, que tienen superficies onduladas y extremidades redondas.
+    </li>
+
+</ol>
+</p>
+<h2>Tratamieno térmico</h2>
+<p>
+  Los efectos del
+  tratamiento térmico dependen de la aleación en particular, su composición y su microestructura, el grado de trabajo previo en frío, así como las velocidades de calentamiento y
+  de enfriamiento durante el tratamiento térmico. A continuación, sistemas hierro-carbono que se diferencian dependiendo del tipo de tratamiento térmico:
+<ul>
+<li> <strong>Perlita:</strong> dependiendo de la velocidad de enfriamiento, la perlita puede convertirse en perlita fina -con laminillas de ferrita y cementita delgadas y apretadas- cuando el enfriamiento es lento y perlita gruesa cuando el enfriamiento es rápido -con laminillas gruesas y espaciadas- </li>
+<li> <strong>Esferoidita:</strong> Cuando se calienta la perlita debajo de la temperatura euctoide y se mantiene asi por un día, se crea este acero con mayor tenacidad y menor dureza</li>
+<li> <strong>Bainita:</strong> es una microestructura muy fina que consiste en ferrita y cementita, algo similar a la perlítica, pero con
+una morfología diferente. Por lo general es más fuerte y dúctil que los aceros perlíticos al mismo nivel de
+dureza.
+</li>
+<li> <strong>Martensita</strong> Cuando la austenita se enfría a alta velocidad, su estructura fcc se transforma en una estructura tetragonal centrada en el cuerpo
+(bct), es muy dura y frágil, no tiene tenacidad y, por lo tanto, su uso es limitado
+<div class="Modelo">
+<model-viewer src="/static/Modelos/martensita.glb" alt="Modelo 3d de la fcc" ar scale="1 1 1" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+<br>
+<p width="100%">Fig. 10.9: La martensita tiene una estructura tetragonal centrada en l cuerpo</p>
+</div>
+</li>
+<li>
+<strong>Austenita Retenida:</strong> Si la temperatura a la que se enfría la aleación no es lo suficientemente baja, sólo una porción de la estructura se transforma en martensita. El resto es
+austenita retenida, puede ocasionar inestabilidad
+dimensional y agrietamiento, además de reducir la dureza y resistencia de la aleación.
+
+</li>
+<li>
+<strong>Martensita revenida:</strong>  El revenido es un proceso de calentamiento mediante el cual se reduce la dureza y se mejora la tenacidad.
+</li>
+
+</ul>
+</p>
+<h2>Templabilidad</h2>
+<p>
+<q>A la capacidad de endurecimiento de una aleación por medio de tratamiento térmico se
+le llama templabilidad. Es una medida de la profundidad de la dureza que se puede obtener mediante calentamiento y enfriamiento posterior. </q> <ref>[185, p. 132]</ref>
+<br>
+Para hacer una prueba de templabilidad, se utiliza el ensayo de Jominy, que consiste en utilizar una barra redonda de 10 cm de la aleación a medir, calentarla hasta volverla austenita y templar la mitad a 25 grados a diferentes velocidades para medir la dureza del temple.
+</p>
+<h2>Tratamiento térmico de aleaciones no ferrosas y aceros inoxidables</h2>
+<p>
+  Las aleaciones de aluminio y de cobre, los aceros inoxidables martensíticos
+ y algunos otros aceros inoxidables a los que se puede dar tratamiento térmico, se endurecen y refuerzan mediante un proceso llamado endurecimiento por precipitación. Este
+ tratamiento térmico es una técnica en la que pequeñas partículas (de una fase diferente y
+ llamados precipitados) se dispersan de manera uniforme en la matriz de la fase original, que consta de tres fases:
+ <br>
+ <div class="">
+ <img src="../Imagenes/tratamiento termico.png" alt="tt">
+ <br>
+ <p width="100%">Fig. 10.10: Fases del endurecimiento por precipitacion  [184, fig. 4.21]</p>
+ </div>
+</p>
+<h3>Tratamiento con solucion</h3>
+<p>
+  En el tratamiento con solución, la aleación se calienta dentro de la fase kapa de la solución
+  sólida, digamos 540 °C (1000 °F) y después se enfría rápidamente. Esta aleación tiene resistencia moderada y ductilidad considerable.
+</p>
+<h2>Endurecimiento superficial</h2>
+<p>
+  <cite>No es deseable endurecer partes completas porque una parte dura adolece de la tenacidad necesaria para estas aplicaciones; una
+  pequeña grieta en la superficie se podría propagar con rapidez por toda la parte y provocar
+ una falla total. Sin embargo, en muchos casos es deseable la alteración exclusiva de las
+ propiedades superficiales de una parte <ref>[184, p. 136]</ref></cite>
+ Los siguientes son los metodos de endurecimiento superficial:
+ <ol>
+   <li>Carburizado (gas, líquido y carburizado en caja)</li>
+
+<li> Carbonitrurado</li>
+ <li>Cianurado</li>
+
+<li> Nitrurado</li>
+
+<li> Borurado</li>
+
+<li> Endurecimiento a la flama</li>
+
+<li> Endurecimiento por inducción</li>
+ <li>Endurecimiento por láser</li>
+
+ </ol>
+</p>
+<h2>Recocido</h2>
+<p>
+El recocido es cuando una aleación tratada térmicamente con uno de los metodos anteriormente descritos se restaura a su estado original. Este proceso se utiliza para relevar
+esfuerzos en una pieza tratada o para mejorar su maquinabilidad.
+<cite>
+
+  El proceso de recocido consta de los siguientes pasos:
+  <ol>
+    <li>Calentamiento de la pieza de trabajo hasta un intervalo específico de temperaturas
+    en un horno.</li>
+    <li>Mantenimiento de la pieza a esa temperatura por cierto periodo (empape).</li>
+    <li>Enfriamiento en aire o en un horno.</li>
+  </ol>
+  Para evitar la suavidad excesiva del recocido de los aceros, el ciclo de enfriamiento
+se puede realizar totalmente en aire calmado. A este proceso se le llama normalizado.
+</cite> <ref>[184, p. 139]</ref>
+La ventaja del normalizado es que aumenta la dureza y resistencia del metal a costa de una menor ductilidad.
+<br>
+Tipos de recocido:
+<ul>
+  <li>
+<strong>Recocido de Proceso</strong>:  La pieza de trabajo se recoce para
+restaurar su ductilidad, parte de o toda, la cual puede haberse agotado mediante el endurecimiento por trabajo durante el trabajado en frío.
+   </li>
+   <li>
+<strong>Recocido para relevado de esfuerzos</strong>: Se utiliza para reducir o eliminar los esfuerzos residuales. En general, se emplea el
+ enfriamiento lento (como ocurre en el aire calmado)
+   </li>
+   <li>
+<strong>Revenido:</strong> Si los aceros se endurecen mediante tratamiento térmico, entonces se utiliza
+el revenido para reducir la fragilidad y los esfuerzos residuales y aumentar la ductilidad
+y la tenacidad. El acero se calienta a una temperatura específica y después se enfría una velocidad prescrita. Puede ocasionar <strong>fragilización por revenido</strong> debido a impurezas en la aleación
+   </li>
+   <li>
+<strong>Bainitizado:</strong> también conocido como <strong> <i>austemperizado </i> </strong>, el acero ca-
+lentado se enfría con rapidez desde la temperatura de austenización para evitar la forma-
+ción de ferrita o de perlita.
+Con frecuencia, el bainitizado se sustituye por enfriado y revenido convencional,
+ya sea para reducir la tendencia al agrietamiento y distorsión durante el temple, o para
+mejorar la ductilidad y la tenacidad manteniendo la dureza.
+   </li>
+   <li>
+<strong>Temple interrumpido:</strong>  primero se templa el acero o el hierro fundido desde la temperatura de austenización; después,
+se mantiene a esa temperatura hasta que es uniforme en toda la parte; luego se enfría a velocidad moderada; por lo común la
+parte se reviene después, estos aceros tienen menos tendencia al agrietamiento, distorsión, o a desarrollar esfuerzos
+ residuales durante el tratamiento térmico.
+   </li>
+   <li>
+<strong>Ausformado:</strong> el
+acero se adapta a las formas deseadas dentro de intervalos controlados de temperatura y
+tiempo para evitar la formación de productos de transformación no martensítica. Des-
+pués se enfría la parte a diversas velocidades para obtener las microestructuras deseadas.
+Las partes ausformadas tienen propiedades mecánicas superiores.
+
+
+   </li>
+   <ref>[184, pp. 139-141]</ref>
+</ul>
+</p>
+<h2>Hornos y equipo para tratamiento termico</h2>
+<p>
+Existen dos tipos de hornos para el tratamiento térmico:
+<ul>
+  <li>
+<strong>Hornos por lotes</strong>
+El horno consiste básicamente en una cámara aislada, un sistema de calentamiento y una puerta, o puertas, de acceso
+  </li>
+  <li>
+<strong>Hornos Continuos</strong>
+<q>, las partes a tratar térmicamente se mueven
+con frecuencia a través del horno sobre transportadores de diversos diseños que utilizan
+charolas, bandas, cadenas y otros mecanismos. Los hornos continuos son adecuados
+para corridas de alta producción, y se pueden diseñar y programar para realizar ciclos completos de tratamiento térmico con un control estricto.
+</q> <ref>[184, p. 143]</ref>
+  </li>
+</ul>
+</p>
+
+<h3>Referencias de la sección 'Aleaciones Metálicas'</h3>
+<div class="ref">
+  <table>
+    <tbody>
+      <tr>
+        <td>[1]</td>
+        <td>Kalpakjian, Serope, “Manufactura, ingeniería y tecnología”, Pearson Educacion, Quinta Edición, 2008.</td>
+        <!-- <td>[2]</td>
+         <td>SAT thermique. (s. f.). Hornos Continuos Industriales [Ilustración].
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sat-thermique.com%2Fes%2Fhornos-continuos-industriales%2F&psig=
+AOvVaw0dhZb-Sn8UnY6nhsO5GsY1&ust=1634952351488000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPD817r13PMCFQ
+AAAAAdAAAAABAD</td>
+<td>[3]</td>
+<td>Nutec Bickley. (s. f.). Hornos de Caja [Ilustración].
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nutecbickley.com%2Fes%2Fque-hacemos%2Fhornos-industriales-de-
+alta-y-baja-temperatura%2Fhornos-de-caja-industriales&psig=AOvVaw2ROvGbl-AYjENkI29VOduD&ust=1634954438091000&source
+=images&cd=vfe&ved=0CAsQjRxqFwoTCKiHmYj23PMCFQAAAAAdAAAAABAD</td>
+<td>[4]</td>
+<td>Especialidades Térmicas. (s. f.). Hornos de Fosa [Ilustración].
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.especialidadestermicas.com%2Fhorno-de-fosa%2F&psig=AOvVaw2qs
+bxrrw5ZMqOmhSlulGbJ&ust=1634954617788000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjcsd323PMCFQAAAAAdAAAA
+ABAD</td>
+<td>[5]</td>
+<td>Ingener. (s. f.). Horno de Campana [Fotografía].
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ingenerfurnaces.com%2Fes%2Fhornos-industriales%2Fhornos-de-trat
+amiento-termico%2Fhorno-campana%2F&psig=AOvVaw3zibjh-4sAKiJbhjzVnnS3&ust=1634954741110000&source=images&cd=vfe
+&ved=0CAsQjRxqFwoTCJCFh5r33PMCFQAAAAAdAAAAABAD</td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>
+<link rel="stylesheet" href="/static/css/botones_nav.css">
+<div class="left" onclick="window.location.href = '/static/temas/Cristalografia.html'">
+  <p>Tema anterior: Difracción de Rayos X</p>
+</div>
+
+<div class="main" onclick="window.location.href = '/'">
+  <p>Indice</p>
+</div>
+
+<div class="right" onclick="window.location.href = '/static/temas/Practica de Cristales.html'">
+  <p>Siguiente tema: Practica de Crecimiento de Cristales</p>
+</div>
+
+
+      </body>
+      </html>

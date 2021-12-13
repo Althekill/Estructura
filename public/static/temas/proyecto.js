@@ -130,5 +130,19 @@ function seccion(nombre){
     summary="Ceramicos"
     text="A difererencia de los metales, los cerámicos estan compuestos exclusivamte de enlaces covalentes e ionicos, dotandoles de mayor resistecia termica, electrica y dureza ..."
     break;
+    case 12:
+    current_models=['atomos/atomo_1.glb', 'atomos/atomo_10.glb', 'atomos/atomo_100.glb', 'atomos/atomo_101.glb', 'atomos/atomo_102.glb', 'atomos/atomo_103.glb', 'atomos/atomo_104.glb', 'atomos/atomo_105.glb', 'atomos/atomo_106.glb', 'atomos/atomo_107.glb', 'atomos/atomo_108.glb', 'atomos/atomo_109.glb', 'atomos/atomo_11.glb', 'atomos/atomo_110.glb', 'atomos/atomo_111.glb', 'atomos/atomo_112.glb', 'atomos/atomo_113.glb', 'atomos/atomo_114.glb', 'atomos/atomo_115.glb', 'atomos/atomo_116.glb', 'atomos/atomo_117.glb', 'atomos/atomo_118.glb', 'atomos/atomo_12.glb', 'atomos/atomo_13.glb', 'atomos/atomo_14.glb', 'atomos/atomo_15.glb', 'atomos/atomo_16.glb', 'atomos/atomo_17.glb', 'atomos/atomo_18.glb', 'atomos/atomo_19.glb', 'atomos/atomo_2.glb', 'atomos/atomo_20.glb', 'atomos/atomo_21.glb', 'atomos/atomo_22.glb', 'atomos/atomo_23.glb', 'atomos/atomo_24.glb', 'atomos/atomo_25.glb', 'atomos/atomo_26.glb', 'atomos/atomo_27.glb', 'atomos/atomo_28.glb', 'atomos/atomo_29.glb', 'atomos/atomo_3.glb', 'atomos/atomo_30.glb', 'atomos/atomo_31.glb', 'atomos/atomo_32.glb', 'atomos/atomo_33.glb', 'atomos/atomo_34.glb', 'atomos/atomo_35.glb', 'atomos/atomo_36.glb', 'atomos/atomo_37.glb', 'atomos/atomo_38.glb', 'atomos/atomo_39.glb', 'atomos/atomo_4.glb', 'atomos/atomo_40.glb', 'atomos/atomo_41.glb', 'atomos/atomo_42.glb', 'atomos/atomo_43.glb', 'atomos/atomo_44.glb', 'atomos/atomo_45.glb', 'atomos/atomo_45_n.glb', 'atomos/atomo_46.glb', 'atomos/atomo_47.glb', 'atomos/atomo_48.glb', 'atomos/atomo_49.glb', 'atomos/atomo_5.glb', 'atomos/atomo_50.glb', 'atomos/atomo_51.glb', 'atomos/atomo_52.glb', 'atomos/atomo_53.glb', 'atomos/atomo_54.glb', 'atomos/atomo_55.glb', 'atomos/atomo_56.glb', 'atomos/atomo_57.glb', 'atomos/atomo_58.glb', 'atomos/atomo_59.glb', 'atomos/atomo_6.glb', 'atomos/atomo_60.glb', 'atomos/atomo_61.glb', 'atomos/atomo_62.glb', 'atomos/atomo_63.glb', 'atomos/atomo_64.glb', 'atomos/atomo_65.glb', 'atomos/atomo_66.glb', 'atomos/atomo_67.glb', 'atomos/atomo_68.glb', 'atomos/atomo_69.glb', 'atomos/atomo_7.glb', 'atomos/atomo_70.glb', 'atomos/atomo_71.glb', 'atomos/atomo_72.glb', 'atomos/atomo_73.glb', 'atomos/atomo_74.glb', 'atomos/atomo_75.glb', 'atomos/atomo_76.glb', 'atomos/atomo_77.glb', 'atomos/atomo_78.glb', 'atomos/atomo_79.glb', 'atomos/atomo_8.glb', 'atomos/atomo_80.glb', 'atomos/atomo_81.glb', 'atomos/atomo_82.glb', 'atomos/atomo_83.glb', 'atomos/atomo_84.glb', 'atomos/atomo_85.glb', 'atomos/atomo_86.glb', 'atomos/atomo_87.glb', 'atomos/atomo_88.glb', 'atomos/atomo_89.glb', 'atomos/atomo_9.glb', 'atomos/atomo_90.glb', 'atomos/atomo_91.glb', 'atomos/atomo_92.glb', 'atomos/atomo_93.glb', 'atomos/atomo_94.glb', 'atomos/atomo_95.glb', 'atomos/atomo_96.glb', 'atomos/atomo_97.glb', 'atomos/atomo_98.glb', 'atomos/atomo_99.glb']
+
+    nombres=[]
+    for (atomo in current_models){
+      sp = current_models[atomo].split('_')[1];
+      sp = sp.split('.')[0];
+      n = parseInt(sp,10)-1;
+      elemento=e[n].nombre;
+      nombres.push(elemento);
     }
+    summary="Tabla Periodica"
+    text="La tabla periodica es donde todos los elementos conocidos por la humanidad se recogen. En ella se listan los 118 átomos conocidos y muchas de sus propiedades más importantes como lo son: el grupo, el numero atómico, la masa atómica, nombre del elemento y símbolo del elemento ..."
+    }
+
 }

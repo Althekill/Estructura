@@ -1,3 +1,4 @@
+var json = ""
 class elemento
 {
   constructor(simbolo="",nombre="",bloque="",familia=0,grupo="",estado=0,masa=0.0,electronegatividad=0,valencias){
@@ -448,7 +449,25 @@ ctx.textAlign = 'center'
   }
   if (e[m].electronegatividad!=0){
   info.innerHTML+="Tiene una electronegatividad de: " + e[m].electronegatividad + "<br>";
+
   }
+  var div = document.getElementById("model")
+  div.innerHTML='<model-viewer style="height:100%;width:100%" src="/static/Modelos/atomos/atomo_'+e[m].numeroatm+'.glb" autoplay ar ar-placement="wall" scale="0.5 0.5 0.5" ar-modes="webxr scene-viewer quick-look" auto-rotate camera-controls >' + "<br>";
+  let img = document.getElementById("imagen_elemento");
+  img.src="";
+  img.src=imagen(e[m].numeroatm);
+}
+function imagen(num_atomico){
+  if (json==""){
+  fetch('/static/temas/periodic table.json')
+  .then(response => response.text())
+  .then((data) => {
+    json = data
+  })}
+  let w =JSON.parse(json);
+  let nombre = w.elements[num_atomico-1].name.toLowerCase();
+  image_path="https://images-of-elements.com/s/"+nombre+".jpg"
+  return image_path;
 }
 
 function llenar_tabla(gradiente="familia"){
@@ -680,8 +699,8 @@ function handleStart(evt) {
   }
 }
 
-
 function load(){
 
   window.requestAnimationFrame(dibujo)
+
 }
