@@ -1,4 +1,9 @@
 var json = ""
+fetch('/static/temas/periodic table.json')
+.then(response => response.text())
+.then((data) => {
+  json = data
+})
 class elemento
 {
   constructor(simbolo="",nombre="",bloque="",familia=0,grupo="",estado=0,masa=0.0,electronegatividad=0,valencias){
@@ -456,6 +461,8 @@ ctx.textAlign = 'center'
   let img = document.getElementById("imagen_elemento");
   img.src="";
   img.src=imagen(e[m].numeroatm);
+  let adsdas =  document.getElementById("descripcion");
+  adsdas.innerHTML=DDD[m];
 }
 function imagen(num_atomico){
   if (json==""){
