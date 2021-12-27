@@ -1,3 +1,8 @@
+##Con este script se pueden generar los 118 atomos con sus electrones, protones, neutrones y orbitales.
+##Funciona con la api de blender (muy util si sabes buscar entre la documentacion)
+##Exporta a gltf, hay otro script para convertir a obj
+
+
 import bpy
 import bmesh
 import os
