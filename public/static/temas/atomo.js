@@ -1,3 +1,5 @@
+w=false;
+
 //1.- Definir los estilos para resaltar una entrada de la tabla
 //2.- Obtener cada uno de los ID para cada orbital
 //3. Crear la animacion
@@ -6,6 +8,10 @@ function sleep(ms) {
 }
 
 async function animar_configuracion(tiempo=1000){
+  if (!w){
+    document.getElementById("elemento").value=""
+    w=true;
+  }
 let orbitales  = [2,2,6,2,6,2,10,6,2,10,6,2,14,10,6,2,14,10,6,2];
 let cuantico_n = [1,2,2,3,3,4,3 ,4,5,4 ,5,6,4 ,5 ,6,7,5 ,6 ,7,8];
 let cuantico_l = [0,0,1,0,1,0,2 ,1,0,2 ,1,0,3 ,2 ,1,0,3 ,2 ,1,0]; //Error en el HTML: sumar +1 a cada uno de estos valores

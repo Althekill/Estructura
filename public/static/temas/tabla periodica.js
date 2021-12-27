@@ -265,6 +265,15 @@ function configuracion_electronica(numero_atomico)
   configuracion[configuracion.length-1]+=contador //porque contador es negativo
   contador=0
   }
+  let estilo_superindice = 'color:red'
+  //Excepcion en la configuracion electronica del cobre
+  let nota_cobre=""
+  if (numero_atomico==29){
+    //En el cobre el electron de 4s2 se pasa a 3d9, por lo que la configuracion termina siendo 4s1 3d10
+    configuracion[configuracion.length-1]=10;
+    configuracion[configuracion.length-2]=1;
+    nota_cobre="<b style=\""+ estilo_superindice + "\">En el cobre, pasa un caso especial, ya que el electron de 4s<sup>2</sup> pasa al otro orbital, ocasionando que la nueva configuracion sea 4s<sup>1</sup>, 3d<sup>10</sup> </b><br>" //NO DEBERIA PONER ESTILOS CSS EN CODIGO, jejejeje (ni texto)
+  }
   for (i in configuracion){
     div.innerHTML+=conf_larga[i]+"<sup>"+configuracion[i]+"</sup> "
   }
@@ -272,9 +281,8 @@ function configuracion_electronica(numero_atomico)
   //n y l
    let n = cuantico_n[configuracion.length-1]
    let l = cuantico_l[configuracion.length-1]
-   document.getElementById('ultimo_orbital').innerHTML="El numero cuantico n es " + n + ", el numero cuantico l es " + l
+   document.getElementById('ultimo_orbital').innerHTML=nota_cobre + "El numero cuantico n es " + n + ", el numero cuantico l es " + l
    document.getElementById('ultimo_orbital').innerHTML+=", ya que el ultimo orbital es " + conf_larga[configuracion.length-1]
-   let estilo_superindice = 'color:red'
    document.getElementById('mas_texto').innerHTML="Ya que el numero l y n estan obtenidos, hay que fijarse en los electrones que habitan ese orbital:"
    document.getElementById('ultimo_orbital_super').innerHTML=conf_larga[configuracion.length-1]+"<sup style=\" " + estilo_superindice + " \">"+configuracion[configuracion.length-1]+"</sup> "
    document.getElementById('z').innerHTML= "Como el tipo de orbital es " + conf_larga[configuracion.length-1][1]
