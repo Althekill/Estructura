@@ -1,3 +1,5 @@
+#Script de la API de blender para importar archivos en formato glb y exportarlos a formato obj
+
 import bpy
 import bmesh
 import os
